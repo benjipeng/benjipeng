@@ -39,7 +39,7 @@ const messages = {
 };
 const useStyles = createUseStyles(styles);
 
-const DEFAULT_OPTIONS ={
+const DEFAULT_OPTIONS = {
     locale: 'en',
     customization: {
         imageHeader: {
@@ -53,7 +53,7 @@ const DEFAULT_OPTIONS ={
 };
 
 const DEFAULT_OBJECT = {};
-const DEFAULT_FUNCTION = () => {};
+const DEFAULT_FUNCTION = () => { };
 
 const DeveloperProfileComponent = ({
     data: originalData = DEFAULT_OBJECT,

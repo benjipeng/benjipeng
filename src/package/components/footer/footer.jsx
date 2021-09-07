@@ -28,59 +28,98 @@ const FooterComponent = () => {
     const mainColor = getHexFromPaletteColor(theme, 'primary');
 
     return (
-        <div className={'w-full pb-20 px-7 mt-20 flex flex-col justify-center md:flex-row text-white'} style={{backgroundColor: mainColor}}>
-            <div className={'flex flex-col text-sm text-white mt-10 mr-20 md:mr-10 lg:mr-20'}>
-                <a href={formatMessage(footerTranslations.w3dLink)} target="_blank" rel="noreferrer noopener">
+        <div className={'w-full pb-20 px-7 mt-20 flex flex-col justify-center md:flex-row text-white'} style={{ backgroundColor: mainColor }}>
+            <div className={'flex flex-col justify-center  text-sm text-white mt-10 mr-20 md:mr-10 lg:mr-20'}>
+                {/* <a href={formatMessage(footerTranslations.w3dLink)} target="_blank" rel="noreferrer noopener">
                     <LongLogo className={'w-[260px] md:w-[160px] lg:w-[260px] mb-2.5'} />
-                </a>
-                <p className={'mb-6 text-primary-50'}>{formatMessage(footerTranslations.w3dSentence)}</p>
-                <div className={'flex flex-col text-primary-50 mb-6'}>
-                    <span className={'mb-1'}>
-                        <a href="mailto:hello@welovedevs.com">hello@welovedevs.com</a>
-                    </span>
-                    <span>
-                        <a href="tel:+33175850252">+33 175850252</a>
-                    </span>
+                </a> */}
+                <div className={'flex flex-col justify-center text-primary-60 mb-2'}>
+                    <div className={'flex flex-col justify-center justify-center mb-1'}>
+                        <a href="mailto:">Made with {'\u2665'} By Benji P.H</a>
+                    </div>
                 </div>
-                <div className={'flex-1 flex flex-col-reverse mb-2.5'}>
-                    <div className={'flex text-primary-50'}>
-                        <a href={'https://www.youtube.com/channel/UCUZcVUeCtPbcsPGMU6icxUQ'}>
+                <div className={'flex flex-col text-primary-50 mb-2'}>
+                    <div className={'flex justify-center'}>
+                        <a className={'flex flex-col justify-center justify-center'} href="tel:+18312648928">+1 8313648928</a>
+                    </div>
+                </div>
+                <div className={'flex flex-col text-primary-50 mb-2'}>
+                    <div className={'flex justify-center text-primary-50'}>
+                        {/* <a href={''}>
                             <YoutubeLogo className={'w-10'} />
-                        </a>
-                        <a href={'https://www.linkedin.com/company/welovedevs'}>
+                        </a> */}
+                        <a href={''}>
                             <LinkedInLogo className={'w-10'} />
                         </a>
-                        <a href={'https://www.twitch.tv/welovedevs'}>
+                        {/* <a href={''}>
                             <TwitchLogo className={'w-10'} />
                         </a>
-                        <a href={'https://discord.com/invite/Ep6A9Ew6uU'}>
+                        <a href={''}>
                             <DiscordLogo className={'w-10'} />
-                        </a>
-                        <a href={'https://twitter.com/welovedevs'}>
+                        </a> */}
+                        <a href={'https://twitter.com'}>
                             <TwitterLogo className={'w-10'} />
                         </a>
                     </div>
                 </div>
             </div>
-            {Object.entries(footer).map(([category, values]) => (
-                <div className={'text-white mt-10 mr-20 md:mr-10 lg:mr-20'}>
-                    <h3 className={'font-bold mb-6'}>{formatMessage(footerTranslations[`${category}Category`])}</h3>
-                    {values.map((element) => (
-                        <ul>
-                            <li className="mb-2.5">
-                                <a
-                                    className="text-sm text-primary-50"
-                                    href={formatMessage(footerTranslations[`${element}Link`])}
-                                >
-                                    {formatMessage(footerTranslations[element])}
-                                </a>
-                            </li>
-                        </ul>
-                    ))}
-                </div>
-            ))}
         </div>
     );
+
+    // return (
+    //     <div className={'w-full pb-20 px-7 mt-20 flex flex-col justify-center md:flex-row text-white'} style={{backgroundColor: mainColor}}>
+    //         <div className={'flex flex-col text-sm text-white mt-10 mr-20 md:mr-10 lg:mr-20'}>
+    //             <a href={formatMessage(footerTranslations.w3dLink)} target="_blank" rel="noreferrer noopener">
+    //                 <LongLogo className={'w-[260px] md:w-[160px] lg:w-[260px] mb-2.5'} />
+    //             </a>
+    //             <p className={'mb-6 text-primary-50'}>{formatMessage(footerTranslations.w3dSentence)}</p>
+    //             <div className={'flex flex-col text-primary-50 mb-6'}>
+    //                 <span className={'mb-1'}>
+    //                     <a href="mailto:hello@welovedevs.com">hello@welovedevs.com</a>
+    //                 </span>
+    //                 <span>
+    //                     <a href="tel:+33175850252">+33 175850252</a>
+    //                 </span>
+    //             </div>
+    //             <div className={'flex-1 flex flex-col-reverse mb-2.5'}>
+    //                 <div className={'flex text-primary-50'}>
+    //                     <a href={'https://www.youtube.com/channel/UCUZcVUeCtPbcsPGMU6icxUQ'}>
+    //                         <YoutubeLogo className={'w-10'} />
+    //                     </a>
+    //                     <a href={'https://www.linkedin.com/company/welovedevs'}>
+    //                         <LinkedInLogo className={'w-10'} />
+    //                     </a>
+    //                     <a href={'https://www.twitch.tv/welovedevs'}>
+    //                         <TwitchLogo className={'w-10'} />
+    //                     </a>
+    //                     <a href={'https://discord.com/invite/Ep6A9Ew6uU'}>
+    //                         <DiscordLogo className={'w-10'} />
+    //                     </a>
+    //                     <a href={'https://twitter.com/welovedevs'}>
+    //                         <TwitterLogo className={'w-10'} />
+    //                     </a>
+    //                 </div>
+    //             </div>
+    //         </div>
+    //         {Object.entries(footer).map(([category, values]) => (
+    //             <div className={'text-white mt-10 mr-20 md:mr-10 lg:mr-20'}>
+    //                 <h3 className={'font-bold mb-6'}>{formatMessage(footerTranslations[`${category}Category`])}</h3>
+    //                 {values.map((element) => (
+    //                     <ul>
+    //                         <li className="mb-2.5">
+    //                             <a
+    //                                 className="text-sm text-primary-50"
+    //                                 href={formatMessage(footerTranslations[`${element}Link`])}
+    //                             >
+    //                                 {formatMessage(footerTranslations[element])}
+    //                             </a>
+    //                         </li>
+    //                     </ul>
+    //                 ))}
+    //             </div>
+    //         ))}
+    //     </div>
+    // );
 };
 
 export const Footer = memo(FooterComponent);

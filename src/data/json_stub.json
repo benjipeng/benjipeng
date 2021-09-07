@@ -4,9 +4,9 @@
         "name": "Benji Peng",
         "label": "PhD Candidate in Analytical Chemistry",
         "picture": "",
-        "email": "john.doe@mail.com",
-        "phone": "(912) 555-4321",
-        "website": "http://johndoe.com",
+        "email": "appcubic@bpappcubic.onmicrosoft.com",
+        "phone": "7606899995",
+        "website": "benjipeng.github.io",
         "summary": "PhD Candidate in Analytical Chemistry",
         "location": {
             "address": "901 Atlantic Dr NW",
@@ -17,7 +17,7 @@
         },
         "profiles": [
             {
-                "network": "Twitter",
+                "network": "Linkedin",
                 "username": "john",
                 "url": "http://twitter.com/john"
             }
@@ -25,8 +25,8 @@
     },
     "work": [
         {
-            "name": "Samsung Engineering",
-            "position": "3D Cad Engineer",
+            "name": "Georgia Institute of Technology",
+            "position": "Graduate Assistant",
             "website": "http://company.com",
             "startDate": "2014-01-01",
             "summary": "Description...",
@@ -36,21 +36,11 @@
             ]
         },
         {
-            "name": "What a nice office",
-            "position": "President",
+            "name": "University of Minnesota",
+            "position": "Researcher",
             "website": "http://company.com",
             "startDate": "2013-01-01",
             "endDate": "2014-01-01",
-            "summary": "Description...",
-            "location": "Paris, France",
-            "highlights": [
-                "Started the company"
-            ]
-        },
-        {
-            "name": "What a nice experience",
-            "position": "Lead dev",
-            "website": "http://company.com",
             "summary": "Description...",
             "location": "Paris, France",
             "highlights": [

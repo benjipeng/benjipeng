@@ -3,11 +3,11 @@ import { defineMessages } from 'react-intl';
 export const footerTranslations = defineMessages({
     w3dLink: {
         id: 'Footer.w3d.Link',
-        defaultMessage: 'https://welovedevs.com'
+        defaultMessage: 'https://github.com/benjipeng'
     },
     w3dSentence: {
         id: 'Footer.w3d.Sentence',
-        defaultMessage: 'We find dream jobs for developers.'
+        defaultMessage: 'Crafted by Benji P.H.'
     },
     developerCategory: {
         id: 'Footer.Category.Developer',

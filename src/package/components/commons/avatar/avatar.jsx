@@ -10,13 +10,13 @@ import { styles } from './avatar_styles';
 
 const useStyles = createUseStyles(styles);
 
-const DEFAULT_IMAGE = 'https://i.pravatar.cc/250';
+const DEFAULT_IMAGE = 'https://github.com/benjipeng/online-cv/blob/master/assets/images/profile.png?raw=true';
 const AvatarComponent = ({ src, displayedName }) => {
     const classes = useStyles();
     const [receivedGlobalClasses] = useReceivedGlobalClasses('banner.avatar');
     const [nodes] = useAdditionalNodes('banner.avatar', null);
 
-    const pictureSource = useMemo(() => src || DEFAULT_IMAGE, [src]);
+    const pictureSource = useMemo(() => DEFAULT_IMAGE || DEFAULT_IMAGE, [DEFAULT_IMAGE]);
 
     return (
         <div className={cn(classes.container, receivedGlobalClasses.container)}>
@@ -24,7 +24,7 @@ const AvatarComponent = ({ src, displayedName }) => {
                 <img
                     className={cn(classes.image, receivedGlobalClasses.image)}
                     src={pictureSource}
-                    alt={displayedName}
+                    alt={pictureSource}
                 />
             </div>
             {nodes}
