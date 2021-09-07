@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/benjipeng/static/css/main.33278d97.chunk.css",
-    "main.js": "/benjipeng/static/js/main.953d0c7d.chunk.js",
-    "main.js.map": "/benjipeng/static/js/main.953d0c7d.chunk.js.map",
+    "main.css": "/benjipeng/static/css/main.6bcf86a2.chunk.css",
+    "main.js": "/benjipeng/static/js/main.8f547694.chunk.js",
+    "main.js.map": "/benjipeng/static/js/main.8f547694.chunk.js.map",
     "runtime-main.js": "/benjipeng/static/js/runtime-main.e48b4882.js",
     "runtime-main.js.map": "/benjipeng/static/js/runtime-main.e48b4882.js.map",
     "static/js/2.db1c62f6.chunk.js": "/benjipeng/static/js/2.db1c62f6.chunk.js",
     "static/js/2.db1c62f6.chunk.js.map": "/benjipeng/static/js/2.db1c62f6.chunk.js.map",
     "index.html": "/benjipeng/index.html",
-    "static/css/main.33278d97.chunk.css.map": "/benjipeng/static/css/main.33278d97.chunk.css.map",
+    "static/css/main.6bcf86a2.chunk.css.map": "/benjipeng/static/css/main.6bcf86a2.chunk.css.map",
     "static/js/2.db1c62f6.chunk.js.LICENSE.txt": "/benjipeng/static/js/2.db1c62f6.chunk.js.LICENSE.txt",
     "static/media/global.css": "/benjipeng/static/media/AvenirNext-UltraLightItalic.102e5d4b.ttf",
     "static/media/Icon__Discord.694f69a7.svg": "/benjipeng/static/media/Icon__Discord.694f69a7.svg",
@@ -54,7 +54,7 @@
   "entrypoints": [
     "static/js/runtime-main.e48b4882.js",
     "static/js/2.db1c62f6.chunk.js",
-    "static/css/main.33278d97.chunk.css",
-    "static/js/main.953d0c7d.chunk.js"
+    "static/css/main.6bcf86a2.chunk.css",
+    "static/js/main.8f547694.chunk.js"
   ]
 }
