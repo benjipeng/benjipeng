@@ -108,17 +108,17 @@
     ],
     "skills": [
         {
-            "name": "React",
+            "name": "Python",
             "level": "Master",
             "value": 100,
             "keywords": [
-                "HTML",
-                "CSS",
-                "Javascript"
+                "Tensorflow/Pytorch",
+                "Matplotlib",
+                "Numpy/Scipy"
             ]
         },
         {
-            "name": "Angular",
+            "name": "ReastJS",
             "level": "Master",
             "value": 80,
             "keywords": [
@@ -182,8 +182,8 @@
     ],
     "interests": [
         {
-            "name": "France europe gif by nike football",
-            "gifUrl": "https://media1.giphy.com/media/3oD3YooLLYg0AfOPdK/giphy-downsized.gif?cid=f7fb5bbaegu1ofs48lty41dyowqsfo0wq9qq8h4czot7rwm1&rid=giphy-downsized.gif",
+            "name": "Exploring New Destinations",
+            "gifUrl": "https://media.giphy.com/media/FIvJcx5jhrpcs/source.gif",
             "id": "afa5739f-f868-464e-a1aa-18f5a3ff4e2b",
             "gifUser": {
                 "name": "Nike Football",
@@ -197,12 +197,12 @@
             "gifUrl": "https://media.giphy.com/media/d8WjGORtSEWqc/giphy.gif"
         },
         {
-            "name": "Tendresse",
-            "gifUrl": "https://media.giphy.com/media/EehnUUCH2JcwU/giphy.gif"
+            "name": "Creating New Recipies",
+            "gifUrl": "https://media.giphy.com/media/A5ugHVbuFL3uo/giphy.gif"
         },
         {
             "name": "Something",
-            "gifUrl": "https://media.giphy.com/media/xTiTnIuKP1BLsMTerS/giphy.gif"
+            "gifUrl": "https://media.giphy                  .com/media/xTiTnIuKP1BLsMTerS/giphy.gif"
         },
         {
             "name": "J'aime faire de la course à pied et des randonnées en famille le weekend."
