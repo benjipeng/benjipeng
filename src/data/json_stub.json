@@ -3,7 +3,7 @@
     "basics": {
         "name": "Benji Peng",
         "label": "PhD Candidate in Analytical Chemistry",
-        "picture": "",
+        "picture": "https://benjipeng.github.io/benjip-cv/assets/images/profile.png",
         "email": "appcubic@bpappcubic.onmicrosoft.com",
         "phone": "7606899995",
         "website": "benjipeng.github.io",
@@ -30,10 +30,8 @@
             "website": "http://company.com",
             "startDate": "2014-01-01",
             "summary": "Description...",
-            "location": "Paris, France",
-            "highlights": [
-                "Started the company"
-            ]
+            "location": "Atlanta, GA. USA",
+            "highlights": ["Started the company"]
         },
         {
             "name": "University of Minnesota",
@@ -43,9 +41,7 @@
             "endDate": "2014-01-01",
             "summary": "Description...",
             "location": "Paris, France",
-            "highlights": [
-                "Started the company"
-            ]
+            "highlights": ["Started the company"]
         }
     ],
     "volunteer": [
@@ -53,17 +49,15 @@
             "organization": "Organization",
             "position": "Volunteer",
             "website": "http://organization.com/",
-            "endDate": "2013-01-01",
+            "endDate": "2021-05-31",
             "summary": "Description...",
-            "highlights": [
-                "Awarded 'Volunteer of the Month'"
-            ]
+            "highlights": ["Awarded 'Volunteer of the Month'"]
         }
     ],
     "education": [
         {
             "institution": "Georgia Institute of Technology",
-            "area": "Software Development",
+            "area": "Chemistry, Education, and Technology",
             "studyType": "PhD in Analytical Chemistry",
             "startDate": "2011-01-01",
             "endDate": "2013-01-01",
@@ -84,9 +78,7 @@
             "gpa": "3.88",
             "institution": "University of Minnesota",
             "startDate": "2013-01-15",
-            "courses": [
-                "DB1101 - Basic SQL"
-            ]
+            "courses": ["DB1101 - Basic SQL"]
         }
     ],
     "awards": [
@@ -111,61 +103,37 @@
             "name": "Python",
             "level": "Master",
             "value": 100,
-            "keywords": [
-                "Tensorflow/Pytorch",
-                "Matplotlib",
-                "Numpy/Scipy"
-            ]
+            "keywords": ["Tensorflow/Pytorch", "Matplotlib", "Numpy/Scipy"]
         },
         {
             "name": "ReastJS",
             "level": "Master",
             "value": 80,
-            "keywords": [
-                "HTML",
-                "CSS",
-                "Javascript"
-            ]
+            "keywords": ["HTML", "CSS", "Javascript"]
         },
         {
             "name": "NodeJS",
             "level": "Master",
             "value": 40,
-            "keywords": [
-                "HTML",
-                "CSS",
-                "Javascript"
-            ]
+            "keywords": ["HTML", "CSS", "Javascript"]
         },
         {
             "name": "Firebase",
             "level": "Master",
             "value": 60,
-            "keywords": [
-                "HTML",
-                "CSS",
-                "Javascript"
-            ]
+            "keywords": ["HTML", "CSS", "Javascript"]
         },
         {
             "name": "Gmail",
             "level": "Master",
             "value": 20,
-            "keywords": [
-                "HTML",
-                "CSS",
-                "Javascript"
-            ]
+            "keywords": ["HTML", "CSS", "Javascript"]
         },
         {
             "name": "K8S",
             "level": "Master",
             "value": 80,
-            "keywords": [
-                "HTML",
-                "CSS",
-                "Javascript"
-            ]
+            "keywords": ["HTML", "CSS", "Javascript"]
         }
     ],
     "languages": [
@@ -186,26 +154,23 @@
             "gifUrl": "https://media.giphy.com/media/FIvJcx5jhrpcs/source.gif",
             "id": "afa5739f-f868-464e-a1aa-18f5a3ff4e2b",
             "gifUser": {
-                "name": "Nike Football",
+                "name": "Traveling",
                 "profileUrl": "https://giphy.com/nikefootball/",
                 "isVerified": true,
-                "profileAvatarUrl": "https://media1.giphy.com/avatars/nikefootball/vPyZcrShcXY8.jpg"
+                "profileAvatarUrl": "https://media0.giphy.com/avatars/marriottbonvoy/SrvdIfyvRMRR.png"
             }
-        },
-        {
-            "name": "Burritos",
-            "gifUrl": "https://media.giphy.com/media/d8WjGORtSEWqc/giphy.gif"
         },
         {
             "name": "Creating New Recipies",
             "gifUrl": "https://media.giphy.com/media/A5ugHVbuFL3uo/giphy.gif"
         },
         {
-            "name": "Something",
-            "gifUrl": "https://media.giphy                  .com/media/xTiTnIuKP1BLsMTerS/giphy.gif"
+            "name": "Collecting Niche Fragrances",
+            "gifUrl": "https://media.giphy.com/media/xUA7b3JB7WAIGVbyTK/giphy.gif"
         },
         {
-            "name": "J'aime faire de la course à pied et des randonnées en famille le weekend."
+            "name": "Analyzing Listed Companies",
+            "gifUrl": "https://media.giphy.com/media/9A3txOMywgh87PCf5o/giphy.gif"
         }
     ],
     "references": [
@@ -361,14 +326,12 @@
             }
         },
         "education": {
-            "studiesLevel": null
+            "studiesLevel": "PhD"
         },
         "work": {
-            "contractTypes": [
-                "permanent"
-            ],
-            "codingYears": 0,
-            "codingReason": "J'ai commencé à coder sur Amstrad dans ma cave et je n'ai jamais arrêté depuis",
+            "contractTypes": ["permanent"],
+            "codingYears": 8,
+            "codingReason": "To solve research problems programmatically and efficiently",
             "searchState": "activelySearching",
             "experienceYears": 0,
             "codeExperienceYears": null,
@@ -377,54 +340,24 @@
         "sound": {
             "embedUrl": "https://open.spotify.com/embed/playlist/48t8uSuv7wlfrYJsox27zy?theme=0"
         },
-        "interestedBy": "ReactJS"
+        "interestedBy": "Python, ReactJS"
     },
     "resumeCustomization": {
         "imageHeader": {
-            "url": "https://cdn.filestackcontent.com/8I2wVnCRTFxypXRYLRsp",
+            "url": "https://raw.githubusercontent.com/benjipeng/assets/main/atl_scape.jpg",
             "alt": "Default Banner"
         },
         "cardsOrder": [
-            {
-                "type": "basics",
-                "variant": 4
-            },
-            {
-                "type": "projects",
-                "variant": 4
-            },
-            {
-                "type": "skills",
-                "variant": 0
-            },
-            {
-                "type": "dreamjob",
-                "variant": 4
-            },
-            {
-                "type": "experiences",
-                "variant": 4
-            },
-            {
-                "type": "studies",
-                "variant": 4
-            },
-            {
-                "type": "gifs",
-                "variant": 0
-            },
-            {
-                "type": "interestedBy",
-                "variant": 3
-            },
-            {
-                "type": "language",
-                "variant": 4
-            },
-            {
-                "type": "soundtrack",
-                "variant": 0
-            }
+            { "type": "basics", "variant": 0 },
+            { "type": "projects", "variant": 4 },
+            { "type": "skills", "variant": 0 },
+            { "type": "dreamjob", "variant": 2 },
+            { "type": "experiences", "variant": 4 },
+            { "type": "studies", "variant": 3 },
+            { "type": "gifs", "variant": 0 },
+            { "type": "interestedBy", "variant": 0 },
+            { "type": "language", "variant": 1 },
+            { "type": "soundtrack", "variant": 0 }
         ],
         "fields": {
             "work": {
@@ -434,42 +367,42 @@
         "theme": {
             "palette": {
                 "primary": {
-                    "50": "#e6f0f3",
-                    "100": "#cde2e8",
-                    "200": "#9bc5d1",
-                    "300": "#68a7b9",
-                    "400": "#368aa2",
-                    "500": "#046d8b",
-                    "600": "#03576f",
-                    "700": "#024153",
-                    "800": "#022c38",
-                    "900": "#01161c",
+                    "50": "#ececed",
+                    "100": "#d9d8db",
+                    "200": "#b3b2b7",
+                    "300": "#8d8b92",
+                    "400": "#67656e",
+                    "500": "#413e4a",
+                    "600": "#34323b",
+                    "700": "#27252c",
+                    "800": "#1a191e",
+                    "900": "#0d0c0f",
                     "contrastDefaultColor": "light"
                 },
                 "secondary": {
-                    "50": "#eaf4f4",
-                    "100": "#d6e9e9",
-                    "200": "#acd3d3",
-                    "300": "#83bebe",
-                    "400": "#59a8a8",
-                    "500": "#309292",
-                    "600": "#267575",
-                    "700": "#1d5858",
-                    "800": "#133a3a",
-                    "900": "#0a1d1d",
+                    "50": "#f1eff1",
+                    "100": "#e3e0e2",
+                    "200": "#c7c0c5",
+                    "300": "#aba1a8",
+                    "400": "#8f818b",
+                    "500": "#73626e",
+                    "600": "#5c4e58",
+                    "700": "#453b42",
+                    "800": "#2e272c",
+                    "900": "#171416",
                     "contrastDefaultColor": "light"
                 },
                 "tertiary": {
-                    "50": "#eaf8f7",
-                    "100": "#d5f1ee",
-                    "200": "#ace3de",
-                    "300": "#82d4cd",
-                    "400": "#59c6bd",
-                    "500": "#2fb8ac",
-                    "600": "#26938a",
-                    "700": "#1c6e67",
-                    "800": "#134a45",
-                    "900": "#092522",
+                    "50": "#f7f2f3",
+                    "100": "#f0e6e6",
+                    "200": "#e1cdce",
+                    "300": "#d1b3b5",
+                    "400": "#c29a9d",
+                    "500": "#b38184",
+                    "600": "#8f676a",
+                    "700": "#6b4d4f",
+                    "800": "#483435",
+                    "900": "#241a1a",
                     "contrastDefaultColor": "light"
                 }
             }

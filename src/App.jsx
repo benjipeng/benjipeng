@@ -61,7 +61,7 @@ function App() {
                 },
                 endpoints: {
                     devicons:
-                        'https://github.com/benjipeng/online-cv/blob/master/assets/images/profile.png'
+                        'https://benjipeng.github.io/benjip-cv/assets/images/profile.png'
                 },
                 // dismissFooter : true
                 // showContactInfos: true,

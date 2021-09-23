@@ -10,13 +10,13 @@ import { styles } from './avatar_styles';
 
 const useStyles = createUseStyles(styles);
 
-const DEFAULT_IMAGE = 'https://github.com/benjipeng/online-cv/blob/master/assets/images/profile.png?raw=true';
+const DEFAULT_IMAGE = 'https://upload.wikimedia.org/wikipedia/commons/8/83/University_Diploma_or_Certificate_Flat_Icon_Vector.svg';
 const AvatarComponent = ({ src, displayedName }) => {
     const classes = useStyles();
     const [receivedGlobalClasses] = useReceivedGlobalClasses('banner.avatar');
     const [nodes] = useAdditionalNodes('banner.avatar', null);
 
-    const pictureSource = useMemo(() => DEFAULT_IMAGE || DEFAULT_IMAGE, [DEFAULT_IMAGE]);
+    const pictureSource = useMemo(() => src || DEFAULT_IMAGE, [src]);
 
     return (
         <div className={cn(classes.container, receivedGlobalClasses.container)}>
@@ -24,7 +24,7 @@ const AvatarComponent = ({ src, displayedName }) => {
                 <img
                     className={cn(classes.image, receivedGlobalClasses.image)}
                     src={pictureSource}
-                    alt={pictureSource}
+                    alt={displayedName}
                 />
             </div>
             {nodes}
