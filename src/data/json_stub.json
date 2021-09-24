@@ -7,7 +7,7 @@
         "email": "appcubic@bpappcubic.onmicrosoft.com",
         "phone": "7606899995",
         "website": "benjipeng.github.io",
-        "summary": "PhD Candidate in Analytical Chemistry",
+        "summary": "A detail oriented, self-driven, and resourceful PhD Candidate in Analytical Chemistry",
         "location": {
             "address": "901 Atlantic Dr NW",
             "postalCode": "GA 30332",
@@ -18,8 +18,8 @@
         "profiles": [
             {
                 "network": "Linkedin",
-                "username": "john",
-                "url": "http://twitter.com/john"
+                "username": "BaijiePH",
+                "url": "http://twitter.com/BaijiePH"
             }
         ]
     },
@@ -28,15 +28,15 @@
             "name": "Georgia Institute of Technology",
             "position": "Graduate Assistant",
             "website": "http://company.com",
-            "startDate": "2014-01-01",
+            "startDate": "2015-08-17",
             "summary": "Description...",
             "location": "Atlanta, GA. USA",
             "highlights": ["Started the company"]
         },
         {
-            "name": "University of Minnesota",
+            "name": "Department of Horticultural Science - University of Minnesota",
             "position": "Researcher",
-            "website": "http://company.com",
+            "website": "https://horticulture.umn.edu/",
             "startDate": "2013-01-01",
             "endDate": "2014-01-01",
             "summary": "Description...",
@@ -303,12 +303,12 @@
     "specific": {
         "basics": {
             "visaSponsorship": false,
-            "personalDescription": "This is a longer description of me, of my backstory, my backyard, my backfire, my backend, my frontend and my friends."
+            "personalDescription": "A detail oriented, self-driven, and profoundly resourceful PhD candidate who offers exceptional research, communication, management and leadership skills. A perpetual learner who has more than 8 years experiences in highly collaborative research and development environment with greatly diverse individuals."
         },
         "dreamJob": {
             "locations": [
                 {
-                    "name": "Boston, MA"
+                    "name": "Home, USA"
                 },
                 {
                     "name": "Austin, TX"
