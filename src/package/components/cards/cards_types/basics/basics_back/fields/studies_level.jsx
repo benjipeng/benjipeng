@@ -13,7 +13,7 @@ export const StudiesLevel = ({ studiesLevel }) => {
         return (
             <FormattedMessage
                 id="Basics.Back.StudiesLevel.noHigherEducation"
-                defaultMessage="Did not pursue higher education"
+                defaultMessage="A perpectual learner"
                 values={{ studiesLevel: studiesLevelValue }}
             />
         );
