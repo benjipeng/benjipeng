@@ -28,11 +28,11 @@ export const styles = (theme) => {
             marginLeft: -spacing
         },
         texts: {
-            width: '100%'
+            width: '110%'
         },
         mainTypography: {
             extend: 'text',
-            width: '100%',
+            width: '105%',
             textOverflow: 'ellipsis',
             wordWrap: 'break-word',
             overflow: 'hidden',
@@ -41,17 +41,17 @@ export const styles = (theme) => {
             '-webkit-box-orient': 'vertical',
             maxHeight: 64 * 1.1 * 3,
             [QUERY_CARD_MARGIN_PADDING]: {
-                fontSize: 42,
-                maxHeight: 42 * 1.1 * 3
+                fontSize: 36,
+                maxHeight: 36 * 1.1 * 3
             },
             [QUERY_EXTRA_SMALL]: {
-                fontSize: 28,
-                maxHeight: 28 * 1.1 * 3,
+                fontSize: 20,
+                maxHeight: 20 * 1.1 * 3,
                 paddingBottom: 0
             }
         },
         truncatedMainTypography: {
-            fontSize: 42,
+            fontSize: 36,
             lineHeight: 1.3,
             [QUERY_CARD_MARGIN_PADDING]: {
                 fontSize: 36,

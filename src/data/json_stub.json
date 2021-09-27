@@ -7,7 +7,8 @@
         "email": "appcubic@bpappcubic.onmicrosoft.com",
         "phone": "7606899995",
         "website": "benjipeng.github.io",
-        "summary": "A detail oriented, self-driven, and resourceful PhD Candidate in Analytical Chemistry",
+        "summary": "A detail oriented, self-driven, and profoundly resourceful PhD candidate who offers exceptional research, communication, management and leadership skills",
+        "shortSum": "PhD in Analytical Chemistry",
         "location": {
             "address": "901 Atlantic Dr NW",
             "postalCode": "GA 30332",
@@ -78,20 +79,20 @@
             "gpa": "3.88",
             "institution": "University of Minnesota",
             "startDate": "2013-01-15",
-            "courses": ["DB1101 - Basic SQL"]
+            "courses": ["Java"]
         }
     ],
     "awards": [
         {
-            "title": "Award",
-            "date": "2014-11-01",
-            "awarder": "Company",
+            "title": "Head-TA for Quantum Mechanics",
+            "date": "2017-08-15",
+            "awarder": "Georgia Institute of Technology",
             "summary": "There is no spoon."
         }
     ],
     "publications": [
         {
-            "name": "Publication",
+            "name": "A practical methodology to measure unbiased gas chromatographic retention factor vs. temperature relationships",
             "publisher": "Company",
             "releaseDate": "2014-10-01",
             "website": "http://publication.com",
@@ -295,9 +296,9 @@
                     "url": "https://cdn.filestackcontent.com/7XpHKtFTC2VynppurrK5"
                 }
             ],
-            "link": "https://your-todos-list.herokuapp.com/",
-            "name": "Your Todo List",
-            "endDate": "2020-07-01"
+            "link": "",
+            "name": "Optically Modulatable Fluorescent Protein Engineering (PhD Research)",
+            "endDate": "2021-04-15"
         }
     ],
     "specific": {
@@ -326,12 +327,12 @@
             }
         },
         "education": {
-            "studiesLevel": "PhD"
+            "studiesLevel": "10"
         },
         "work": {
             "contractTypes": ["permanent"],
-            "codingYears": 8,
-            "codingReason": "To solve research problems programmatically and efficiently",
+            "codingYears": 5,
+            "codingReason": "To solve research problems that I encounter in analytical chemistry and physical chemsitry programmatically and efficiently",
             "searchState": "activelySearching",
             "experienceYears": 0,
             "codeExperienceYears": null,
@@ -340,7 +341,7 @@
         "sound": {
             "embedUrl": "https://open.spotify.com/embed/playlist/48t8uSuv7wlfrYJsox27zy?theme=0"
         },
-        "interestedBy": "Python, ReactJS"
+        "interestedBy": "LC/GC-MS, Python, ReactJS, Lasers and optics"
     },
     "resumeCustomization": {
         "imageHeader": {
