@@ -19,16 +19,19 @@ export const EditButton = () => {
 
     if (!isEditing) {
         return (
-            <Button variant="outlined" color="light" onClick={handleClick}>
+            <>
+                {/* <Button variant="outlined" color="light" onClick={handleClick}>
                 <EditIcon className={classes.penIcon} />
                 <FormattedMessage id="Main.lang.edit" defaultMessage="Edit" />
-            </Button>
+            </Button> */}
+            </>
         );
     }
     return (
-        <Button variant="outlined" color="light" onClick={handleClick}>
-            <CheckIcon className={classes.checkIcon} />
-            <FormattedMessage id="Main.lang.stopEdit" defaultMessage="Stop edit" />
-        </Button>
+        <></>
+        // <Button variant="outlined" color="light" onClick={handleClick}>
+        //     <CheckIcon className={classes.checkIcon} />
+        //     <FormattedMessage id="Main.lang.stopEdit" defaultMessage="Stop edit" />
+        // </Button>
     );
 };

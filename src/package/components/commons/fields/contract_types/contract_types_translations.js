@@ -7,7 +7,7 @@ export default defineMessages({
     },
     fixedTerm: {
         id: 'Developer.contractType.fixedTerm',
-        defaultMessage: 'Fixed Term'
+        defaultMessage: 'Fixed Term (P.R. USA)'
     },
     internship: {
         id: 'Developer.contractType.internship',

@@ -108,7 +108,8 @@ const Picture = ({ techno, classes }) => {
         const luminance = chroma(hex).luminance();
         if (luminance < 0.98) {
             return `https://process.filestackapi.com/output=format:png/negative/modulate=brightness:1000/compress/${
-                techno?.handle || DEFAULT_TECHNO_HANDLE
+                'jiclpS0yRhySvhSlLDGA'
+                // techno?.handle || DEFAULT_TECHNO_HANDLE
             }`;
         }
         return `https://process.filestackapi.com/output=format:png/${techno?.handle || DEFAULT_TECHNO_HANDLE}`;

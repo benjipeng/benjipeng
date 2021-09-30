@@ -22,7 +22,7 @@ const mergeFunction = (objValue, srcValue) => {
     return undefined;
 };
 
-const mode = process.env.REACT_APP_MODE || 'edit';
+const mode = process.env.REACT_APP_MODE || 'readOnly';
 
 function App() {
     const classes = useStyles();
@@ -60,11 +60,10 @@ function App() {
                     giphy: process.env.REACT_APP_GIPHY
                 },
                 endpoints: {
-                    devicons:
-                        'https://benjipeng.github.io/benjip-cv/assets/images/profile.png'
+                    devicons: 'https://benjipeng.github.io/benjip-cv/assets/images/profile.png'
                 },
                 // dismissFooter : true
-                // showContactInfos: true,
+                showContactInfos: true,
                 // maxSkills: 6,
                 customization,
                 disableSortableExperience: false,

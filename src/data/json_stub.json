@@ -4,10 +4,10 @@
         "name": "Benji Peng",
         "label": "PhD Candidate in Analytical Chemistry",
         "picture": "https://benjipeng.github.io/benjip-cv/assets/images/profile.png",
-        "email": "appcubic@bpappcubic.onmicrosoft.com",
-        "phone": "7606899995",
-        "website": "benjipeng.github.io",
-        "summary": "A detail oriented, self-driven, and profoundly resourceful PhD candidate who offers exceptional research, communication, management and leadership skills",
+        "email": "pengx107@umn.edu",
+        "phone": "+1 (760)-689-9995",
+        "website": "https://benjipeng.github.io",
+        "summary": "A detail oriented, self-driven, and profoundly resourceful PhD candidate who offers exceptional research, communication, management and leadership skills. (Current Status: P.R. in USA)",
         "shortSum": "PhD in Analytical Chemistry",
         "location": {
             "address": "901 Atlantic Dr NW",
@@ -26,9 +26,9 @@
     },
     "work": [
         {
-            "name": "Georgia Institute of Technology",
+            "name": "Department of Chemistry and Biochemistry - Georgia Institute of Technology",
             "position": "Graduate Assistant",
-            "website": "http://company.com",
+            "website": "https://chemistry.gatech.edu/",
             "startDate": "2015-08-17",
             "summary": "Description...",
             "location": "Atlanta, GA. USA",
@@ -60,8 +60,8 @@
             "institution": "Georgia Institute of Technology",
             "area": "Chemistry, Education, and Technology",
             "studyType": "PhD in Analytical Chemistry",
-            "startDate": "2011-01-01",
-            "endDate": "2013-01-01",
+            "startDate": "2015-08-01",
+            "endDate": "2021-11-01",
             "gpa": "3.83",
             "courses": [
                 "Statistics and Data Analysis",
@@ -93,10 +93,17 @@
     "publications": [
         {
             "name": "A practical methodology to measure unbiased gas chromatographic retention factor vs. temperature relationships",
-            "publisher": "Company",
+            "publisher": "Journal of Chromatography A",
             "releaseDate": "2014-10-01",
-            "website": "http://publication.com",
-            "summary": "Description..."
+            "website": "https://doi.org/10.1016/j.chroma.2014.11.018",
+            "summary": "Retention factor vs. T relationships can be measured from six temperature programs."
+        },
+        {
+            "name": "A practical methodology to measure unbiased gas chromatographic retention factor vs. temperature relationships",
+            "publisher": "Journal of Chromatography A",
+            "releaseDate": "2014-10-01",
+            "website": "https://doi.org/10.1016/j.chroma.2014.11.018",
+            "summary": "Retention factor vs. T relationships can be measured from six temperature programs."
         }
     ],
     "skills": [
@@ -104,7 +111,7 @@
             "name": "Python",
             "level": "Master",
             "value": 100,
-            "keywords": ["Tensorflow/Pytorch", "Matplotlib", "Numpy/Scipy"]
+            "keywords": ["Python", "Tensorflow/Pytorch", "Matplotlib", "Numpy/Scipy"]
         },
         {
             "name": "ReastJS",
@@ -318,19 +325,18 @@
                     "name": "San Diego, CA"
                 }
             ],
-            "remoteFrequency": "regularly"
+            "remoteFrequency": "fullTime"
         },
         "currentJob": {
             "issues": {
-                "z": true,
-                "boring_team": true
+                "other": true
             }
         },
         "education": {
             "studiesLevel": "10"
         },
         "work": {
-            "contractTypes": ["permanent"],
+            "contractTypes": ["freelance","fixedTerm", "permanent"],
             "codingYears": 5,
             "codingReason": "To solve research problems that I encounter in analytical chemistry and physical chemsitry programmatically and efficiently",
             "searchState": "activelySearching",
