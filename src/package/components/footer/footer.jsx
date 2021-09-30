@@ -10,8 +10,8 @@ import { ReactComponent as DiscordLogo } from '../../assets/icons/brands/social/
 
 import { footerTranslations } from './footer_translations';
 // import { ReactComponent as FacebookLogo } from '../../assets/icons/brands/social/Icon__Facebook.svg';
-// import { ReactComponent as InstagramLogo } from '../../assets/icons/brands/social/Icon__Instagram.svg';
-// import { ReactComponent as GithubLogo } from '../../assets/icons/brands/social/Icon__Github.svg';
+import { ReactComponent as InstagramLogo } from '../../assets/icons/brands/social/Icon__Instagram.svg';
+import { ReactComponent as GithubLogo } from '../../assets/icons/brands/social/Icon__Github.svg';
 import { ReactComponent as TwitterLogo } from '../../assets/icons/brands/social/Icon__Twitter.svg';
 import { useTheme } from 'react-jss';
 import { getHexFromPaletteColor } from '../../utils/styles/styles_utils';
@@ -28,27 +28,30 @@ const FooterComponent = () => {
     const mainColor = getHexFromPaletteColor(theme, 'primary');
 
     return (
-        <div className={'w-full pb-20 px-7 mt-20 flex flex-col justify-center md:flex-row text-white'} style={{ backgroundColor: mainColor }}>
+        <div
+            className={'w-full pb-20 px-7 mt-20 flex flex-col justify-center md:flex-row text-white'}
+            style={{ backgroundColor: mainColor }}
+        >
             <div className={'flex flex-col justify-center  text-sm text-white mt-10 mr-20 md:mr-10 lg:mr-20'}>
                 {/* <a href={formatMessage(footerTranslations.w3dLink)} target="_blank" rel="noreferrer noopener">
                     <LongLogo className={'w-[260px] md:w-[160px] lg:w-[260px] mb-2.5'} />
                 </a> */}
                 <div className={'flex flex-col justify-center text-primary-60 mb-2'}>
                     <div className={'flex flex-col justify-center justify-center mb-1'}>
-                        <a href="mailto:">Made with {'\u2665'} By Benji P.H</a>
+                        <div>Made with {'❤️'} By Benji P. Honeycutt ---- Special Thanks To WeLoveDevs</div>
                     </div>
                 </div>
-                <div className={'flex flex-col text-primary-50 mb-2'}>
+                {/* <div className={'flex flex-col text-primary-50 mb-2'}>
                     <div className={'flex justify-center'}>
-                        <a className={'flex flex-col justify-center justify-center'} href="tel:+18312648928">+1 8313648928</a>
+                        <a className={'flex flex-col justify-center justify-center'} href="tel:+1 8312648928">Tel: +1 (831)-364-8928</a>
                     </div>
-                </div>
+                </div> */}
                 <div className={'flex flex-col text-primary-50 mb-2'}>
                     <div className={'flex justify-center text-primary-50'}>
                         {/* <a href={''}>
                             <YoutubeLogo className={'w-10'} />
                         </a> */}
-                        <a href={''}>
+                        <a href={'http://linkedin.com/BaijiePH'}>
                             <LinkedInLogo className={'w-10'} />
                         </a>
                         {/* <a href={''}>
@@ -57,8 +60,14 @@ const FooterComponent = () => {
                         <a href={''}>
                             <DiscordLogo className={'w-10'} />
                         </a> */}
+                        <a href={'https://www.instagram.com/ben_flyer/'}>
+                            <InstagramLogo className={'w-10'} />
+                        </a>
                         <a href={'https://twitter.com'}>
                             <TwitterLogo className={'w-10'} />
+                        </a>
+                        <a href={'https://twitter.com'}>
+                            <GithubLogo className={'w-10'} />
                         </a>
                     </div>
                 </div>

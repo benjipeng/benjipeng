@@ -6,7 +6,7 @@
     "main": "lib/index.js",
     "private": true,
     "scripts": {
-        "start": "touch .env.local && sh -ac 'sh .env.${NODE_ENV:-local}; PORT=${PORT:-3000} EXTEND_ESLINT=false BROWSER=none TAILWIND_MODE=watch craco start'",
+        "start": "touch .env.local && sh -ac 'sh .env.${NODE_ENV:-local}; PORT=${PORT:-3500} EXTEND_ESLINT=false BROWSER=none TAILWIND_MODE=watch craco start'",
         "dev": "yarn start",
         "eject": "react-scripts eject",
         "test": "craco test",

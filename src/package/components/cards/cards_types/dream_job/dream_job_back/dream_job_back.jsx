@@ -50,7 +50,7 @@ const DreamJobBackComponent = ({ data }) => {
             {existsAndNotEmpty(contractTypes) && (
                 <ProfileCardSection>
                     <ProfileCardSectionTitle>
-                        <FormattedMessage id="Dreamjob.Back.ContractTypes.Title" defaultMessage="Contract types" />
+                        <FormattedMessage id="Dreamjob.Back.ContractTypes.Title" defaultMessage="Looking For" />
                     </ProfileCardSectionTitle>
                     <ProfileCardSectionText>
                         <ContractType contractTypes={contractTypes} />

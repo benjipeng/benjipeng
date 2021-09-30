@@ -19,11 +19,11 @@ export const CustomizeButton = ({ customizationOptions }) => {
 
     return (
         <>
-            <CustomizeDialog open={dialogOpen} onClose={close} customizationOptions={customizationOptions} />
+            {/* <CustomizeDialog open={dialogOpen} onClose={close} customizationOptions={customizationOptions} />
             <Button variant="outlined" color="light" onClick={open}>
                 <Twemoji svg text="🎨" className={classes.icon} />
                 {!isMobile && formatMessage(translations.customize)}
-            </Button>
+            </Button> */}
         </>
     );
 };

@@ -43,7 +43,7 @@ const DreamJobFrontComponent = ({ data }) => {
                 <>
                     <ProfileCardFrontVector classes={{ container: classes.logo }} vector={HomeLogo} />
                     <ProfileCardFrontTypography classes={{ container: classes.typography }}>
-                        <FormattedMessage id="DreamJob.Front.RemoteFulltime" defaultMessage="I want to work remotely" />
+                        <FormattedMessage id="whatisthat" defaultMessage="Would love to work remotely" />
                     </ProfileCardFrontTypography>
                 </>
             );
@@ -55,7 +55,7 @@ const DreamJobFrontComponent = ({ data }) => {
                 <ProfileCardFrontTypography classes={{ container: classes.typography }}>
                     <FormattedMessage
                         id="DreamJob.Front.Cities"
-                        defaultMessage="I want to work in {cities}{andMore}"
+                        defaultMessage="Would be ideal to work remotely"
                         values={{
                             cities: places?.[0]?.name,
                             andMore
