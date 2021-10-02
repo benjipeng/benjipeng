@@ -30,12 +30,12 @@ const ProjectSectionContainer = ({ project, cardVariant, onDelete, index }) => {
 
     const descriptionChunks = useMemo(
         () =>
-            project.description
+            project.shortDesc
                 ?.split('\n')
                 .map((descriptionChunk, chunkIndex) => (
                     <p key={`project_description_chunk_${project.id}_${chunkIndex}`}>{descriptionChunk}</p>
                 )),
-        [project.description]
+        [project.shortDesc]
     );
 
     const formattedDate = useMemo(() => project.date?.year(), [project.date]);

@@ -64,7 +64,7 @@ const ProjectDialogContent = ({ isEditing }) => {
                 <ProjectDialogContentTitle isEditing={isEditing} title={project.title} />
                 <ProjectDialogContentDate isEditing={isEditing} date={project.data} />
             </div>
-            <ProjectDialogContentDescription isEditing={isEditing} description={project.description} />
+            <ProjectDialogContentDescription isEditing={isEditing} description={project.longDesc} />
             <ProjectDialogContentLink isEditing={isEditing} link={project.link} />
             <ProjectDialogContentImages isEditing={isEditing} images={project.images} />
         </>

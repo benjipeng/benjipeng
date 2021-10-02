@@ -45,7 +45,7 @@ const EditingContent = ({ classes }) => {
                 variant="flat"
                 onChange={handleChange}
                 name="description"
-                value={values.description}
+                value={values.longDesc}
                 classes={{
                     container: classes.textField
                 }}
