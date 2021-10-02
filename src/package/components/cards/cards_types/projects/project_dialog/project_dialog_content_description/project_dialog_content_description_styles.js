@@ -11,7 +11,7 @@ export const styles = (theme) => {
         }),
         typography: {
             whiteSpace: 'pre-line',
-            lineHeight: '24px'
+            lineHeight: '26px'
         }
     };
 };
