@@ -59,10 +59,10 @@
         {
             "institution": "Georgia Institute of Technology",
             "area": "Chemistry, Education, and Technology",
-            "studyType": "PhD in Analytical Chemistry",
+            "studyType": "PhD in Analytical Chemistry (3.85/4.00)",
             "startDate": "2015-08-01",
             "endDate": "2021-11-01",
-            "gpa": "3.83",
+            "gpa": "3.85",
             "courses": [
                 "Statistics and Data Analysis",
                 "Probability Theory, Data Visualization",
@@ -73,13 +73,23 @@
         },
         {
             "area": "Analytical Chemistry, healthcare focused",
-            "studyType": "Bachelor of Arts",
+            "studyType": "Bachelor of Arts (3.88/4.00)",
             "endDate": "2014-12-15",
             "field": "Chemistry",
             "gpa": "3.88",
             "institution": "University of Minnesota",
             "startDate": "2013-01-15",
             "courses": ["Java"]
+        },
+        {
+            "area": "Pre-health",
+            "studyType": "Undergraduate (3.97/4.00)",
+            "endDate": "2012-12-10",
+            "field": "Chemistry",
+            "gpa": "3.97",
+            "institution": "Purdue University",
+            "startDate": "2011-09-15",
+            "courses": ["Cellular Biology", "Principle of Engineering"]
         }
     ],
     "awards": [
