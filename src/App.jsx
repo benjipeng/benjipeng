@@ -14,6 +14,12 @@ import { ReactComponent as SaveIcon } from './package/assets/icons/drop_file.svg
 
 import { styles } from './app_styles';
 
+// import ReactGA from 'react-ga';
+// G-A needs some general improvements
+
+// const TRACKING_ID = 'UA-219172152-1'; // YOUR_OWN_TRACKING_ID
+// ReactGA.initialize(TRACKING_ID);
+
 const useStyles = createUseStyles(styles);
 const mergeFunction = (objValue, srcValue) => {
     if (!objValue || isArray(objValue)) {

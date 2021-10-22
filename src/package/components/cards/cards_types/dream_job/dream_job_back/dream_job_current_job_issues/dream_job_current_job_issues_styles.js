@@ -1,5 +1,9 @@
 export const styles = {
     list: {
-        paddingLeft: 20
+        paddingLeft: 0,
+        fontWeight: 500
+    },
+    div: {
+        fontWeight: 'bold'
     }
 };

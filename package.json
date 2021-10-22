@@ -1,13 +1,13 @@
 {
     "name": "@benjipeng/resume",
     "version": "1.1.9",
-    "description": "Benji P. H's Profile, credit to @welovedevs/react-ultimate-resume",
+    "description": "Benji P. H's Profile, credit to react-ultimate-resume",
     "homepage": "https://benjipeng.github.io/benjipeng/",
     "main": "lib/index.js",
     "private": true,
     "scripts": {
-        "start": "touch .env.local && sh -ac 'sh .env.${NODE_ENV:-local}; PORT=${PORT:-3500} EXTEND_ESLINT=false BROWSER=none TAILWIND_MODE=watch craco start'",
-        "dev": "yarn start",
+        "start": "touch .env.local && sh -ac 'sh .env.${NODE_ENV:-local}; NODE_OPTIONS='--openssl-legacy-provider' PORT=${PORT:-3500} EXTEND_ESLINT=false BROWSER=none TAILWIND_MODE=watch craco start'",
+        "dev": "NODE_OPTIONS='--openssl-legacy-provider' yarn start",
         "eject": "react-scripts eject",
         "test": "craco test",
         "prepackage": "rimraf lib ",
@@ -20,7 +20,7 @@
         "build:messages": "NODE_ENV=production babel ./src >/dev/null",
         "serve": "craco build && serve build",
         "manage:translations": "node ./translationRunner.js",
-        "gh-deploy": "yarn build && gh-pages -d build",
+        "gh-deploy": "NODE_OPTIONS='--openssl-legacy-provider' yarn build && gh-pages -d build",
         "version:beta": "npm version prerelease --preid=beta",
         "version:release": "npm version ${VERSION:-patch}"
     },
@@ -69,6 +69,7 @@
         "prop-types": "15.7.2",
         "react-dropzone": "^10.2.1",
         "react-emoji-render": "^1.2.1",
+        "react-ga": "^3.3.0",
         "react-images": "^1.1.0-beta.3",
         "react-infinite-scroller": "^1.2.4",
         "react-intl": "^3.9.3",

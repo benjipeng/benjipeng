@@ -31,7 +31,7 @@ const DreamJobBackComponent = ({ data }) => {
     const isFreelance = hasOnlyFreelanceContract(contractTypes);
 
     return (
-        <ProfileCardAnimatedBack title={<FormattedMessage id="Dreamjob.Back.Title" defaultMessage="Dream job" />}>
+        <ProfileCardAnimatedBack title={<FormattedMessage id="Dreamjob.Back.Title" defaultMessage="Objective" />}>
             {existsAndNotEmpty(places) && (
                 <ProfileCardSection>
                     <DreamJobLocations places={places} remoteFrequency={remoteFrequency} classes={classes} />
@@ -92,22 +92,26 @@ const DreamJobBackComponent = ({ data }) => {
 const DreamJobLocations = ({ remoteFrequency, places, classes }) => {
     const { formatMessage } = useIntl();
     if (remoteFrequency === REMOTE_FREQUENCY.FULL_TIME) {
-        return <FormattedMessage id="Dreamjob.Back.Location.RemoteOnly" defaultMessage="I want to work remotely" />;
+        return (
+            <div>
+                <div style={{ fontWeight: 700 }}>🗺️ Work Effectively With Globally Distributed Teams</div>
+            </div>
+        );
     }
 
-    return (
-        <>
-            <ProfileCardSectionTitle>
-                <FormattedMessage id="Dreamjob.Back.Location.Title" defaultMessage="My dreamjob location" />
-            </ProfileCardSectionTitle>
-            <ProfileCardSectionText>
-                <DreamJobPlaces places={places} classes={classes} />
-                <br />
-                {remoteFrequency &&
-                    formatMessage(remoteDisplayTranslations[remoteFrequency] || remoteDisplayTranslations.others)}
-            </ProfileCardSectionText>
-        </>
-    );
+    // return (
+    //     <>
+    //         <ProfileCardSectionTitle>
+    //             <FormattedMessage id="Dreamjob.Back.Location.Title" defaultMessage="My dreamjob location" />
+    //         </ProfileCardSectionTitle>
+    //         <ProfileCardSectionText>
+    //             <DreamJobPlaces places={places} classes={classes} />
+    //             <br />
+    //             {remoteFrequency &&
+    //                 formatMessage(remoteDisplayTranslations[remoteFrequency] || remoteDisplayTranslations.others)}
+    //         </ProfileCardSectionText>
+    //     </>
+    // );
 };
 
 const DreamJobPlaces = ({ places = [], classes }) => {

@@ -2,45 +2,54 @@
     "mode": "readOnly",
     "basics": {
         "name": "Benji Peng",
-        "label": "PhD Candidate in Analytical Chemistry",
+        "label": "Software Engineer, Ph.D. in Physical Chemistry",
         "picture": "https://benjipeng.github.io/benjip-cv/assets/images/profile.png",
-        "email": "pengx107@umn.edu",
-        "phone": "+1 (760)-689-9995",
+        "email": "benji.peng.p@gmail.com",
+        "phone": "+1 (831)-264-8928",
         "website": "https://benjipeng.github.io",
-        "summary": "A detail oriented, self-driven, and profoundly resourceful PhD candidate who offers exceptional research, communication, management and leadership skills. (Current Status: P.R. in USA)",
-        "shortSum": "PhD in Analytical Chemistry",
+        "summary": "A detail-oriented, self-driven, and resourceful individual in the fast-paced tech industry who is skilled in Python IT/lab automation and has years of expertise in testing, troubleshooting, failure analysis/risk mitigation, analytical process development, optics/photonics, quantitative data analysis/visualization, curriculum design, and research consulting.(P.R. in USA)",
+        "shortSum": "Software Engineer Ph.D. in Physical Chemistry",
         "location": {
-            "address": "901 Atlantic Dr NW",
-            "postalCode": "GA 30332",
-            "city": "Atlanta",
-            "countryCode": "US",
-            "region": "Georgia"
+            "address": "800 Brickell Ave",
+            "postalCode": "FL 33131",
+            "city": "Miami",
+            "countryCode": "FL",
+            "region": "Florida"
         },
         "profiles": [
             {
                 "network": "Linkedin",
                 "username": "BaijiePH",
-                "url": "http://twitter.com/BaijiePH"
+                "url": "https://www.linkedin.com/in/benjiph/"
             }
         ]
     },
     "work": [
         {
-            "name": "Department of Chemistry and Biochemistry - Georgia Institute of Technology",
-            "position": "Graduate Assistant",
-            "website": "https://chemistry.gatech.edu/",
-            "startDate": "2015-08-17",
-            "summary": "\b \b \b \b \b \b Worked in a highly collaborative physical chemistry research laboratory over several interdisciplinary research projects focused on adopting qualitative and quantitative analytical approaches in protein engineering, mathematical modeling and developing innovative background-free fluorescence microscopy approaches. \n \b \b \b \b \b \b Served as a Research Laboratory Safety Representative over the years. \n \b \b \b \b \b \b Head-TA / Instructor for multiple courses offered by Georgia Tech over the years.",
-            "location": "Atlanta, GA. USA",
-            "highlights": ["Started the company"]
+            "name": "IT Glue",
+            "position": "Software Development Engineer",
+            "website": "https://www.itglue.com",
+            "startDate": "2021-05-15",
+            "summary": " 🛠️ Performance, Scalability, and Resiliency (PSR) Testing Lead \n 💡 Scrum Master \n 🔎 Quality Assurance Consultant | Lead QA Engineer \n",
+            "location": "Miami, FL. USA",
+            "highlights": ["Scrum Master"]
         },
         {
-            "name": "Department of Horticultural Science - University of Minnesota",
+            "name": "Georgia Institute of Technology",
+            "position": "Research Support",
+            "website": "https://chemistry.gatech.edu/",
+            "startDate": "2015-08-17",
+            "summary": "🔬 Graduate Researcher | Analytical Methodology Liaison \n 👨‍🔬 Research Safety Representative | Instrument Manager",
+            "location": "Atlanta, GA. USA",
+            "highlights": ["Outstanding Research Support"]
+        },
+        {
+            "name": "University of Minnesota",
             "position": "Researcher",
             "website": "https://horticulture.umn.edu/",
             "startDate": "2013-01-01",
             "endDate": "2015-04-30",
-            "summary": "\b \b \b \b \b \b Involved in interdisciplinary research projects that enables accurate calculation of liquid chromatographic retention times. \n \b \b \b \b \b \b Designed algorithms to streamline and automate processes in sample preparation and data processing. \n \b \b \b \b \b \b Mentoring Project SEED (Summer Experiences for the Economically Disadvantaged) Students.",
+            "summary": "",
             "location": "Saint Paul, MN. USA",
             "highlights": ["Started the company"]
         }
@@ -59,7 +68,7 @@
         {
             "institution": "Georgia Institute of Technology",
             "area": "Chemistry, Education, and Technology",
-            "studyType": "PhD in Analytical Chemistry (3.85/4.00)",
+            "studyType": "PhD in Physical Chemistry (3.85/4.00)",
             "startDate": "2015-08-01",
             "endDate": "2021-11-01",
             "gpa": "3.85",
@@ -142,12 +151,6 @@
             "keywords": ["HTML", "CSS", "Javascript"]
         },
         {
-            "name": "Gmail",
-            "level": "Master",
-            "value": 20,
-            "keywords": ["HTML", "CSS", "Javascript"]
-        },
-        {
             "name": "K8S",
             "level": "Master",
             "value": 80,
@@ -157,13 +160,13 @@
     "languages": [
         {
             "language": "English",
-            "value": 95,
-            "fluency": "Native-like"
+            "value": 98.9,
+            "fluency": "Native Speaker"
         },
         {
             "language": "Mandarin",
-            "value": 100,
-            "fluency": "Native speaker"
+            "value": 98.9,
+            "fluency": "Native Speaker"
         }
     ],
     "interests": [
@@ -199,12 +202,12 @@
     ],
     "projects": [
         {
-            "index": 0,
+            "index": 1,
             "date": {
                 "month": 1,
                 "year": 2015
             },
-            "shortDesc": "Retention projection is an extremely accurate way to predict LC/GC retention time, and has been used as a novel approach for compound identification / differentiation.\n \b \b \b \b \b \b Used a unique mixture of calibration compounds to accurately obtain thermodynamic parameters for each column, thereby to predict, identify, and differentiate isomers.\n \b \b \b \b \b \b Backend functions and APIs were implemented in Java (prototyped in VBA) with a user-friendly interface. Open-sourced on Github.",
+            "shortDesc": "Retention projection is an extremely accurate way to predict LC/GC retention time, and has been used as a novel approach for compound identification / differentiation.\n «««««« Used a unique mixture of calibration compounds to accurately obtain thermodynamic parameters for each column, thereby to predict, identify, and differentiate isomers.\n «««««« Backend functions and APIs were implemented in Java (prototyped in VBA) with a user-friendly interface. Open-sourced on Github.",
             "longDesc": "Retention projection is an extremely accurate way to predict LC/GC retention time, and has been used as a novel approach for compound identification / differentiation. In this project, we used 20+ calibration compounds to accurately obtain thermodynamic parameters for each GC column, thereby to predict, identify, and differentiate isomers based on accurately predicted retention times. We also had the \"GC Retention Predictor\" software available for every research to use, which enables accurate retention prediction with virtually any temperature program, inlet pressure/flow rate, column length, and make/model of GC instrument. The backend functions and APIs of GC Retention Predictor are implemented in Java (prototyped in VBA) with a user-friendly interface. GC Retention Predictor is open-source software distributed free of charge under the terms of the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. \n ---------- \n Had a first-authored research article published in Journal of Chromatography A. It is titled \"A practical methodology to measure unbiased gas chromatographic retention factor vs. temperature relationships\", and has doi:10.1016/j.chroma.2014.11.018.",
             "id": "d9f7ca32-a40a-418e-affb-317bfb4fd20e",
             "images": [
@@ -217,12 +220,12 @@
             "endDate": "2015-04-30"
         },
         {
-            "index": 1,
+            "index": 4,
             "date": {
                 "month": 6,
                 "year": 2016
             },
-            "shortDesc": "Optically Modulated Fluorescent Proteins (OMFPs), initially discovered and reported by us, are unique fluorescent proteins (FPs) have photo-accessible dark states. Engineering of OM-YFP further completes our OMFP color palette, which substantiates considerable potentials in revolutionizing cellular imaging. \n \b \b \b \b \b \b Used computer-assisted 3D modeling Python software to guide site-directed mutagenesis. \n \b \b \b \b \b \b Successfully identified and characterized several OM-YFP mutants with unique and fascinating photophysics.",
+            "shortDesc": "Optically Modulated Fluorescent Proteins (OMFPs), initially discovered and reported by us, are unique fluorescent proteins (FPs) have photo-accessible dark states. Engineering of OM-YFP further completes our OMFP color palette, which substantiates considerable potentials in revolutionizing cellular imaging. \n «««««« Used computer-assisted 3D modeling Python software to guide site-directed mutagenesis. \n «««««« Successfully identified and characterized several OM-YFP mutants with unique and fascinating photophysics.",
             "longDesc": "Optically Modulated Fluorescent Proteins (OMFPs) are unique fluorescent proteins (FP) possessing photo-accessible dark states. The naturally occurring dark state in OMFPs yields strong fluorescence modulation upon long-wavelength-induced dark state depopulation, allowing selective detection at the frequency at which the long wavelength secondary laser is intensity modulated. In this highly collaborative and interdisciplinary research project, we used computer-assisted 3D modeling Python software to guide site-directed mutagenesis, notably at site 65 and 148, yielding several Optically Modulated YFP (OM-YFP) mutants with unique dark state characteristics. \n .......... \n Furthermore, we discovered optically activated delayed fluorescence (OADF) in FPs, which was not reported before in literature. OADF takes place while the near IR secondary coexcitation repumps the emissive S1 level from the long-lived triplet state due to secondary laser-induced, reverse intersystem crossing (RISC), producing additional nanosecond-lived, visible fluorescence that is delayed by many microseconds after the primary excitation has turned off. OADF in YFPs demonstrates boundless potentials to revolutionize cellular imaging. \n ---------- \n Had a first-authored research article published in Journal of Physical Chemistry B. It is titled \"Optically Modulated and Optically Activated Delayed Fluorescent Proteins through Dark State Engineering\", and has doi:10.1021/acs.jpcb.1c00649.",
             "id": "ffb8a4f2-24d6-44ef-bbe7-0593b86d40be",
             "images": [
@@ -253,12 +256,12 @@
             "endDate": "2020-09-15"
         },
         {
-            "index": 3,
+            "index": 0,
             "date": {
                 "month": 4,
                 "year": 2016
             },
-            "shortDesc": "The ultimate goal of my PhD research is to make major improvements in cellular imaging to address autofluorescence and multi-labeling limitations in fluorescence microscopy. \n \b \b \b \b \b \b Developed OMFP tags ideal for Optical Modulation, thereby felicitous for background/reference-free multi-label cellular imaging.",
+            "shortDesc": " 📷 The objective of my Ph.D. research is to make major improvements in cellular imaging to address autofluorescence and multi-labeling limitations in fluorescence microscopy. \n 🧬 Developed unique fluorescent proteins based on designs from open source Python packages. ideal for Optical Modulation, thereby felicitous for background/reference-free multi-label cellular imaging.",
             "longDesc": "In order to address autofluorescence and multi-labeling limitations in cellular imaging and fluorescence microscopy, approaches from multiple perspectives are investigated. \n ---------- \n Engineering novel OMFPs from mutagenesis; Studing and utilizing optically activated delayed fluorescence (OADF) from OMFPs. Mathematical modeling Photophysics of OMFPs for more detailed and generalized characterization. \n ********** \n This section will be further implemented once my thesis becomes public",
             "id": "ffb8a4f2-24e6-44ef-bbe7-0593986p40be",
             "images": [
@@ -267,7 +270,7 @@
                 }
             ],
             "link": "",
-            "name": "A comprehensive study of OMFPs (PhD Thesis)",
+            "name": "Ph.D. Thesis -- A Comprehensive Study of Modulatable Fluorescent Proteins",
             "endDate": "2021-10-15"
         }
     ],
@@ -299,9 +302,9 @@
             "studiesLevel": "10"
         },
         "work": {
-            "contractTypes": ["freelance", "fixedTerm", "permanent"],
+            "contractTypes": ["Freelance", "FixedTerm", "Permanent"],
             "codingYears": 5,
-            "codingReason": "To solve research problems that I encounter in analytical chemistry and physical chemsitry programmatically and efficiently",
+            "codingReason": "To solve research problems that I encounter in analytical chemistry and physical chemistry programmatically and efficiently",
             "searchState": "activelySearching",
             "experienceYears": 0,
             "codeExperienceYears": null,
@@ -310,19 +313,19 @@
         "sound": {
             "embedUrl": "https://open.spotify.com/embed/playlist/48t8uSuv7wlfrYJsox27zy?theme=0"
         },
-        "interestedBy": "LC/GC-MS, Python, ReactJS, Lasers and optics"
+        "interestedBy": "Process Design, Python, ReactJS, Machine Learning, Lasers optics"
     },
     "resumeCustomization": {
         "imageHeader": {
-            "url": "https://raw.githubusercontent.com/benjipeng/assets/main/atl_scape.jpg",
+            "url": "https://raw.githubusercontent.com/benjipeng/assets/main/miami_scape.jpg",
             "alt": "Default Banner"
         },
         "cardsOrder": [
             { "type": "basics", "variant": 0 },
+            { "type": "experiences", "variant": 4 },
             { "type": "projects", "variant": 4 },
             { "type": "skills", "variant": 0 },
             { "type": "dreamjob", "variant": 2 },
-            { "type": "experiences", "variant": 4 },
             { "type": "studies", "variant": 3 },
             { "type": "gifs", "variant": 0 },
             { "type": "interestedBy", "variant": 0 },
