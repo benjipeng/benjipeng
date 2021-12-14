@@ -2,12 +2,12 @@
     "mode": "readOnly",
     "basics": {
         "name": "Benji Peng",
-        "label": "PhD Candidate in Analytical Chemistry",
+        "label": "PhD in Analytical Chemistry",
         "picture": "https://benjipeng.github.io/benjip-cv/assets/images/profile.png",
         "email": "pengx107@umn.edu",
         "phone": "+1 (760)-689-9995",
         "website": "https://benjipeng.github.io",
-        "summary": "A detail oriented, self-driven, and profoundly resourceful PhD candidate who offers exceptional research, communication, management and leadership skills. (Current Status: P.R. in USA)",
+        "summary": "A detail oriented, self-driven, and profoundly resourceful PhD who offers exceptional quantitative analysis, communication, and management skills. (Current Status: P.R. in USA)",
         "shortSum": "PhD in Analytical Chemistry",
         "location": {
             "address": "901 Atlantic Dr NW",

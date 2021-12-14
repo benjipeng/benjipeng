@@ -12,7 +12,7 @@
     "Banner.actions.customize": "Customize",
     "Banner.actions.customize.dialog.title": "Customize your profile",
     "Banner.image.editButton": "Edit banner image",
-    "Basics.Back.CodeExperienceYear.noExperience": "No experience (yet!) as developer",
+    "Basics.Back.CodeExperienceYear.noExperience": "Over 8 years in a research laboratory. \n Over 6 years with programming. \n Over 5 years with undergraduate teaching / mentoring \n ",
     "Basics.Back.CodeExperienceYear.value": "{codeExperienceYears, plural, one {# year} other {# years} } as a developer",
     "Basics.Back.CodingReason.Title": "How i started coding",
     "Basics.Back.CodingYears.noExperience": "I've just started coding",
