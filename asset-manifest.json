@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/benjipeng/static/css/main.42cb3cce.chunk.css",
+    "main.css": "/benjipeng/static/css/main.42a914e6.chunk.css",
     "main.js": "/benjipeng/static/js/main.72feacea.chunk.js",
     "main.js.map": "/benjipeng/static/js/main.72feacea.chunk.js.map",
     "runtime-main.js": "/benjipeng/static/js/runtime-main.28283780.js",
@@ -8,7 +8,7 @@
     "static/js/2.bab292fb.chunk.js": "/benjipeng/static/js/2.bab292fb.chunk.js",
     "static/js/2.bab292fb.chunk.js.map": "/benjipeng/static/js/2.bab292fb.chunk.js.map",
     "index.html": "/benjipeng/index.html",
-    "static/css/main.42cb3cce.chunk.css.map": "/benjipeng/static/css/main.42cb3cce.chunk.css.map",
+    "static/css/main.42a914e6.chunk.css.map": "/benjipeng/static/css/main.42a914e6.chunk.css.map",
     "static/js/2.bab292fb.chunk.js.LICENSE.txt": "/benjipeng/static/js/2.bab292fb.chunk.js.LICENSE.txt",
     "static/media/global.css": "/benjipeng/static/media/AvenirNext-UltraLightItalic.102e5d4b.ttf",
     "static/media/Icon__Discord.694f69a7.svg": "/benjipeng/static/media/Icon__Discord.694f69a7.svg",
@@ -56,7 +56,7 @@
   "entrypoints": [
     "static/js/runtime-main.28283780.js",
     "static/js/2.bab292fb.chunk.js",
-    "static/css/main.42cb3cce.chunk.css",
+    "static/css/main.42a914e6.chunk.css",
     "static/js/main.72feacea.chunk.js"
   ]
 }
