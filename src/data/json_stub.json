@@ -26,30 +26,30 @@
     },
     "work": [
         {
-            "name": "ITGlue",
+            "name": "IT Glue",
             "position": "Software Development Engineer",
             "website": "https://www.itglue.com",
             "startDate": "2021-05-15",
-            "summary": "»»»» Worked in a highly collaborative physical chemistry research laboratory over several interdisciplinary research projects focused on adopting qualitative and quantitative analytical approaches in protein engineering, mathematical modeling and developing innovative background-free fluorescence microscopy approaches. \n »»»» Served as a Research Laboratory Safety Representative over the years. \n »»»» Head-TA / Instructor for multiple courses offered by Georgia Tech over the years.",
+            "summary": " 🛠️ Performance, Scalability, and Resiliency (PSR) Testing Lead \n 💡 Scrum Master \n 🔎 Quality Assurance Consultant | Lead QA Engineer \n",
             "location": "Miami, FL. USA",
-            "highlights": ["Started the company"]
+            "highlights": ["Scrum Master"]
         },
         {
-            "name": "Department of Chemistry and Biochemistry - Georgia Institute of Technology",
-            "position": "Graduate Assistant",
+            "name": "Georgia Institute of Technology",
+            "position": "Research Support",
             "website": "https://chemistry.gatech.edu/",
             "startDate": "2015-08-17",
-            "summary": "»»»» Worked in a highly collaborative physical chemistry research laboratory over several interdisciplinary research projects focused on adopting qualitative and quantitative analytical approaches in protein engineering, mathematical modeling and developing innovative background-free fluorescence microscopy approaches. \n »»»» Served as a Research Laboratory Safety Representative over the years. \n »»»» Head-TA / Instructor for multiple courses offered by Georgia Tech over the years.",
+            "summary": "🔬 Graduate Researcher | Analytical Methodology Liaison \n 👨‍🔬 Research Safety Representative | Instrument Manager",
             "location": "Atlanta, GA. USA",
-            "highlights": ["Started the company"]
+            "highlights": ["Outstanding Research Support"]
         },
         {
-            "name": "Department of Horticultural Science - University of Minnesota",
+            "name": "University of Minnesota",
             "position": "Researcher",
             "website": "https://horticulture.umn.edu/",
             "startDate": "2013-01-01",
             "endDate": "2015-04-30",
-            "summary": "»»»» Involved in interdisciplinary research projects that enables accurate calculation of liquid chromatographic retention times. \n »»»» Designed algorithms to streamline and automate processes in sample preparation and data processing. \n »»»» Mentored Project SEED (Summer Experiences for the Economically Disadvantaged) Students.",
+            "summary": "",
             "location": "Saint Paul, MN. USA",
             "highlights": ["Started the company"]
         }
@@ -68,7 +68,7 @@
         {
             "institution": "Georgia Institute of Technology",
             "area": "Chemistry, Education, and Technology",
-            "studyType": "PhD in Analytical Chemistry (3.85/4.00)",
+            "studyType": "PhD in Physical Chemistry (3.85/4.00)",
             "startDate": "2015-08-01",
             "endDate": "2021-11-01",
             "gpa": "3.85",
@@ -160,13 +160,13 @@
     "languages": [
         {
             "language": "English",
-            "value": 95,
-            "fluency": "Native-like"
+            "value": 98.9,
+            "fluency": "Native Speaker"
         },
         {
             "language": "Mandarin",
-            "value": 100,
-            "fluency": "Native speaker"
+            "value": 98.9,
+            "fluency": "Native Speaker"
         }
     ],
     "interests": [
@@ -202,7 +202,7 @@
     ],
     "projects": [
         {
-            "index": 0,
+            "index": 1,
             "date": {
                 "month": 1,
                 "year": 2015
@@ -220,7 +220,7 @@
             "endDate": "2015-04-30"
         },
         {
-            "index": 1,
+            "index": 4,
             "date": {
                 "month": 6,
                 "year": 2016
@@ -256,12 +256,12 @@
             "endDate": "2020-09-15"
         },
         {
-            "index": 3,
+            "index": 0,
             "date": {
                 "month": 4,
                 "year": 2016
             },
-            "shortDesc": "The ultimate goal of my PhD research is to make major improvements in cellular imaging to address autofluorescence and multi-labeling limitations in fluorescence microscopy. \n «««««« Developed OMFP tags ideal for Optical Modulation, thereby felicitous for background/reference-free multi-label cellular imaging.",
+            "shortDesc": " 📷 The objective of my Ph.D. research is to make major improvements in cellular imaging to address autofluorescence and multi-labeling limitations in fluorescence microscopy. \n 🧬 Developed unique fluorescent proteins based on designs from open source Python packages. ideal for Optical Modulation, thereby felicitous for background/reference-free multi-label cellular imaging.",
             "longDesc": "In order to address autofluorescence and multi-labeling limitations in cellular imaging and fluorescence microscopy, approaches from multiple perspectives are investigated. \n ---------- \n Engineering novel OMFPs from mutagenesis; Studing and utilizing optically activated delayed fluorescence (OADF) from OMFPs. Mathematical modeling Photophysics of OMFPs for more detailed and generalized characterization. \n ********** \n This section will be further implemented once my thesis becomes public",
             "id": "ffb8a4f2-24e6-44ef-bbe7-0593986p40be",
             "images": [
@@ -270,7 +270,7 @@
                 }
             ],
             "link": "",
-            "name": "A comprehensive study of OMFPs (PhD Thesis)",
+            "name": "Ph.D. Thesis -- A Comprehensive Study of Modulatable Fluorescent Proteins",
             "endDate": "2021-10-15"
         }
     ],
@@ -302,9 +302,9 @@
             "studiesLevel": "10"
         },
         "work": {
-            "contractTypes": ["freelance", "fixedTerm", "permanent"],
+            "contractTypes": ["Freelance", "FixedTerm", "Permanent"],
             "codingYears": 5,
-            "codingReason": "To solve research problems that I encounter in analytical chemistry and physical chemsitry programmatically and efficiently",
+            "codingReason": "To solve research problems that I encounter in analytical chemistry and physical chemistry programmatically and efficiently",
             "searchState": "activelySearching",
             "experienceYears": 0,
             "codeExperienceYears": null,
@@ -313,7 +313,7 @@
         "sound": {
             "embedUrl": "https://open.spotify.com/embed/playlist/48t8uSuv7wlfrYJsox27zy?theme=0"
         },
-        "interestedBy": "LC/GC-MS, Python, ReactJS, Lasers and optics"
+        "interestedBy": "Process Design, Python, ReactJS, Machine Learning, Lasers optics"
     },
     "resumeCustomization": {
         "imageHeader": {
@@ -322,10 +322,10 @@
         },
         "cardsOrder": [
             { "type": "basics", "variant": 0 },
+            { "type": "experiences", "variant": 4 },
             { "type": "projects", "variant": 4 },
             { "type": "skills", "variant": 0 },
             { "type": "dreamjob", "variant": 2 },
-            { "type": "experiences", "variant": 4 },
             { "type": "studies", "variant": 3 },
             { "type": "gifs", "variant": 0 },
             { "type": "interestedBy", "variant": 0 },

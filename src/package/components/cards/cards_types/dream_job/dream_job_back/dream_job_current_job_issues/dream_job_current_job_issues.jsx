@@ -23,8 +23,8 @@ const DreamJobCurrentJobIssuesComponent = ({ currentJobIssues = {} }) => {
                     if (issueId === JobIssues.OTHER) {
                         return (
                             <div>
-                                <li>Graduating from current PhD program</li>
-                                <li>Exploring new and exciting opportunities</li>
+                                <li>⚙️ Acquiring Best Practices Relevant in Software Engineering.</li>
+                                <li>⚗️ Ready to Explore New and Exciting Opportunities</li>
                             </div>
                             // <li className={classes.listItem} key={`dream_job_current_job_issue_${issueId}`}>
                             //     "Graduating from current PhD program"

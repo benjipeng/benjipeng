@@ -43,7 +43,7 @@ const DreamJobFrontComponent = ({ data }) => {
                 <>
                     <ProfileCardFrontVector classes={{ container: classes.logo }} vector={HomeLogo} />
                     <ProfileCardFrontTypography classes={{ container: classes.typography }}>
-                        <FormattedMessage id="whatisthat" defaultMessage="Would love to work remotely" />
+                        <FormattedMessage id="whatisthat" defaultMessage="Distributed Teams" />
                     </ProfileCardFrontTypography>
                 </>
             );
