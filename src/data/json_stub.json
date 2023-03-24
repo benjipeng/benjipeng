@@ -2,13 +2,13 @@
     "mode": "readOnly",
     "basics": {
         "name": "Benji Peng",
-        "label": "Software Engineer, Ph.D. in Physic Chem",
+        "label": "Software Engineer, Ph.D. in Physical Chemistry",
         "picture": "https://benjipeng.github.io/benjip-cv/assets/images/profile.png",
         "email": "benji.peng.p@gmail.com",
         "phone": "+1 (831)-264-8928",
         "website": "https://benjipeng.github.io",
         "summary": "A detail-oriented, self-driven, and resourceful individual in the fast-paced tech industry who is skilled in Python IT/lab automation and has years of expertise in testing, troubleshooting, failure analysis/risk mitigation, analytical process development, optics/photonics, quantitative data analysis/visualization, curriculum design, and research consulting.(P.R. in USA)",
-        "shortSum": "Software Engineer",
+        "shortSum": "Software Engineer Ph.D. in Physical Chemistry",
         "location": {
             "address": "800 Brickell Ave",
             "postalCode": "FL 33131",
@@ -25,6 +25,15 @@
         ]
     },
     "work": [
+        {
+            "name": "ITGlue",
+            "position": "Software Development Engineer",
+            "website": "https://www.itglue.com",
+            "startDate": "2021-05-15",
+            "summary": "»»»» Worked in a highly collaborative physical chemistry research laboratory over several interdisciplinary research projects focused on adopting qualitative and quantitative analytical approaches in protein engineering, mathematical modeling and developing innovative background-free fluorescence microscopy approaches. \n »»»» Served as a Research Laboratory Safety Representative over the years. \n »»»» Head-TA / Instructor for multiple courses offered by Georgia Tech over the years.",
+            "location": "Miami, FL. USA",
+            "highlights": ["Started the company"]
+        },
         {
             "name": "Department of Chemistry and Biochemistry - Georgia Institute of Technology",
             "position": "Graduate Assistant",
@@ -139,12 +148,6 @@
             "name": "Firebase",
             "level": "Master",
             "value": 60,
-            "keywords": ["HTML", "CSS", "Javascript"]
-        },
-        {
-            "name": "Gmail",
-            "level": "Master",
-            "value": 20,
             "keywords": ["HTML", "CSS", "Javascript"]
         },
         {
@@ -314,7 +317,7 @@
     },
     "resumeCustomization": {
         "imageHeader": {
-            "url": "https://raw.githubusercontent.com/benjipeng/assets/main/atl_scape.jpg",
+            "url": "https://raw.githubusercontent.com/benjipeng/assets/main/miami_scape.jpg",
             "alt": "Default Banner"
         },
         "cardsOrder": [

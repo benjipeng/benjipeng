@@ -53,7 +53,7 @@
 		"heading": "Education",
 		"items": [
 			{
-				"degree": "PhD",
+				"degree": "Ph.D.",
 				"endDate": "",
 				"field": "Analytical Chemistry (Advised by Prof. Robert M Dickson)",
 				"gpa": "3.83/4.00",
@@ -106,7 +106,7 @@
 		"heading": "Languages",
 		"items": [
 			{
-				"fluency": "Native-like ",
+				"fluency": "Native ",
 				"id": "0ed229c6-863c-40b6-9121-465b00fc9a27",
 				"isVisible": true,
 				"name": "English"

@@ -20,7 +20,7 @@
         "build:messages": "NODE_ENV=production babel ./src >/dev/null",
         "serve": "craco build && serve build",
         "manage:translations": "node ./translationRunner.js",
-        "gh-deploy": "yarn build && gh-pages -d build",
+        "gh-deploy": "NODE_OPTIONS='--openssl-legacy-provider' yarn build && gh-pages -d build",
         "version:beta": "npm version prerelease --preid=beta",
         "version:release": "npm version ${VERSION:-patch}"
     },
