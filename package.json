@@ -1,13 +1,13 @@
 {
     "name": "@benjipeng/resume",
     "version": "1.1.9",
-    "description": "Benji P. H's Profile, credit to @welovedevs/react-ultimate-resume",
+    "description": "Benji P. H's Profile, credit to react-ultimate-resume",
     "homepage": "https://benjipeng.github.io/benjipeng/",
     "main": "lib/index.js",
     "private": true,
     "scripts": {
-        "start": "touch .env.local && sh -ac 'sh .env.${NODE_ENV:-local}; PORT=${PORT:-3500} EXTEND_ESLINT=false BROWSER=none TAILWIND_MODE=watch craco start'",
-        "dev": "yarn start",
+        "start": "touch .env.local && sh -ac 'sh .env.${NODE_ENV:-local}; NODE_OPTIONS='--openssl-legacy-provider' PORT=${PORT:-3500} EXTEND_ESLINT=false BROWSER=none TAILWIND_MODE=watch craco start'",
+        "dev": "NODE_OPTIONS='--openssl-legacy-provider' yarn start",
         "eject": "react-scripts eject",
         "test": "craco test",
         "prepackage": "rimraf lib ",

@@ -2,25 +2,25 @@
     "mode": "readOnly",
     "basics": {
         "name": "Benji Peng",
-        "label": "PhD in Analytical Chemistry",
+        "label": "Software Engineer, Ph.D. in Physic Chem",
         "picture": "https://benjipeng.github.io/benjip-cv/assets/images/profile.png",
-        "email": "pengx107@umn.edu",
-        "phone": "+1 (760)-689-9995",
+        "email": "benji.peng.p@gmail.com",
+        "phone": "+1 (831)-264-8928",
         "website": "https://benjipeng.github.io",
-        "summary": "A detail oriented, self-driven, and profoundly resourceful PhD who offers exceptional quantitative analysis, communication, and management skills. (Current Status: P.R. in USA)",
-        "shortSum": "PhD in Analytical Chemistry",
+        "summary": "A detail-oriented, self-driven, and resourceful individual in the fast-paced tech industry who is skilled in Python IT/lab automation and has years of expertise in testing, troubleshooting, failure analysis/risk mitigation, analytical process development, optics/photonics, quantitative data analysis/visualization, curriculum design, and research consulting.(P.R. in USA)",
+        "shortSum": "Software Engineer",
         "location": {
-            "address": "901 Atlantic Dr NW",
-            "postalCode": "GA 30332",
-            "city": "Atlanta",
-            "countryCode": "US",
-            "region": "Georgia"
+            "address": "800 Brickell Ave",
+            "postalCode": "FL 33131",
+            "city": "Miami",
+            "countryCode": "FL",
+            "region": "Florida"
         },
         "profiles": [
             {
                 "network": "Linkedin",
                 "username": "BaijiePH",
-                "url": "http://twitter.com/BaijiePH"
+                "url": "https://www.linkedin.com/in/benjiph/"
             }
         ]
     },
