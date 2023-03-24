@@ -10,6 +10,7 @@ export const styles = (theme) => ({
         '*:focus': {
             outline: 'none'
         },
+
         textarea: {
             resize: 'none'
         },
