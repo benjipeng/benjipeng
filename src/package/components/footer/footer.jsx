@@ -38,7 +38,7 @@ const FooterComponent = () => {
                 </a> */}
                 <div className={'flex flex-col justify-center text-primary-60 mb-2'}>
                     <div className={'flex flex-col justify-center justify-center mb-1'}>
-                        <div>Made with {'❤️'} By Benji P. Honeycutt ---- Special Thanks To WeLoveDevs</div>
+                        <div style={{ fontWeight: 600 }}>Made with {'❤️'} By Benji Peng</div>
                     </div>
                 </div>
                 {/* <div className={'flex flex-col text-primary-50 mb-2'}>
@@ -51,7 +51,7 @@ const FooterComponent = () => {
                         {/* <a href={''}>
                             <YoutubeLogo className={'w-10'} />
                         </a> */}
-                        <a href={'http://linkedin.com/BaijiePH'}>
+                        <a href={'https://www.linkedin.com/in/benjiph/'}>
                             <LinkedInLogo className={'w-10'} />
                         </a>
                         {/* <a href={''}>
@@ -63,10 +63,10 @@ const FooterComponent = () => {
                         <a href={'https://www.instagram.com/ben_flyer/'}>
                             <InstagramLogo className={'w-10'} />
                         </a>
-                        <a href={'https://twitter.com'}>
+                        {/* <a href={'https://twitter.com'}>
                             <TwitterLogo className={'w-10'} />
-                        </a>
-                        <a href={'https://twitter.com'}>
+                        </a> */}
+                        <a href={'https://github.com/benjipeng'}>
                             <GithubLogo className={'w-10'} />
                         </a>
                     </div>

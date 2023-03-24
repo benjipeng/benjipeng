@@ -34,7 +34,7 @@ export const DEFAULT_THEME = {
             default: {
                 backgroundColor: 'dark',
                 color: 'light',
-                backBackgroundColor: 'light',
+                backBackgroundColor: 'dark',
                 backColor: 'dark'
             },
             variants: [

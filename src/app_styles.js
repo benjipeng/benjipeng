@@ -5,5 +5,7 @@ export const styles = {
         '& g': {
             stroke: 'white'
         }
-    }
+    },
+
+    body: { backgroundColor: 'blue' }
 };

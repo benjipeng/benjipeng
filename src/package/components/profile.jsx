@@ -53,7 +53,7 @@ const DEFAULT_OPTIONS = {
 };
 
 const DEFAULT_OBJECT = {};
-const DEFAULT_FUNCTION = () => { };
+const DEFAULT_FUNCTION = () => {};
 
 const DeveloperProfileComponent = ({
     data: originalData = DEFAULT_OBJECT,
@@ -121,7 +121,7 @@ const DeveloperProfileComponent = ({
     const side = useMemo(() => (isEditing && SIDES.BACK) || options?.side, [options, isEditing]);
 
     return (
-        <div className={classes.container}>
+        <div style={{ 'background-color': '#262121' }} className={classes.container}>
             <StaticDataContext.Provider value={staticContext}>
                 <StoreContext.Provider value={store}>
                     <DeveloperProfileContext.Provider value={context}>
