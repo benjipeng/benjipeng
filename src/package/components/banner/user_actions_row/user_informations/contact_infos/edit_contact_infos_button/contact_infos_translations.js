@@ -12,5 +12,9 @@ export const translations = defineMessages({
     name: {
         id: 'Banner.UserInformations.ContactInformations.Name',
         defaultMessage: 'Name'
+    },
+    portfolio: {
+        id: 'Banner.UserInformations.ContactInformations.Portfolio',
+        defaultMessage: 'URL to Portfolio'
     }
 });

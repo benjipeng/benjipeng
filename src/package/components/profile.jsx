@@ -121,7 +121,7 @@ const DeveloperProfileComponent = ({
     const side = useMemo(() => (isEditing && SIDES.BACK) || options?.side, [options, isEditing]);
 
     return (
-        <div style={{ 'background-color': '#262121' }} className={classes.container}>
+        <div style={{ 'background-color': '#101417' }} className={classes.container}>
             <StaticDataContext.Provider value={staticContext}>
                 <StoreContext.Provider value={store}>
                     <DeveloperProfileContext.Provider value={context}>

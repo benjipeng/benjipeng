@@ -6,8 +6,9 @@
         "picture": "https://benjipeng.github.io/benjip-cv/assets/images/profile.png",
         "email": "benji.peng.p@gmail.com",
         "phone": "+1 (831)-264-8928",
+        "portfolio": "https://benjipeng.github.io/portfolio",
         "website": "https://benjipeng.github.io",
-        "summary": "A detail-oriented, self-driven, and resourceful individual in the fast-paced tech industry who is skilled in Python IT/lab automation and has years of expertise in testing, troubleshooting, failure analysis/risk mitigation, analytical process development, optics/photonics, quantitative data analysis/visualization, curriculum design, and research consulting.(P.R. in USA)",
+        "summary": "Fueled by the fast-paced tech industry, I excel in Python-driven IT/lab automation and troubleshooting. My diverse expertise spans optics, data visualization, and curriculum design, underpinned by a passion for risk mitigation and process development. Welcome to my detail-oriented, innovative world.",
         "shortSum": "Software Engineer Ph.D. in Physical Chemistry",
         "location": {
             "address": "800 Brickell Ave",
@@ -277,7 +278,7 @@
     "specific": {
         "basics": {
             "visaSponsorship": false,
-            "personalDescription": "A detail oriented, self-driven, and profoundly resourceful PhD candidate who offers exceptional research, communication, management and leadership skills. A perpetual learner who has more than 8 years experiences in highly collaborative research and development environment with greatly diverse individuals."
+            "personalDescription": "Driven by curiosity, I thrive in the dynamic tech sector where I apply my robust Python skills to innovate in IT and lab automation. With over nine years in the field, my career has been characterized by intensive troubleshooting, strategic risk mitigation, and meticulous failure analysis. My proficiency in optics and photonics, paired with my expertise in quantitative data analysis and visualization, has made me a linchpin in any R&D team. A penchant for curriculum design and research consulting underscores my collaborative spirit. As a relentless learner, I've shaped an adaptable skillset, thriving amidst diversity and driving progress."
         },
         "dreamJob": {
             "locations": [
@@ -313,7 +314,7 @@
         "sound": {
             "embedUrl": "https://open.spotify.com/embed/playlist/48t8uSuv7wlfrYJsox27zy?theme=0"
         },
-        "interestedBy": "Process Design, Python, ReactJS, Machine Learning, Lasers optics"
+        "interestedBy": "Process Engineering,, Python, ReactJS, Machine Learning, Lasers optics"
     },
     "resumeCustomization": {
         "imageHeader": {
@@ -340,42 +341,42 @@
         "theme": {
             "palette": {
                 "primary": {
-                    "50": "#ececed",
-                    "100": "#d9d8db",
-                    "200": "#b3b2b7",
-                    "300": "#8d8b92",
-                    "400": "#67656e",
-                    "500": "#413e4a",
-                    "600": "#34323b",
-                    "700": "#27252c",
-                    "800": "#1a191e",
+                    "50": "#e3fafe",
+                    "100": "#c7f5fd",
+                    "200": "#b9f3fc",
+                    "300": "#a7dbe3",
+                    "400": "#6f9297",
+                    "500": "#4a6165",
+                    "600": "#37494c",
+                    "700": "#253132",
+                    "800": "#121819",
                     "900": "#0d0c0f",
                     "contrastDefaultColor": "light"
                 },
                 "secondary": {
-                    "50": "#f1eff1",
-                    "100": "#e3e0e2",
-                    "200": "#c7c0c5",
-                    "300": "#aba1a8",
-                    "400": "#8f818b",
-                    "500": "#73626e",
-                    "600": "#5c4e58",
-                    "700": "#453b42",
-                    "800": "#2e272c",
-                    "900": "#171416",
+                    "50": "#fff5ff",
+                    "100": "#feebff",
+                    "200": "#fee1ff",
+                    "300": "#fedeff",
+                    "400": "#cbb2cc",
+                    "500": "#988599",
+                    "600": "#665966",
+                    "700": "#4c434c",
+                    "800": "#332c33",
+                    "900": "#191619",
                     "contrastDefaultColor": "light"
                 },
                 "tertiary": {
-                    "50": "#f7f2f3",
-                    "100": "#f0e6e6",
-                    "200": "#e1cdce",
-                    "300": "#d1b3b5",
-                    "400": "#c29a9d",
-                    "500": "#b38184",
-                    "600": "#8f676a",
-                    "700": "#6b4d4f",
-                    "800": "#483435",
-                    "900": "#241a1a",
+                    "50": "#ffffff",
+                    "100": "#f4f9fd",
+                    "200": "#e9f4fa",
+                    "300": "#d4e8f5",
+                    "400": "#c9e3f3",
+                    "500": "#b3d7ee",
+                    "600": "#84b2d0",
+                    "700": "#678ba2",
+                    "800": "#4a6374",
+                    "900": "#2c3b45",
                     "contrastDefaultColor": "light"
                 }
             }
