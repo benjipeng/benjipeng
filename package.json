@@ -1,6 +1,6 @@
 {
     "name": "@benjipeng/resume",
-    "version": "1.1.9",
+    "version": "1.0.0",
     "description": "Benji P. H's Profile, credit to react-ultimate-resume",
     "homepage": "https://benji.appcubic.com",
     "main": "lib/index.js",
