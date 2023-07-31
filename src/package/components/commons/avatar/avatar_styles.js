@@ -9,7 +9,7 @@ export const styles = ({ palette }) => ({
         width: 110,
         minHeight: 110,
         minWidth: 110,
-        borderRadius: '50%',
+        borderRadius: '12%',
         backgroundColor: palette.dark[50],
         overflow: 'hidden',
         ...center

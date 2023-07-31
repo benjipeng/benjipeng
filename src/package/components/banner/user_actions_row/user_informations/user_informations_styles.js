@@ -23,11 +23,14 @@ export const styles = (theme) => {
         },
         name: {
             extend: 'text',
+            fontSize: 35,
             fontWeight: 700
         },
         description: {
             extend: 'text',
-            fontWeight: 500
+            fontSize: 17,
+            fontWeight: 500,
+            marginTop: 10
         },
         [createScreenWidthMediaQuery('max-width', screenSizes.small)]: {
             container: {
