@@ -5,12 +5,14 @@ export const styles = (theme) => ({
         margin: [8, 0]
     },
     icon: {
-        height: 20,
+        height: 25,
         width: 'auto',
         fill: `rgba(${theme.palette.light.rgbShades[500].join(', ')}, .75)`
     },
     typography: {
-        marginLeft: 8 * 2
+        marginLeft: 8,
+        fontWeight: 500,
+        fontSize: 15
     },
     button: {
         display: 'flex'

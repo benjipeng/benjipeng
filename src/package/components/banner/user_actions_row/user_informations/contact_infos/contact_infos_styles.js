@@ -3,11 +3,11 @@ export const styles = {
         overflow: 'hidden'
     },
     divider: {
-        height: 1,
+        height: 3,
         width: '100%',
-        maxWidth: 100,
+        maxWidth: 300,
         backgroundColor: '#fff',
-        margin: [8 * 2, 0]
+        margin: [8, 0]
     },
     contactInfosRows: {
         display: 'flex',

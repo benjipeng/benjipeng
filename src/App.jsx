@@ -70,9 +70,9 @@ function App() {
                 },
                 // dismissFooter : true
                 showContactInfos: true,
-                // maxSkills: 6,
+                //maxSkills: 6,
                 customization,
-                disableSortableExperience: false,
+                disableSortableExperience: true,
                 maxCardsPerRow: 4
             }}
             additionalNodes={{

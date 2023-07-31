@@ -3,7 +3,7 @@ import { translations } from './edit_contact_infos_button/contact_infos_translat
 import { ReactComponent as PhoneIcon } from '../../../../../assets/icons/phone.svg';
 import { ReactComponent as EmailIcon } from '../../../../../assets/icons/email.svg';
 import { ReactComponent as PersonIcon } from '../../../../../assets/icons/person_info.svg';
-import { ReactComponent as WebIcon } from '../../../../../assets/icons/photo_camera.svg';
+import { ReactComponent as WebIcon } from '../../../../../assets/icons/link.svg';
 
 export const CONTACT_INFOS_DATA = {
     name: {

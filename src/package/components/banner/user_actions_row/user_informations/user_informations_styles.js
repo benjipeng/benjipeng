@@ -18,8 +18,8 @@ export const styles = (theme) => {
         },
         text: {
             color: '#fff',
-            display:'flex',
-            alignItems:'center'
+            display: 'flex',
+            alignItems: 'center'
         },
         name: {
             extend: 'text',
@@ -27,7 +27,7 @@ export const styles = (theme) => {
         },
         description: {
             extend: 'text',
-            fontWeight: 400
+            fontWeight: 500
         },
         [createScreenWidthMediaQuery('max-width', screenSizes.small)]: {
             container: {

@@ -6,10 +6,10 @@
         "picture": "https://benjipeng.github.io/benjip-cv/assets/images/profile.png",
         "email": "benji@appcubic.com",
         "phone": "+1 (385) 519-4279",
-        "portfolio": "https://portfolio.appcubic.com",
-        "website": "https://benjipeng.github.io",
+        "portfolio": "https://www.linkedin.com/in/benjiph/",
+        "website": "https://www.linkedin.com/in/benjiph/",
         "summary": "Fueled by the fast-paced tech industry, I excel in Python-driven IT/lab automation and troubleshooting. My diverse expertise spans optics, data visualization, and curriculum design, underpinned by a passion for risk mitigation and process development. Welcome to my detail-oriented, innovative world.",
-        "shortSum": "Software Engineer Ph.D. in Physical Chemistry",
+        "shortSum": "Software Engineer Ph.D. in Science",
         "location": {
             "address": "800 Brickell Ave",
             "postalCode": "FL 33131",
@@ -134,25 +134,25 @@
             "keywords": ["Python", "Tensorflow/Pytorch", "Matplotlib", "Numpy/Scipy"]
         },
         {
-            "name": "ReastJS",
+            "name": "JavaScript",
             "level": "Master",
             "value": 80,
-            "keywords": ["HTML", "CSS", "Javascript"]
+            "keywords": ["TypeScript", "CSS", "ReactJS"]
         },
         {
-            "name": "NodeJS",
+            "name": "C++",
             "level": "Master",
             "value": 40,
-            "keywords": ["HTML", "CSS", "Javascript"]
+            "keywords": ["OOP", "Design Patterns", "Make"]
         },
         {
-            "name": "Firebase",
+            "name": "AWS",
             "level": "Master",
             "value": 60,
             "keywords": ["HTML", "CSS", "Javascript"]
         },
         {
-            "name": "K8S",
+            "name": "Oracle Cloud",
             "level": "Master",
             "value": 80,
             "keywords": ["HTML", "CSS", "Javascript"]
@@ -270,7 +270,7 @@
                     "url": "https://raw.githubusercontent.com/benjipeng/assets/main/OMFP.gif"
                 }
             ],
-            "link": "",
+            "link": "https://repository.gatech.edu/entities/publication/386155d1-0b5c-43ad-b26a-150057b454f7",
             "name": "Ph.D. Thesis -- A Comprehensive Study of Modulatable Fluorescent Proteins",
             "endDate": "2021-10-15"
         }
