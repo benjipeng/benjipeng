@@ -2,14 +2,13 @@
 
 <div align="center">
 
-<img src="https://github.com/benjipeng/benjipeng/actions/workflows/main.yml/badge.svg">
+<img src="https://github.com/benjipeng/benjipeng/actions/workflows/release_master_tags.yml/badge.svg">
 
 </div>
 
 
 
 <div align="center">
-[<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white">](https://www.linkedin.com/in/benjiph)
   
 [![find-me-on-linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/benjiph)
 </div>
