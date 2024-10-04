@@ -23,7 +23,7 @@ import {
 
 import { FaAws, FaCloudflare } from "react-icons/fa";
 
-const iconClassName = "text-neutral-800 dark:text-neutral-200 w-10 h-10"; // Tailwind classes for color and size
+const iconClassName = "text-secondary dark:text-neutral-200 w-10 h-10"; // Tailwind classes for color and size
 
 export const technologyIconList: iconType[] = [
   {

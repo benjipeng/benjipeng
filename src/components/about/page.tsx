@@ -9,18 +9,19 @@ import { Education } from "../Education";
 import { iconType, educationType } from "@/types";
 
 import { educationList, technologyIconList, whoAmIData } from "@/utils";
-import aboutAnimation from "@/utils/aboutAnimation";
 import IconComponent from "../ui/IconComponent";
+import useAnimations from "@/utils/aboutAnimation";
 
 const { fullName, profession, whoAmI, quote } = whoAmIData;
 
 export default function About() {
-  const whoAmIRef = aboutAnimation.whoAmIAnimation();
-  const professionRef = aboutAnimation.professionAnimation();
-  const quoteRef = aboutAnimation.quoteAnimation();
-  const techIconsRef = aboutAnimation.techonologyIconListAnimation();
-  const verticalImageRef = aboutAnimation.verticalImageAnimation();
-  const educationRef = aboutAnimation.educationContentAnimation();
+  const animations = useAnimations();
+  const whoAmIRef = animations.whoAmIAnimation();
+  const professionRef = animations.professionAnimation();
+  const quoteRef = animations.quoteAnimation();
+  const techIconsRef = animations.techonologyIconListAnimation();
+  const verticalImageRef = animations.verticalImageAnimation();
+  const educationRef = animations.educationContentAnimation();
 
   useEffect(() => {
     const mq = window.matchMedia("(min-width: 1024px)");
@@ -32,7 +33,7 @@ export default function About() {
   }, []);
 
   return (
-    <div className="grid grid-rows-8 grid-cols-4 lg:grid-cols-3 gap-6">
+    <div className="grid grid-rows-8 grid-cols-4 lg:grid-cols-3 lg:grid-rows-3  gap-6">
       <Card className="col-span-full lg:row-start-2 lg:row-span-2 lg:col-start-2 lg:col-span-1 bg-neutral-100 dark:bg-neutral-800">
         <CardBody className="flex-col items-center justify-center gap-4 p-6">
           <Avatar
