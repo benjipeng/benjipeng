@@ -1,1 +1,0 @@
-export const DEFAULT_TECHNO_HANDLE = '4A5N89okRPW50jRcmkuM';
