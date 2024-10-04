@@ -1,6 +1,0 @@
-#Ignore Dirs
-node_modules/
-build/
-
-#Ignore files
-yarn.lock
