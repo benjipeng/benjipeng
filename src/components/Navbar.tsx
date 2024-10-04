@@ -7,7 +7,6 @@ import {
   NavbarMenuToggle,
   NavbarMenu,
   NavbarMenuItem,
-  Link,
   Switch,
 } from "@nextui-org/react";
 import { Sun, Moon } from "lucide-react";
@@ -16,12 +15,25 @@ export default function App() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [isDark, setIsDark] = React.useState(false);
 
-  const menuItems = ["Home", "About", "Projects", "Contact"];
+  const menuItems = ["Home", "About", "Contact"];
 
   const toggleTheme = () => {
     const newIsDark = !isDark;
     setIsDark(newIsDark);
     document.documentElement.classList.toggle("dark", newIsDark);
+  };
+
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      const navbarHeight = 70; // Adjust this value based on your navbar height
+      const sectionTop = section.offsetTop - navbarHeight;
+      window.scrollTo({
+        top: sectionTop,
+        behavior: "smooth",
+      });
+    }
+    setIsMenuOpen(false); // Close the menu after clicking
   };
 
   return (
@@ -58,13 +70,12 @@ export default function App() {
             </NavbarBrand>
             {menuItems.map((item, index) => (
               <NavbarItem key={`${item}-${index}`}>
-                <Link
-                  color="foreground"
-                  href="#"
-                  className="text-neutral-800 dark:text-neutral-200 hover:text-neutral-800 dark:hover:text-neutral-200 transition-colors text-lg"
+                <span
+                  onClick={() => scrollToSection(item.toLowerCase())}
+                  className="text-neutral-800 dark:text-neutral-200 hover:text-neutral-800 dark:hover:text-neutral-200 transition-colors text-lg cursor-pointer"
                 >
                   {item}
-                </Link>
+                </span>
               </NavbarItem>
             ))}
           </NavbarContent>
@@ -85,13 +96,12 @@ export default function App() {
           <NavbarMenu className="bg-background/70 dark:bg-background/70 backdrop-blur-md mt-2 pt-2 rounded-2xl">
             {menuItems.map((item, index) => (
               <NavbarMenuItem key={`${item}-${index}`}>
-                <Link
-                  className="w-full text-neutral-600 dark:text-neutral-400 hover:text-neutral-800 dark:hover:text-neutral-200 transition-colors"
-                  href="#"
-                  size="lg"
+                <span
+                  onClick={() => scrollToSection(item.toLowerCase())}
+                  className="w-full text-neutral-600 dark:text-neutral-400 hover:text-neutral-800 dark:hover:text-neutral-200 transition-colors cursor-pointer"
                 >
                   {item}
-                </Link>
+                </span>
               </NavbarMenuItem>
             ))}
           </NavbarMenu>

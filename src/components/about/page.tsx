@@ -33,7 +33,7 @@ export default function About() {
   }, []);
 
   return (
-    <div className="grid grid-rows-8 grid-cols-4 lg:grid-cols-3 gap-6">
+    <div className="grid grid-rows-8 grid-cols-4 lg:grid-cols-3 lg:grid-rows-3  gap-6">
       <Card className="col-span-full lg:row-start-2 lg:row-span-2 lg:col-start-2 lg:col-span-1 bg-neutral-100 dark:bg-neutral-800">
         <CardBody className="flex-col items-center justify-center gap-4 p-6">
           <Avatar
