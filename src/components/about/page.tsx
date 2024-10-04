@@ -9,18 +9,19 @@ import { Education } from "../Education";
 import { iconType, educationType } from "@/types";
 
 import { educationList, technologyIconList, whoAmIData } from "@/utils";
-import aboutAnimation from "@/utils/aboutAnimation";
 import IconComponent from "../ui/IconComponent";
+import useAnimations from "@/utils/aboutAnimation";
 
 const { fullName, profession, whoAmI, quote } = whoAmIData;
 
 export default function About() {
-  const whoAmIRef = aboutAnimation.whoAmIAnimation();
-  const professionRef = aboutAnimation.professionAnimation();
-  const quoteRef = aboutAnimation.quoteAnimation();
-  const techIconsRef = aboutAnimation.techonologyIconListAnimation();
-  const verticalImageRef = aboutAnimation.verticalImageAnimation();
-  const educationRef = aboutAnimation.educationContentAnimation();
+  const animations = useAnimations();
+  const whoAmIRef = animations.whoAmIAnimation();
+  const professionRef = animations.professionAnimation();
+  const quoteRef = animations.quoteAnimation();
+  const techIconsRef = animations.techonologyIconListAnimation();
+  const verticalImageRef = animations.verticalImageAnimation();
+  const educationRef = animations.educationContentAnimation();
 
   useEffect(() => {
     const mq = window.matchMedia("(min-width: 1024px)");
