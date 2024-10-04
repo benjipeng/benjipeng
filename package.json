@@ -1,7 +1,7 @@
 {
     "name": "@benjipeng/resume",
     "version": "1.0.0",
-    "description": "Benji P. H's Profile, credit to react-ultimate-resume",
+    "description": "Benji Peng's Profile, credit to react-ultimate-resume",
     "homepage": "https://benji.appcubic.com",
     "main": "lib/index.js",
     "private": true,
@@ -28,8 +28,8 @@
         "type": "git",
         "url": "git+https://github.com/benjipeng/benjipeng"
     },
-    "author": "WeLoveDevs & Benji PH",
-    "license": "AGPLv3",
+    "author": "Benji Peng",
+    "license": "MIT",
     "peerDependencies": {
         "@material-ui/core": "^4.11.0",
         "@welovedevs/ui": "1.1.4",
