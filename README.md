@@ -1,4 +1,4 @@
-# Benji Peng, Ph.D.
+# Benji
 ![My Card](https://raw.githubusercontent.com/benjipeng/assets/main/ac/site/card.svg)
 
 <div align="center">
