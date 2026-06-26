@@ -1,0 +1,49 @@
+# Generates the contribution-snake animation with a bespoke palette that
+# matches the profile's header/README (blue->cyan grid, luminous snake).
+# Renders to an isolated `output` branch, so it never touches the Vite site
+# on main and never retriggers the Pages deploy.
+name: Generate snake animation
+
+on:
+  # Refresh daily so the grid stays current
+  schedule:
+    - cron: "27 6 * * *"
+
+  # Allow manual runs from the Actions tab
+  workflow_dispatch:
+
+  # Keep it fresh right after profile pushes
+  push:
+    branches: ["main"]
+
+# Least privilege: only needs to push the generated SVGs
+permissions:
+  contents: write
+
+# Never let two generations race on the output branch
+concurrency:
+  group: snake
+  cancel-in-progress: false
+
+jobs:
+  snake:
+    runs-on: ubuntu-latest
+    steps:
+      # Dark variant: luminous lavender snake over a blue->cyan grid.
+      # Light variant: slate snake over a light-blue grid.
+      # Every hex is reused from the header/README to stay on-palette.
+      - name: Generate snake SVGs
+        uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake-dark.svg?palette=github-dark&color_snake=#c0caf5&color_dots=#16161e,#243056,#3a5694,#5d83e0,#7dcfff
+            dist/snake-light.svg?palette=github-light&color_snake=#1f2937&color_dots=#ebedf0,#cdd9f5,#9ab4ee,#5a86dd,#0969da
+
+      - name: Push to output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

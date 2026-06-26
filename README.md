@@ -57,6 +57,17 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=benjipeng&hide_border=true&background=0D1117&stroke=21262D&ring=7AA2F7&fire=7AA2F7&currStreakNum=C9D1D9&sideNums=C9D1D9&currStreakLabel=7AA2F7&sideLabels=8B949E&dates=6E7681" />
   <img height="165" src="https://streak-stats.demolab.com?user=benjipeng&hide_border=true&background=FFFFFF&stroke=D0D7DE&ring=0969DA&fire=0969DA&currStreakNum=24292F&sideNums=24292F&currStreakLabel=0969DA&sideLabels=57606A&dates=6E7681" />
+</picture>
+
+</div>
+
+<div align="center">
+
+<!-- Contribution snake with a bespoke palette (.github/workflows/snake.yml): blue->cyan grid, luminous snake. Generated to the `output` branch; day/night via <picture>. -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/benjipeng/benjipeng/output/snake-dark.svg" />
+  <img alt="My GitHub contribution graph being eaten by a snake" src="https://raw.githubusercontent.com/benjipeng/benjipeng/output/snake-light.svg" width="820" />
+</picture>
 
 </div>
 
