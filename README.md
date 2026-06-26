@@ -51,8 +51,8 @@
 
 <!-- Personal overview. Restrained one-accent palette; day/night via <picture>. include_all_commits also counts my public App Automaton commits. -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=benjipeng&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=7AA2F7&icon_color=7AA2F7&text_color=8B949E&ring_color=7AA2F7" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=benjipeng&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=FFFFFF&title_color=0969DA&icon_color=0969DA&text_color=57606A&ring_color=0969DA" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=benjipeng&show_icons=true&include_all_commits=true&count_private=true&hide=stars&hide_border=true&bg_color=0D1117&title_color=7AA2F7&icon_color=7AA2F7&text_color=8B949E&ring_color=7AA2F7" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=benjipeng&show_icons=true&include_all_commits=true&count_private=true&hide=stars&hide_border=true&bg_color=FFFFFF&title_color=0969DA&icon_color=0969DA&text_color=57606A&ring_color=0969DA" />
 </picture>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=benjipeng&hide_border=true&background=0D1117&stroke=21262D&ring=7AA2F7&fire=7AA2F7&currStreakNum=C9D1D9&sideNums=C9D1D9&currStreakLabel=7AA2F7&sideLabels=8B949E&dates=6E7681" />
