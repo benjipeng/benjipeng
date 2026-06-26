@@ -37,11 +37,24 @@
 
 <div align="center">
 
+<!-- Personal overview. include_all_commits also tallies my public commits to the App Automaton org. -->
 <!-- tokyonight = the tasteful "anime palette" theme. Other good ones: dracula, radical, ayu-mirage. -->
 <img height="165" src="https://github-readme-stats.vercel.app/api?username=benjipeng&show_icons=true&hide_border=true&theme=tokyonight&include_all_commits=true&count_private=true" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=benjipeng&layout=compact&hide_border=true&theme=tokyonight&langs_count=8" />
+<img height="165" src="https://streak-stats.demolab.com?user=benjipeng&hide_border=true&theme=tokyonight" />
 
-<img src="https://streak-stats.demolab.com?user=benjipeng&hide_border=true&theme=tokyonight" height="165" />
+</div>
+
+### 🤖 App Automaton — the studio's open workshop
+
+<div align="center">
+
+<!-- Live repo cards: stars/forks update automatically, and the pin endpoint works for org-owned repos. -->
+<a href="https://github.com/appautomaton/document-SKILLs"><img src="https://github-readme-stats.vercel.app/api/pin/?username=appautomaton&repo=document-SKILLs&theme=tokyonight&hide_border=true" /></a>
+<a href="https://github.com/appautomaton/agent-designer"><img src="https://github-readme-stats.vercel.app/api/pin/?username=appautomaton&repo=agent-designer&theme=tokyonight&hide_border=true" /></a>
+<a href="https://github.com/appautomaton/presentation"><img src="https://github-readme-stats.vercel.app/api/pin/?username=appautomaton&repo=presentation&theme=tokyonight&hide_border=true" /></a>
+<a href="https://github.com/appautomaton/mlx-speech"><img src="https://github-readme-stats.vercel.app/api/pin/?username=appautomaton&repo=mlx-speech&theme=tokyonight&hide_border=true" /></a>
+
+<sub>…and more open source across <a href="https://github.com/appautomaton">@appautomaton</a> →</sub>
 
 </div>
 
