@@ -1,64 +1,58 @@
-# Benji
-![My Card](https://raw.githubusercontent.com/benjipeng/assets/main/ac/site/card.svg)
-
 <div align="center">
 
-## Tech & Me
+<!-- Animated header. Edit the "lines" param to change the rotating text. -->
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=26&duration=3000&pause=800&color=7AA2F7&center=true&vCenter=true&width=600&lines=Benji+Peng;Founder+%40+AppCubic;Applied+AI+venture+studio+since+2019;Agentic+systems%2C+not+demos)](https://appcubic.com)
 
-### WEB STACK & SERVICES:
-![NextJS](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Redux](https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white)
-![GraphQL](https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white)
-![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
-![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
-![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black)
-![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)
+<!-- Single visual accent. Swap this for one slim anime gif if you want motion, or delete it. -->
+<img src="https://raw.githubusercontent.com/benjipeng/assets/main/ac/site/card.svg" alt="Benji" width="420" />
 
-### PYTHON STACK & SERVICES:
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
-![Pandas](https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?style=for-the-badge&logo=scipy&logoColor=white)
-
-### FRONTEND/TOOLS:
-![Babel](https://img.shields.io/badge/Babel-F9DC3E?style=for-the-badge&logo=babel&logoColor=black)
-![ESLint](https://img.shields.io/badge/eslint-3A33D1?style=for-the-badge&logo=eslint&logoColor=white)
-![Prettier](https://img.shields.io/badge/prettier-1A2C34?style=for-the-badge&logo=prettier&logoColor=F7BA3E)
-![Jest](https://img.shields.io/badge/Jest-323330?style=for-the-badge&logo=Jest&logoColor=red)
-![RTL](https://img.shields.io/badge/testing%20library-323330?style=for-the-badge&logo=testing-library&logoColor=red)
-![Cypress](https://img.shields.io/badge/Cypress-323330?style=for-the-badge&logo=Cypress&logoColor=green)
-![Playwright](https://img.shields.io/badge/Playwright-323330?style=for-the-badge&logo=Playwright&logoColor=green)
-
-### DESIGN & DEVTOOLS:
-![Figma](https://img.shields.io/badge/figma-%A259FF.svg?style=for-the-badge&logo=figma&logoColor=white)
-![Adobe Ai](https://img.shields.io/badge/Adobe%20Illustrator-FF9A00?style=for-the-badge&logo=adobe%20illustrator&logoColor=white)
-![Adobe PSD](https://img.shields.io/badge/Adobe%20Photoshop-001e36?style=for-the-badge&logo=Adobe%20Photoshop&logoColor=white)
-![Adobe XD](https://img.shields.io/badge/Adobe%20XD-470137?style=for-the-badge&logo=Adobe%20XD&logoColor=FF61F6)
-![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
-
-### ADDITIONAL STACK & SERVICES:
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
-![jQuery](https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white)
-![PowerShell](https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge&logo=powershell&logoColor=white)
-![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
-![Yarn](https://img.shields.io/badge/yarn-%232C8EBB.svg?style=for-the-badge&logo=yarn&logoColor=white)
-
-
-### Find Me On:
-
-<div align="center">
-  
-[![find-me-on-linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/benjiph)
 </div>
+
+---
+
+> Founder of **[AppCubic](https://appcubic.com)** — an applied AI venture studio. I turn research-grade
+> AI into systems teams can actually run: agent workflows with clear tool boundaries, honest evaluation
+> loops, and the products that grow out of them.
+
+### 🧪 What I'm building
+
+- **[App Automaton](https://github.com/appautomaton)** — the studio's open workshop. Portable skills for
+  coding agents, document & web tooling, multi-agent orchestration, and pure-MLX models for Apple
+  Silicon. MIT-licensed, built in public, used daily inside the studio.
+- **[AppCubic Research](https://research.appcubic.com)** — scientific and analytical workflows turned
+  into dependable, repeatable systems.
+- **Venture & advisory** — early product strategy, technical diligence, and incubation for AI-first teams.
+
+### 🧰 Working with
+
+<p>
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
+<img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" />
+<img src="https://img.shields.io/badge/MLX-Apple%20Silicon-000000?style=flat-square&logo=apple&logoColor=white" />
+<img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" />
+<img src="https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white" />
+<img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" />
+<img src="https://img.shields.io/badge/Astro-BC52EE?style=flat-square&logo=astro&logoColor=white" />
+<img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
+</p>
+
+### 📊 Stats
+
+<div align="center">
+
+<!-- tokyonight = the tasteful "anime palette" theme. Other good ones: dracula, radical, ayu-mirage. -->
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=benjipeng&show_icons=true&hide_border=true&theme=tokyonight&include_all_commits=true&count_private=true" />
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=benjipeng&layout=compact&hide_border=true&theme=tokyonight&langs_count=8" />
+
+<img src="https://streak-stats.demolab.com?user=benjipeng&hide_border=true&theme=tokyonight" height="165" />
+
+</div>
+
+### 🔗 Find me
+
+<p>
+<a href="https://appcubic.com"><img src="https://img.shields.io/badge/appcubic.com-111111?style=for-the-badge&logo=safari&logoColor=white" /></a>
+<a href="https://research.appcubic.com"><img src="https://img.shields.io/badge/research-111111?style=for-the-badge&logo=googlescholar&logoColor=white" /></a>
+<a href="https://github.com/appautomaton"><img src="https://img.shields.io/badge/App%20Automaton-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
+<a href="https://www.linkedin.com/in/benjiph"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+</p>
