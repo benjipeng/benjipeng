@@ -1,10 +1,7 @@
 <div align="center">
 
-<!-- Animated header. Edit the "lines" param to change the rotating text. -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=26&duration=3000&pause=800&color=7AA2F7&center=true&vCenter=true&width=600&lines=Benji+Peng;Founder+%40+AppCubic;Applied+AI+venture+studio+since+2019;Agentic+systems%2C+not+demos)](https://appcubic.com)
-
-<!-- Single visual accent. Swap this for one slim anime gif if you want motion, or delete it. -->
-<img src="https://raw.githubusercontent.com/benjipeng/assets/main/ac/site/card.svg" alt="Benji" width="420" />
+<!-- Bespoke animated banner (assets/header.svg): glowing AppCubic cube, console scanline, blinking cursor. -->
+<a href="https://appcubic.com"><img src="https://raw.githubusercontent.com/benjipeng/benjipeng/main/assets/header.svg" alt="Benji Peng — founder of AppCubic, an applied AI venture studio" width="820" /></a>
 
 </div>
 

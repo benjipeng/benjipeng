@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260" width="900" height="260" fill="none" role="img" aria-label="Benji Peng — founder of AppCubic, an applied AI venture studio">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#16161e"/>
+      <stop offset="0.55" stop-color="#1a1b26"/>
+      <stop offset="1" stop-color="#1f2335"/>
+    </linearGradient>
+    <linearGradient id="topFace" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7dcfff"/>
+      <stop offset="1" stop-color="#7aa2f7"/>
+    </linearGradient>
+    <linearGradient id="leftFace" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3b4261"/>
+      <stop offset="1" stop-color="#24283b"/>
+    </linearGradient>
+    <linearGradient id="rightFace" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#bb9af7"/>
+      <stop offset="1" stop-color="#565f89"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#7aa2f7" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#7aa2f7" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="aurora" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#bb9af7" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#bb9af7" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+    <clipPath id="card"><rect x="1" y="1" width="898" height="258" rx="18"/></clipPath>
+  </defs>
+
+  <rect x="1" y="1" width="898" height="258" rx="18" fill="url(#bg)" stroke="#2a2e42"/>
+
+  <g clip-path="url(#card)">
+    <!-- drifting aurora -->
+    <ellipse cx="680" cy="50" rx="260" ry="170" fill="url(#aurora)">
+      <animateTransform attributeName="transform" type="translate" values="0 0; -40 24; 0 0" dur="14s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0.95;0.5" dur="9s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- faint grid -->
+    <g stroke="#7aa2f7" stroke-width="1" opacity="0.06">
+      <path d="M60 0V260 M120 0V260 M180 0V260 M240 0V260 M300 0V260 M360 0V260 M420 0V260 M480 0V260 M540 0V260 M600 0V260 M660 0V260 M720 0V260 M780 0V260 M840 0V260"/>
+      <path d="M0 50H900 M0 100H900 M0 150H900 M0 200H900"/>
+    </g>
+
+    <!-- scanline -->
+    <rect x="0" y="-4" width="900" height="2" fill="#7dcfff" opacity="0.10">
+      <animate attributeName="y" values="-4;260" dur="6s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- terminal chrome -->
+    <circle cx="34" cy="30" r="5.5" fill="#f7768e"/>
+    <circle cx="54" cy="30" r="5.5" fill="#e0af68"/>
+    <circle cx="74" cy="30" r="5.5" fill="#9ece6a"/>
+    <text x="96" y="34" font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="13" fill="#565f89">benji@appcubic — ~/studio</text>
+
+    <!-- glow behind cube -->
+    <ellipse cx="175" cy="152" rx="120" ry="105" fill="url(#glow)">
+      <animate attributeName="opacity" values="0.5;0.85;0.5" dur="4.5s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- floating cube -->
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -8; 0 0" dur="5.5s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.42 0 0.58 1; 0.42 0 0.58 1"/>
+      <polygon points="175,90 233,122 175,154 117,122" fill="url(#topFace)">
+        <animate attributeName="opacity" values="0.80;0.97;0.80" dur="4s" repeatCount="indefinite"/>
+      </polygon>
+      <polygon points="117,122 175,154 175,218 117,186" fill="url(#leftFace)" opacity="0.92"/>
+      <polygon points="175,154 233,122 233,186 175,218" fill="url(#rightFace)">
+        <animate attributeName="opacity" values="0.72;0.92;0.72" dur="4s" begin="0.6s" repeatCount="indefinite"/>
+      </polygon>
+
+      <!-- edge glow -->
+      <path d="M175 90 L233 122 L175 154 L117 122 Z M117 122 L117 186 L175 218 L175 154 M233 122 L233 186 L175 218"
+            fill="none" stroke="#c0caf5" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" filter="url(#soft)" opacity="0.9"
+            stroke-dasharray="1500" stroke-dashoffset="1500">
+        <animate attributeName="stroke-dashoffset" from="1500" to="0" dur="2s" begin="0.2s" fill="freeze"/>
+      </path>
+      <!-- crisp edges -->
+      <path d="M175 90 L233 122 L175 154 L117 122 Z M117 122 L117 186 L175 218 L175 154 M233 122 L233 186 L175 218"
+            fill="none" stroke="#7dcfff" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"
+            stroke-dasharray="1500" stroke-dashoffset="1500">
+        <animate attributeName="stroke-dashoffset" from="1500" to="0" dur="2s" begin="0.2s" fill="freeze"/>
+      </path>
+      <!-- vertices -->
+      <g fill="#ffffff">
+        <circle cx="175" cy="90" r="2.6"><animate attributeName="opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite"/></circle>
+        <circle cx="233" cy="122" r="2.6"><animate attributeName="opacity" values="0.4;1;0.4" dur="3s" begin="0.6s" repeatCount="indefinite"/></circle>
+        <circle cx="117" cy="122" r="2.6"><animate attributeName="opacity" values="0.4;1;0.4" dur="3s" begin="1.2s" repeatCount="indefinite"/></circle>
+        <circle cx="175" cy="218" r="2.6"><animate attributeName="opacity" values="0.4;1;0.4" dur="3s" begin="1.8s" repeatCount="indefinite"/></circle>
+      </g>
+    </g>
+
+    <!-- drifting particles -->
+    <g>
+      <circle cx="320" cy="210" r="2" fill="#7aa2f7"><animate attributeName="cy" values="215;55" dur="7s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.8;0" dur="7s" repeatCount="indefinite"/></circle>
+      <circle cx="295" cy="170" r="1.6" fill="#bb9af7"><animate attributeName="cy" values="225;50" dur="9s" begin="1.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.7;0" dur="9s" begin="1.5s" repeatCount="indefinite"/></circle>
+      <circle cx="345" cy="190" r="1.4" fill="#7dcfff"><animate attributeName="cy" values="215;70" dur="8s" begin="3s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.7;0" dur="8s" begin="3s" repeatCount="indefinite"/></circle>
+    </g>
+
+    <!-- text block -->
+    <g opacity="0">
+      <animate attributeName="opacity" from="0" to="1" dur="1.1s" begin="0.4s" fill="freeze"/>
+      <text x="372" y="116" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="32" font-weight="700" fill="#c0caf5">Benji Peng</text>
+      <text x="374" y="146" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#7aa2f7">Founder · <tspan fill="#bb9af7" font-weight="600">AppCubic</tspan></text>
+      <text x="374" y="170" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#565f89">applied AI venture studio · agentic systems since 2019</text>
+      <text x="374" y="206" font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="13.5"><tspan fill="#9ece6a">~/studio $ </tspan><tspan fill="#c0caf5">ship reliable agents</tspan><tspan fill="#9ece6a" font-weight="700"> ▌<animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1.1s" repeatCount="indefinite"/></tspan></text>
+    </g>
+  </g>
+</svg>
