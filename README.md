@@ -1,7 +1,10 @@
 <div align="center">
 
-<!-- Bespoke animated banner (assets/header.svg): glowing AppCubic cube, console scanline, blinking cursor. -->
-<a href="https://appcubic.com"><img src="https://raw.githubusercontent.com/benjipeng/benjipeng/main/assets/header.svg" alt="Benji Peng, Ph.D. — founder of AppCubic, an applied AI venture studio" width="820" /></a>
+<!-- Bespoke animated banner with day/night variants (assets/header*.svg): glowing AppCubic cube, console scanline, blinking cursor. -->
+<a href="https://appcubic.com"><picture>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/benjipeng/benjipeng/main/assets/header-light.svg" />
+  <img src="https://raw.githubusercontent.com/benjipeng/benjipeng/main/assets/header.svg" alt="Benji Peng, Ph.D. — founder of AppCubic, an applied AI venture studio" width="820" />
+</picture></a>
 
 </div>
 
@@ -46,10 +49,14 @@
 
 <div align="center">
 
-<!-- Personal overview. include_all_commits also tallies my public commits to the App Automaton org. -->
-<!-- tokyonight = the tasteful "anime palette" theme. Other good ones: dracula, radical, ayu-mirage. -->
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=benjipeng&show_icons=true&hide_border=true&theme=tokyonight&include_all_commits=true&count_private=true" />
-<img height="165" src="https://streak-stats.demolab.com?user=benjipeng&hide_border=true&theme=tokyonight" />
+<!-- Personal overview. Restrained one-accent palette; day/night via <picture>. include_all_commits also counts my public App Automaton commits. -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=benjipeng&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=7AA2F7&icon_color=7AA2F7&text_color=8B949E&ring_color=7AA2F7" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=benjipeng&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=FFFFFF&title_color=0969DA&icon_color=0969DA&text_color=57606A&ring_color=0969DA" />
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=benjipeng&hide_border=true&background=0D1117&stroke=21262D&ring=7AA2F7&fire=7AA2F7&currStreakNum=C9D1D9&sideNums=C9D1D9&currStreakLabel=7AA2F7&sideLabels=8B949E&dates=6E7681" />
+  <img height="165" src="https://streak-stats.demolab.com?user=benjipeng&hide_border=true&background=FFFFFF&stroke=D0D7DE&ring=0969DA&fire=0969DA&currStreakNum=24292F&sideNums=24292F&currStreakLabel=0969DA&sideLabels=57606A&dates=6E7681" />
 
 </div>
 
@@ -57,11 +64,23 @@
 
 <div align="center">
 
-<!-- Live repo cards: stars/forks update automatically, and the pin endpoint works for org-owned repos. -->
-<a href="https://github.com/appautomaton/document-SKILLs"><img src="https://github-readme-stats.vercel.app/api/pin/?username=appautomaton&repo=document-SKILLs&theme=tokyonight&hide_border=true" /></a>
-<a href="https://github.com/appautomaton/agent-designer"><img src="https://github-readme-stats.vercel.app/api/pin/?username=appautomaton&repo=agent-designer&theme=tokyonight&hide_border=true" /></a>
-<a href="https://github.com/appautomaton/presentation"><img src="https://github-readme-stats.vercel.app/api/pin/?username=appautomaton&repo=presentation&theme=tokyonight&hide_border=true" /></a>
-<a href="https://github.com/appautomaton/mlx-speech"><img src="https://github-readme-stats.vercel.app/api/pin/?username=appautomaton&repo=mlx-speech&theme=tokyonight&hide_border=true" /></a>
+<!-- Live repo cards: stars/forks update automatically; pin endpoint works for org repos. Restrained palette, day/night via <picture>. -->
+<a href="https://github.com/appautomaton/latex-arxiv-SKILL"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=appautomaton&repo=latex-arxiv-SKILL&hide_border=true&bg_color=0D1117&title_color=7AA2F7&icon_color=7AA2F7&text_color=8B949E" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=appautomaton&repo=latex-arxiv-SKILL&hide_border=true&bg_color=FFFFFF&title_color=0969DA&icon_color=0969DA&text_color=57606A" />
+</picture></a>
+<a href="https://github.com/appautomaton/document-SKILLs"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=appautomaton&repo=document-SKILLs&hide_border=true&bg_color=0D1117&title_color=7AA2F7&icon_color=7AA2F7&text_color=8B949E" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=appautomaton&repo=document-SKILLs&hide_border=true&bg_color=FFFFFF&title_color=0969DA&icon_color=0969DA&text_color=57606A" />
+</picture></a>
+<a href="https://github.com/appautomaton/agent-designer"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=appautomaton&repo=agent-designer&hide_border=true&bg_color=0D1117&title_color=7AA2F7&icon_color=7AA2F7&text_color=8B949E" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=appautomaton&repo=agent-designer&hide_border=true&bg_color=FFFFFF&title_color=0969DA&icon_color=0969DA&text_color=57606A" />
+</picture></a>
+<a href="https://github.com/appautomaton/presentation"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=appautomaton&repo=presentation&hide_border=true&bg_color=0D1117&title_color=7AA2F7&icon_color=7AA2F7&text_color=8B949E" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=appautomaton&repo=presentation&hide_border=true&bg_color=FFFFFF&title_color=0969DA&icon_color=0969DA&text_color=57606A" />
+</picture></a>
 
 <sub>…and more open source across <a href="https://github.com/appautomaton">@appautomaton</a> →</sub>
 
