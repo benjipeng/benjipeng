@@ -1,0 +1,50 @@
+# Aggregates total stars across benjipeng + the App Automaton org into the
+# README badge. Commits from GITHUB_TOKEN don't retrigger other workflows,
+# so this never kicks off the Pages deploy.
+name: Update star count
+
+on:
+  # Refresh once a day
+  schedule:
+    - cron: "17 6 * * *"
+
+  # Allow manual runs from the Actions tab
+  workflow_dispatch:
+
+# Least privilege: only needs to commit the README
+permissions:
+  contents: write
+
+# Never let two refreshes race on the README
+concurrency:
+  group: update-stats
+  cancel-in-progress: false
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Aggregate total stars
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/update-stats.mjs
+
+      - name: Commit if changed
+        run: |
+          if [ -n "$(git status --porcelain README.md)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add README.md
+            git commit -m "chore: refresh total star count"
+            git push
+          else
+            echo "README unchanged — nothing to commit."
+          fi

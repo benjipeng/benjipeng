@@ -37,6 +37,15 @@
 
 <div align="center">
 
+<!-- Combined stars across benjipeng + the App Automaton org. Auto-updated daily by .github/workflows/update-stats.yml -->
+<!-- TOTAL_STARS:START -->
+<a href="https://github.com/appautomaton"><img alt="Total stars across benjipeng and the App Automaton org" src="https://img.shields.io/badge/Total%20stars-483-7AA2F7?style=for-the-badge&labelColor=1A1B26&logo=github&logoColor=white"></a>
+<!-- TOTAL_STARS:END -->
+
+</div>
+
+<div align="center">
+
 <!-- Personal overview. include_all_commits also tallies my public commits to the App Automaton org. -->
 <!-- tokyonight = the tasteful "anime palette" theme. Other good ones: dracula, radical, ayu-mirage. -->
 <img height="165" src="https://github-readme-stats.vercel.app/api?username=benjipeng&show_icons=true&hide_border=true&theme=tokyonight&include_all_commits=true&count_private=true" />
