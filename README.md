@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- Bespoke animated banner (assets/header.svg): glowing AppCubic cube, console scanline, blinking cursor. -->
-<a href="https://appcubic.com"><img src="https://raw.githubusercontent.com/benjipeng/benjipeng/main/assets/header.svg" alt="Benji Peng — founder of AppCubic, an applied AI venture studio" width="820" /></a>
+<a href="https://appcubic.com"><img src="https://raw.githubusercontent.com/benjipeng/benjipeng/main/assets/header.svg" alt="Benji Peng, Ph.D. — founder of AppCubic, an applied AI venture studio" width="820" /></a>
 
 </div>
 
