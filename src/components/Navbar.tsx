@@ -4,8 +4,8 @@ import { useTheme } from "../hooks/useTheme";
 
 const LINKS = [
   { id: "about", label: "About" },
-  { id: "orbital", label: "Orbital" },
-  { id: "courier", label: "Courier" },
+  { id: "lumen", label: "Lumen" },
+  { id: "palimpsest", label: "Archive" },
 ] as const;
 
 /**

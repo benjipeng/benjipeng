@@ -6,7 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "playwright test --config=playwright.unit.config.ts",
+    "test:lumen": "playwright test --config=playwright.unit.config.ts --grep lumen",
+    "test:palimpsest": "playwright test --config=playwright.unit.config.ts --grep palimpsest",
+    "test:e2e": "playwright test"
   },
   "license": "ISC",
   "devDependencies": {

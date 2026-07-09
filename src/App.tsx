@@ -1,8 +1,8 @@
 import Navbar from "./components/Navbar";
 import TorchEffect from "./components/TorchEffect";
 import About from "./components/about/page";
-import OrbitalSection from "./components/arcade/OrbitalSection";
-import CourierSection from "./components/arcade/CourierSection";
+import LumenSection from "./components/exhibits/LumenSection";
+import PalimpsestSection from "./components/exhibits/PalimpsestSection";
 import Footer from "./components/Footer";
 
 function App() {
@@ -12,8 +12,8 @@ function App() {
       <main className="flex-1">
         <TorchEffect />
         <About />
-        <OrbitalSection />
-        <CourierSection />
+        <LumenSection />
+        <PalimpsestSection />
       </main>
       <Footer />
     </div>
