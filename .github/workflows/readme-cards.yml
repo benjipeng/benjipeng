@@ -1,0 +1,51 @@
+# Generates static README stats + pin SVGs under profile/ so the profile
+# no longer depends on the public github-readme-stats Vercel host.
+# Commits via GITHUB_TOKEN do not retrigger other workflows (incl. Pages deploy).
+name: Update README cards
+
+on:
+  schedule:
+    # Shortly after the star-count job (06:17 UTC)
+    - cron: "37 6 * * *"
+  workflow_dispatch:
+  push:
+    branches: ["main"]
+    paths:
+      - "scripts/generate-readme-cards.mjs"
+      - ".github/workflows/readme-cards.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: readme-cards
+  cancel-in-progress: false
+
+jobs:
+  cards:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Generate cards
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/generate-readme-cards.mjs
+
+      - name: Commit if changed
+        run: |
+          if [ -n "$(git status --porcelain profile/)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add profile/
+            git commit -m "chore: refresh README stats and pin cards"
+            git push
+          else
+            echo "Cards unchanged — nothing to commit."
+          fi

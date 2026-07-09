@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="380" height="165" viewBox="0 0 380 165" role="img" aria-label="Benji Peng GitHub stats">
+  <style>
+    .title { font: 600 16px 'Segoe UI', Ubuntu, Sans-Serif; fill: #0969DA; }
+    .label { font: 400 13px 'Segoe UI', Ubuntu, Sans-Serif; fill: #57606A; }
+    .value { font: 700 13px 'Segoe UI', Ubuntu, Sans-Serif; fill: #57606A; }
+  </style>
+  <rect x="0.5" y="0.5" width="379" height="164" rx="4.5" fill="#FFFFFF" stroke="#D0D7DE"/>
+  <text x="25" y="30" class="title">Benji Peng's GitHub Stats</text>
+  
+  <svg x="25" y="42" width="14" height="14" viewBox="0 0 16 16" fill="#0969DA" aria-hidden="true"><path fill-rule="evenodd" d="M1.643 3.143L.427 1.927A.25.25 0 000 2.104V5.75c0 .138.112.25.25.25h3.646a.25.25 0 00.177-.427L2.715 4.215a6.5 6.5 0 11-1.18 4.458.75.75 0 10-1.493.154 8.001 8.001 0 101.6-5.684zM7.75 4a.75.75 0 01.75.75v2.992l2.028.812a.75.75 0 01-.557 1.392l-2.5-1A.75.75 0 017 8.25v-3.5A.75.75 0 017.75 4z"/></svg>
+  <text x="48" y="54" class="label">Total Commits:</text>
+  <text x="175" y="54" class="value">1.5k</text>
+  <svg x="25" y="70" width="14" height="14" viewBox="0 0 16 16" fill="#0969DA" aria-hidden="true"><path fill-rule="evenodd" d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z"/></svg>
+  <text x="48" y="82" class="label">Total PRs:</text>
+  <text x="175" y="82" class="value">125</text>
+  <svg x="25" y="98" width="14" height="14" viewBox="0 0 16 16" fill="#0969DA" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm9 3a1 1 0 11-2 0 1 1 0 012 0zm-.25-6.25a.75.75 0 00-1.5 0v3.5a.75.75 0 001.5 0v-3.5z"/></svg>
+  <text x="48" y="110" class="label">Total Issues:</text>
+  <text x="175" y="110" class="value">8</text>
+  <svg x="25" y="126" width="14" height="14" viewBox="0 0 16 16" fill="#0969DA" aria-hidden="true"><path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"/></svg>
+  <text x="48" y="138" class="label">Contributed to:</text>
+  <text x="175" y="138" class="value">40</text>
+</svg>

@@ -1,0 +1,32 @@
+:root {
+  --graphite: #12141a;
+  --slate: #1c1f2a;
+  --chalk: #e6e1d6;
+  --mist: #8b8790;
+  --rule: #2e3140;
+  --oxide: #c4784a;
+  --oxide-soft: rgba(196, 120, 74, 0.2);
+  /* Science pole: lime / phosphor (was blue-violet) */
+  --signal: #b8f000;
+  --signal-soft: rgba(184, 240, 0, 0.28);
+  --focus: rgba(184, 240, 0, 0.55);
+
+  --font-display: "Bricolage Grotesque", system-ui, sans-serif;
+  --font-body: "Literata", Georgia, serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  --radius: 6px;
+  --nav-h: 4.25rem;
+  --nav-h-scrolled: 3.25rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

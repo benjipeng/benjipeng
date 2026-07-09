@@ -1,0 +1,53 @@
+@import "@fontsource/bricolage-grotesque/600.css";
+@import "@fontsource/bricolage-grotesque/700.css";
+@import "@fontsource/bricolage-grotesque/800.css";
+@import "@fontsource/literata/400.css";
+@import "@fontsource/literata/600.css";
+@import "@fontsource/ibm-plex-mono/400.css";
+@import "@fontsource/ibm-plex-mono/500.css";
+
+@import "./styles/tokens.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-graphite text-chalk font-body antialiased;
+    min-height: 100dvh;
+  }
+
+  ::selection {
+    background: var(--signal-soft);
+    color: var(--graphite);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--signal);
+    outline-offset: 3px;
+  }
+}
+
+@layer components {
+  .eyebrow {
+    @apply font-mono text-[0.7rem] uppercase tracking-[0.18em] text-mist;
+  }
+
+  .display {
+    @apply font-display font-bold tracking-tight text-chalk;
+  }
+
+  .panel {
+    @apply border border-rule bg-slate-elev/80;
+    border-radius: var(--radius);
+  }
+
+  .section-pad {
+    @apply px-5 sm:px-8 lg:px-10;
+  }
+}

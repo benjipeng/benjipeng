@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Benji Peng mark">
+  <title>BP</title>
+  <style>
+    .bar { fill: #E6E1D6; }
+    .signal { fill: #B8F000; }
+    .oxide { fill: #C4784A; }
+    .draw {
+      stroke: #E6E1D6;
+      stroke-width: 2.5;
+      fill: none;
+      stroke-linecap: square;
+    }
+    .pulse {
+      transform-origin: 48px 16px;
+      animation: pulse 3.2s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 0.45; transform: scale(0.85); }
+      50% { opacity: 1; transform: scale(1); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .pulse { animation: none; opacity: 1; }
+    }
+  </style>
+  <!-- Dual vertical bars: B stem + open channel (science / builder poles) -->
+  <rect class="bar" x="12" y="10" width="7" height="44" rx="1"/>
+  <rect class="bar" x="24" y="10" width="7" height="44" rx="1"/>
+  <!-- Signal wedge (science) -->
+  <path class="signal" d="M36 14h16l-8 14H36V14z"/>
+  <!-- Oxide base block (builder) -->
+  <rect class="oxide" x="36" y="36" width="16" height="18" rx="1"/>
+  <!-- Ambient pulse node -->
+  <circle class="pulse signal" cx="48" cy="16" r="3.5"/>
+</svg>
