@@ -12,7 +12,7 @@ import {
 import { FaAws } from "react-icons/fa";
 import { Brain } from "lucide-react";
 
-const iconClass = "w-7 h-7 text-chalk/90";
+const iconClass = "w-7 h-7 text-ink/90";
 
 export const technologyIconList: iconType[] = [
   { name: "Python", icon: <SiPython className={iconClass} /> },

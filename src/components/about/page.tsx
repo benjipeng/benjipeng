@@ -1,161 +1,162 @@
 import { motion } from "framer-motion";
 import { educationList, whoAmIData } from "@/utils";
-import DualField from "./DualField";
-import {
-  CredentialSeal,
-  HeaderRule,
-  MarkBuild,
-  MarkOpen,
-  MarkScience,
-  MethodRings,
-  WhoLattice,
-} from "./FieldMarks";
 
 const { fullName, profession, whoAmI, quote } = whoAmIData;
 const phd = educationList[0];
 
-const ease = [0.22, 1, 0.36, 1] as const;
-const fade = {
-  initial: { opacity: 0, y: 16 },
-  whileInView: { opacity: 1, y: 0 },
-  viewport: { once: true, margin: "-10% 0px" },
-  transition: { duration: 0.45, ease },
-};
+const PHOTO =
+  "https://res.cloudinary.com/aveg/image/upload/v1727985455/brutalist1_cp68e1.jpg";
 
-const poles = [
-  {
-    key: "methods",
-    label: "Methods",
-    blurb: "What holds under scrutiny",
-    Mark: MarkScience,
-    accent: "text-signal",
-  },
-  {
-    key: "systems",
-    label: "Systems",
-    blurb: "What people can actually run",
-    Mark: MarkBuild,
-    accent: "text-oxide",
-  },
-  {
-    key: "open",
-    label: "Open tools",
-    blurb: "Labs, operators, shared work",
-    Mark: MarkOpen,
-    accent: "text-chalk",
-  },
-] as const;
+const ease = [0.16, 1, 0.3, 1] as const;
+const reveal = (delay = 0) => ({
+  initial: { opacity: 0, y: 24 },
+  whileInView: { opacity: 1, y: 0 },
+  viewport: { once: true, margin: "-8% 0px" },
+  transition: { duration: 0.65, ease, delay },
+});
 
 /**
- * Bento with a full field of animated marks:
- *
- *  ┌──────────────────────┬────────────┐
- *  │ Who I am + lattice   │            │
- *  ├───────────┬──────────┤ DualField  │
- *  │ Quote+ring│ PhD+seal │            │
- *  ├───────────┴────┬─────┴────────────┤
- *  │ Science │ Build │ Open            │
- *  └─────────┴───────┴─────────────────┘
+ * Museum wall — paper, ink, hairlines, original field photo.
  */
 export default function About() {
   return (
-    <section
-      id="about"
-      className="section-pad py-24 sm:py-32 max-w-content mx-auto"
-    >
-      <div className="mb-6 sm:mb-8 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
-        <div>
-          <p className="eyebrow text-oxide mb-3">About</p>
-          <h2 className="display text-4xl sm:text-5xl md:text-6xl">{fullName}</h2>
-        </div>
-        <p className="font-mono text-sm text-signal tracking-wide">{profession}</p>
-      </div>
-
-      <HeaderRule className="w-full h-3 mb-10 sm:mb-12 opacity-90" />
-
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-5">
-        {/* Who I am */}
-        <motion.article
-          {...fade}
-          className="panel md:col-span-7 relative overflow-hidden p-6 sm:p-8 flex flex-col justify-between min-h-[220px]"
-        >
-          <WhoLattice className="pointer-events-none absolute right-0 bottom-0 w-[70%] max-w-[280px] h-auto opacity-80" />
-          <div className="relative z-[1]">
-            <h3 className="eyebrow mb-5 text-signal">Who I am</h3>
-            <p className="font-body text-lg sm:text-xl leading-relaxed text-chalk/95 max-w-xl">
-              {whoAmI}
+    <section id="about" className="relative border-t border-rule">
+      <div className="section-pad py-28 sm:py-36 max-w-content mx-auto">
+        <div className="mb-16 sm:mb-20 grid grid-cols-12 gap-4 items-end">
+          <motion.div {...reveal(0)} className="col-span-12 sm:col-span-2">
+            <p className="font-mono text-[0.62rem] tracking-[0.28em] text-mute uppercase">
+              01
             </p>
-          </div>
-        </motion.article>
-
-        {/* Tall dual field */}
-        <motion.div
-          {...fade}
-          transition={{ ...fade.transition, delay: 0.05 }}
-          className="panel md:col-span-5 md:row-span-2 relative overflow-hidden min-h-[320px] md:min-h-full bg-[#0a0b10]"
-        >
-          <DualField />
-          <div className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-white/[0.04] rounded-[inherit]" />
-          <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-6 bg-gradient-to-t from-[#0a0b10]/95 via-[#0a0b10]/45 to-transparent pt-16">
-            <p className="font-mono text-[0.65rem] uppercase tracking-[0.18em] text-chalk/80">
-              Field notes · studio & lab
+            <p className="font-mono text-[0.62rem] tracking-[0.18em] text-mark uppercase mt-1">
+              About
             </p>
-          </div>
-        </motion.div>
+          </motion.div>
 
-        {/* Principle + method rings */}
-        <motion.blockquote
-          {...fade}
-          transition={{ ...fade.transition, delay: 0.08 }}
-          className="panel md:col-span-4 relative overflow-hidden p-6 sm:p-7 flex flex-col justify-between gap-5 border-l-2 border-l-oxide min-h-[180px]"
-        >
-          <MethodRings className="pointer-events-none absolute -right-6 -bottom-8 w-44 h-44 opacity-70" />
-          <p className="eyebrow text-oxide relative z-[1]">Principle</p>
-          <p className="display text-xl sm:text-2xl leading-snug text-chalk relative z-[1]">
-            “{quote}”
-          </p>
-        </motion.blockquote>
+          <motion.div {...reveal(0.04)} className="col-span-12 sm:col-span-7">
+            <h2 className="font-display font-semibold text-[clamp(2.75rem,7vw,4.75rem)] leading-[0.92] tracking-[-0.025em] text-ink">
+              {fullName}
+            </h2>
+          </motion.div>
 
-        {/* Education + seal */}
-        <motion.div
-          {...fade}
-          transition={{ ...fade.transition, delay: 0.1 }}
-          className="panel md:col-span-3 relative overflow-hidden p-5 sm:p-6 flex flex-col min-h-[180px]"
-        >
-          <h3 className="eyebrow text-oxide relative z-[1]">Education</h3>
-          <div className="relative z-[1] flex-1 flex flex-col items-center justify-center py-2">
-            <CredentialSeal className="w-28 h-28 sm:w-32 sm:h-32" />
-          </div>
-          <div className="relative z-[1] text-center">
-            <p className="font-display font-semibold text-sm sm:text-base text-chalk leading-snug">
-              {phd.school}
-            </p>
-            <p className="font-mono text-[0.65rem] text-signal mt-2 tracking-wide">
-              {phd.years}
-            </p>
-          </div>
-        </motion.div>
-
-        {/* Three pole marks — full width under the main bento */}
-        {poles.map(({ key, label, blurb, Mark, accent }, i) => (
           <motion.div
-            key={key}
-            {...fade}
-            transition={{ ...fade.transition, delay: 0.12 + i * 0.04 }}
-            className="panel md:col-span-4 p-5 sm:p-6 flex flex-col gap-3 min-h-[160px]"
+            {...reveal(0.06)}
+            className="col-span-12 sm:col-span-3 sm:text-right sm:pb-2"
           >
-            <div className="flex items-baseline justify-between gap-3">
-              <p className={`eyebrow ${accent}`}>{label}</p>
-              <span className="font-mono text-[0.6rem] text-mist/60 tracking-widest">
-                0{i + 1}
+            <p className="font-mono text-[0.65rem] tracking-[0.14em] text-mark leading-relaxed uppercase">
+              {profession}
+            </p>
+          </motion.div>
+        </div>
+
+        <motion.div
+          {...reveal(0.08)}
+          className="mb-10 sm:mb-12 h-px w-full bg-rule"
+        />
+
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-px bg-rule border border-rule rounded-sm overflow-hidden shadow-soft">
+          <motion.article
+            {...reveal(0.1)}
+            className="lg:col-span-7 bg-elev p-8 sm:p-10 lg:p-12 flex flex-col justify-between gap-12 min-h-[280px]"
+          >
+            <div>
+              <div className="flex items-center justify-between mb-8">
+                <h3 className="eyebrow text-mark">Who I am</h3>
+                <span className="font-mono text-[0.58rem] tracking-[0.22em] text-mute/60">
+                  01.1
+                </span>
+              </div>
+              <p className="font-body text-[1.1rem] sm:text-[1.3rem] leading-[1.7] text-ink max-w-[38ch]">
+                {whoAmI}
+              </p>
+            </div>
+            <div className="flex flex-wrap gap-x-6 gap-y-2">
+              {["AI", "Product", "Shipping"].map((t, i) => (
+                <span
+                  key={t}
+                  className="font-mono text-[0.6rem] uppercase tracking-[0.16em] text-mute flex items-center gap-2"
+                >
+                  <span
+                    className={
+                      i === 0
+                        ? "text-mark"
+                        : i === 1
+                          ? "text-clay"
+                          : "text-ink/40"
+                    }
+                  >
+                    —
+                  </span>
+                  {t}
+                </span>
+              ))}
+            </div>
+          </motion.article>
+
+          {/* Original field photo — restored */}
+          <motion.div
+            {...reveal(0.14)}
+            className="lg:col-span-5 lg:row-span-2 relative min-h-[400px] lg:min-h-[540px] overflow-hidden bg-[#0a0b10]"
+          >
+            <img
+              src={PHOTO}
+              alt=""
+              className="absolute inset-0 h-full w-full object-cover opacity-90 grayscale contrast-110"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/15 to-transparent" />
+            <div className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-white/[0.06]" />
+            <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-7">
+              <p className="font-mono text-[0.65rem] uppercase tracking-[0.18em] text-white/85">
+                Field notes · studio & lab
+              </p>
+            </div>
+          </motion.div>
+
+          <motion.blockquote
+            {...reveal(0.16)}
+            className="lg:col-span-4 bg-elev p-8 sm:p-10 flex flex-col justify-between gap-10 min-h-[200px] relative"
+          >
+            <div className="absolute left-0 top-8 bottom-8 w-px bg-clay" />
+            <div className="flex items-center justify-between pl-5">
+              <p className="eyebrow text-clay">Principle</p>
+              <span className="font-mono text-[0.58rem] tracking-[0.22em] text-mute/60">
+                01.3
               </span>
             </div>
-            <div className="flex-1 flex items-center justify-center py-1">
-              <Mark className="w-full max-w-[200px] h-[100px]" />
+            <p className="font-display font-semibold text-[1.45rem] sm:text-[1.7rem] leading-[1.25] tracking-[-0.02em] text-ink pl-5">
+              “{quote}”
+            </p>
+          </motion.blockquote>
+
+          <motion.div
+            {...reveal(0.18)}
+            className="lg:col-span-3 bg-paper p-8 sm:p-10 flex flex-col justify-between gap-10 min-h-[200px]"
+          >
+            <div className="flex items-center justify-between">
+              <p className="eyebrow text-clay">Education</p>
+              <span className="font-mono text-[0.58rem] tracking-[0.22em] text-mute/60">
+                01.4
+              </span>
             </div>
-            <p className="font-body text-sm text-mist leading-snug">{blurb}</p>
+            <div>
+              <p className="font-display font-semibold text-lg leading-snug tracking-tight text-ink">
+                {phd.school}
+              </p>
+              <div className="mt-5 flex items-center gap-3">
+                <span className="h-px w-5 bg-mark/50" />
+                <p className="font-mono text-[0.65rem] tracking-[0.18em] uppercase text-mark">
+                  {phd.years}
+                </p>
+              </div>
+            </div>
           </motion.div>
-        ))}
+        </div>
+
+        <motion.p
+          {...reveal(0.2)}
+          className="mt-10 font-mono text-[0.58rem] tracking-[0.2em] uppercase text-mute/70"
+        >
+          AI products
+        </motion.p>
       </div>
     </section>
   );

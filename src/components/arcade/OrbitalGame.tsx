@@ -210,14 +210,14 @@ export default function OrbitalGame() {
     const voidG = ctx.createRadialGradient(CX, CY, 0, CX, CY, S * 0.7);
     voidG.addColorStop(0, "#141820");
     voidG.addColorStop(0.55, "#0c0e14");
-    voidG.addColorStop(1, "#07080c");
+    voidG.addColorStop(1, "#121110");
     ctx.fillStyle = voidG;
     ctx.fillRect(0, 0, S, S);
 
     // single cool wash (not multiple neon blobs)
     const wash = ctx.createRadialGradient(CX - 40, CY - 50, 20, CX, CY, 220);
-    wash.addColorStop(0, "rgba(184,240,0,0.03)");
-    wash.addColorStop(1, "rgba(184,240,0,0)");
+    wash.addColorStop(0, "rgba(250,248,243,0.03)");
+    wash.addColorStop(1, "rgba(250,248,243,0)");
     ctx.fillStyle = wash;
     ctx.beginPath();
     ctx.arc(CX, CY, 220, 0, Math.PI * 2);
@@ -242,7 +242,7 @@ export default function OrbitalGame() {
     // escape circle — hairline, oxide whisper
     ctx.beginPath();
     ctx.arc(CX, CY, R_MAX, 0, Math.PI * 2);
-    ctx.strokeStyle = "rgba(196,120,74,0.14)";
+    ctx.strokeStyle = "rgba(143,78,58,0.14)";
     ctx.lineWidth = 1;
     ctx.setLineDash([1.5, 10]);
     ctx.lineDashOffset = -T * 6;
@@ -252,7 +252,7 @@ export default function OrbitalGame() {
     // —— planet: single jewel ——
     // soft atmosphere (one ring only)
     const atmo = ctx.createRadialGradient(CX, CY, PLANET_R * 0.9, CX, CY, PLANET_R * 2.1);
-    atmo.addColorStop(0, "rgba(184,240,0,0.08)");
+    atmo.addColorStop(0, "rgba(250,248,243,0.08)");
     atmo.addColorStop(0.5, "rgba(140,160,190,0.04)");
     atmo.addColorStop(1, "rgba(0,0,0,0)");
     ctx.fillStyle = atmo;
@@ -294,7 +294,7 @@ export default function OrbitalGame() {
     // rim light
     ctx.beginPath();
     ctx.arc(CX, CY, PLANET_R, 0, Math.PI * 2);
-    ctx.strokeStyle = "rgba(184,240,0,0.35)";
+    ctx.strokeStyle = "rgba(250,248,243,0.35)";
     ctx.lineWidth = 1.25;
     ctx.stroke();
     // specular crescent
@@ -312,13 +312,13 @@ export default function OrbitalGame() {
       ctx.beginPath();
       ctx.moveTo(pos.current.x, pos.current.y);
       for (const q of pr) ctx.lineTo(q.x, q.y);
-      ctx.strokeStyle = "rgba(184,240,0,0.12)";
+      ctx.strokeStyle = "rgba(250,248,243,0.12)";
       ctx.lineWidth = 5;
       ctx.stroke();
       ctx.beginPath();
       ctx.moveTo(pos.current.x, pos.current.y);
       for (const q of pr) ctx.lineTo(q.x, q.y);
-      ctx.strokeStyle = "rgba(184,240,0,0.55)";
+      ctx.strokeStyle = "rgba(250,248,243,0.55)";
       ctx.lineWidth = 1.25;
       ctx.setLineDash([3, 8]);
       ctx.lineDashOffset = -T * 22;
@@ -335,7 +335,7 @@ export default function OrbitalGame() {
         ctx.beginPath();
         ctx.moveTo(tr[i - 1].x, tr[i - 1].y);
         ctx.lineTo(tr[i].x, tr[i].y);
-        ctx.strokeStyle = `rgba(184,240,0,${a * 0.7})`;
+        ctx.strokeStyle = `rgba(250,248,243,${a * 0.7})`;
         ctx.lineWidth = 0.8 + a * 1.6;
         ctx.stroke();
       }
@@ -347,7 +347,7 @@ export default function OrbitalGame() {
       const a = aim.current;
       const pull = Math.hypot(p.x - a.x, p.y - a.y);
       const ok = pull >= MIN_PULL;
-      const col = ok ? "184,240,0" : "196,120,74";
+      const col = ok ? "250,248,243" : "143,78,58";
       ctx.beginPath();
       ctx.moveTo(p.x, p.y);
       ctx.lineTo(a.x, a.y);
@@ -362,7 +362,7 @@ export default function OrbitalGame() {
       const t = Math.min(1, Math.max(0, (pull - MIN_PULL) / (MAX_PULL - MIN_PULL)));
       ctx.beginPath();
       ctx.arc(p.x, p.y, 12 + t * 16, -Math.PI * 0.8, -Math.PI * 0.8 + Math.PI * 1.6 * t);
-      ctx.strokeStyle = `rgba(184,240,0,${0.3 + t * 0.5})`;
+      ctx.strokeStyle = `rgba(250,248,243,${0.3 + t * 0.5})`;
       ctx.lineWidth = 1.5;
       ctx.stroke();
     }
@@ -381,8 +381,8 @@ export default function OrbitalGame() {
 
     // halo
     const halo = ctx.createRadialGradient(0, 0, 0, 0, 0, 16);
-    halo.addColorStop(0, "rgba(184,240,0,0.28)");
-    halo.addColorStop(1, "rgba(184,240,0,0)");
+    halo.addColorStop(0, "rgba(250,248,243,0.28)");
+    halo.addColorStop(1, "rgba(250,248,243,0)");
     ctx.fillStyle = halo;
     ctx.beginPath();
     ctx.arc(0, 0, 16, 0, Math.PI * 2);
@@ -390,7 +390,7 @@ export default function OrbitalGame() {
 
     if (phaseRef.current === "fly") {
       const flick = 0.4 + 0.3 * Math.sin(T * 36);
-      ctx.fillStyle = `rgba(184,240,0,${flick})`;
+      ctx.fillStyle = `rgba(250,248,243,${flick})`;
       ctx.beginPath();
       ctx.moveTo(-5, -2.2);
       ctx.lineTo(-11 - Math.sin(T * 48) * 2, 0);
@@ -401,7 +401,7 @@ export default function OrbitalGame() {
 
     if (phaseRef.current === "aim" && !dragging.current) {
       const pulse = 11 + Math.sin(T * 2.4) * 1.5;
-      ctx.strokeStyle = "rgba(184,240,0,0.35)";
+      ctx.strokeStyle = "rgba(250,248,243,0.35)";
       ctx.lineWidth = 1;
       ctx.beginPath();
       ctx.arc(0, 0, pulse, 0, Math.PI * 2);
@@ -409,7 +409,7 @@ export default function OrbitalGame() {
     }
 
     // craft body
-    ctx.fillStyle = "#E8FF7A";
+    ctx.fillStyle = "#FAF8F3";
     ctx.beginPath();
     ctx.moveTo(10, 0);
     ctx.lineTo(-5.5, 5.5);
@@ -417,7 +417,7 @@ export default function OrbitalGame() {
     ctx.lineTo(-5.5, -5.5);
     ctx.closePath();
     ctx.fill();
-    ctx.fillStyle = "#1a1e14";
+    ctx.fillStyle = "#1C3D36";
     ctx.beginPath();
     ctx.moveTo(3, 0);
     ctx.lineTo(-1, 1.8);
@@ -507,18 +507,18 @@ export default function OrbitalGame() {
     <div className="flex flex-col items-stretch gap-3.5 w-full">
       <div className="flex items-end justify-between px-0.5">
         <div>
-          <p className="font-mono text-[0.6rem] uppercase tracking-[0.2em] text-mist mb-1">
+          <p className="font-mono text-[0.6rem] uppercase tracking-[0.2em] text-mute mb-1">
             Orbits
           </p>
-          <p className="font-display text-2xl font-bold text-chalk tabular-nums leading-none">
+          <p className="font-display text-2xl font-bold text-ink tabular-nums leading-none">
             {score}
           </p>
         </div>
         <div className="text-right">
-          <p className="font-mono text-[0.6rem] uppercase tracking-[0.2em] text-mist mb-1">
+          <p className="font-mono text-[0.6rem] uppercase tracking-[0.2em] text-mute mb-1">
             Best
           </p>
-          <p className="font-display text-lg font-semibold text-signal tabular-nums leading-none">
+          <p className="font-display text-lg font-semibold text-mark tabular-nums leading-none">
             {best}
           </p>
         </div>
@@ -526,7 +526,7 @@ export default function OrbitalGame() {
 
       <div
         ref={wrapRef}
-        className="relative w-full aspect-square overflow-hidden bg-[#07080c] ring-1 ring-rule/70"
+        className="relative w-full aspect-square overflow-hidden bg-[#121110] ring-1 ring-rule/70"
         style={{ borderRadius: "var(--radius)" }}
       >
         <canvas
@@ -557,18 +557,18 @@ export default function OrbitalGame() {
         />
 
         {phase === "menu" && (
-          <div className="absolute inset-0 z-10 flex flex-col items-center justify-center px-10 text-center bg-[#07080c]/70 backdrop-blur-[2px]">
-            <p className="font-mono text-[0.62rem] uppercase tracking-[0.28em] text-signal mb-4">
+          <div className="absolute inset-0 z-10 flex flex-col items-center justify-center px-10 text-center bg-[#121110]/70 backdrop-blur-[2px]">
+            <p className="font-mono text-[0.62rem] uppercase tracking-[0.28em] text-mark mb-4">
               Gravity well
             </p>
-            <p className="display text-[2rem] text-chalk tracking-tight mb-3">Orbital</p>
-            <p className="font-body text-mist text-[0.9rem] leading-relaxed max-w-[14rem] mb-8">
+            <p className="display text-[2rem] text-ink tracking-tight mb-3">Orbital</p>
+            <p className="font-body text-mute text-[0.9rem] leading-relaxed max-w-[14rem] mb-8">
               Drag the probe. Release. Hold the orbit.
             </p>
             <button
               type="button"
               onClick={goAim}
-              className="font-display font-bold text-sm tracking-wide text-graphite bg-signal px-9 py-2.5 rounded-[var(--radius)] hover:brightness-110 transition"
+              className="font-display font-bold text-sm tracking-wide text-paper bg-mark px-9 py-2.5 rounded-[var(--radius)] hover:brightness-110 transition"
             >
               Begin
             </button>
@@ -576,27 +576,27 @@ export default function OrbitalGame() {
         )}
 
         {phase === "aim" && !dragging.current && (
-          <p className="pointer-events-none absolute bottom-6 inset-x-0 text-center font-mono text-[0.6rem] uppercase tracking-[0.22em] text-mist">
+          <p className="pointer-events-none absolute bottom-6 inset-x-0 text-center font-mono text-[0.6rem] uppercase tracking-[0.22em] text-mute">
             {hint ?? "Drag · release"}
           </p>
         )}
 
         {phase === "aim" && dragging.current && pullPower.current < MIN_PULL && (
-          <p className="pointer-events-none absolute bottom-6 inset-x-0 text-center font-mono text-[0.6rem] uppercase tracking-[0.22em] text-oxide">
+          <p className="pointer-events-none absolute bottom-6 inset-x-0 text-center font-mono text-[0.6rem] uppercase tracking-[0.22em] text-clay">
             Farther
           </p>
         )}
 
         {phase === "over" && (
-          <div className="absolute inset-0 z-10 flex flex-col items-center justify-center px-10 text-center bg-[#07080c]/72 backdrop-blur-[2px]">
-            <p className="display text-[2rem] text-chalk tracking-tight mb-2">Lost</p>
-            <p className="font-mono text-[0.7rem] uppercase tracking-[0.18em] text-mist mb-8">
-              Orbits <span className="text-signal tabular-nums ml-2">{score}</span>
+          <div className="absolute inset-0 z-10 flex flex-col items-center justify-center px-10 text-center bg-[#121110]/72 backdrop-blur-[2px]">
+            <p className="display text-[2rem] text-ink tracking-tight mb-2">Lost</p>
+            <p className="font-mono text-[0.7rem] uppercase tracking-[0.18em] text-mute mb-8">
+              Orbits <span className="text-mark tabular-nums ml-2">{score}</span>
             </p>
             <button
               type="button"
               onClick={goAim}
-              className="font-display font-bold text-sm tracking-wide text-graphite bg-signal px-9 py-2.5 rounded-[var(--radius)] hover:brightness-110 transition"
+              className="font-display font-bold text-sm tracking-wide text-paper bg-mark px-9 py-2.5 rounded-[var(--radius)] hover:brightness-110 transition"
             >
               Again
             </button>

@@ -6,9 +6,8 @@ const TEXT = {
 };
 
 /**
- * Dual-identity reveal: chalk name by default; pointer reveals
- * Scientist / Entrepreneur through a soft torch aperture.
- * Touch / reduced-motion: show both lines statically.
+ * Dual-identity reveal on gallery paper.
+ * Name in ink; pointer reveals institutional mark / clay poles.
  */
 export default function TorchEffect() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -57,18 +56,25 @@ export default function TorchEffect() {
     if (!ctx) return;
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 
+    const styles = getComputedStyle(document.documentElement);
+    const mark = styles.getPropertyValue("--mark").trim() || "#1C3D36";
+    const clay = styles.getPropertyValue("--clay").trim() || "#8F4E3A";
+    const paper = styles.getPropertyValue("--paper").trim() || "#F1EEE6";
+    const isDark =
+      document.documentElement.classList.contains("dark") ||
+      (!document.documentElement.classList.contains("light") &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches);
+
     const draw = () => {
       ctx.clearRect(0, 0, dims.w, dims.h);
-      // Hidden identity layer
-      ctx.fillStyle = "#E6E1D6";
       ctx.textAlign = "center";
       ctx.textBaseline = "middle";
       const size = Math.min(dims.w * 0.14, 96);
-      ctx.font = `800 ${size}px "Bricolage Grotesque", system-ui, sans-serif`;
+      ctx.font = `600 ${size}px "Cormorant Garamond", Georgia, serif`;
       const cy = dims.h * 0.48;
-      ctx.fillStyle = "#B8F000";
+      ctx.fillStyle = mark;
       ctx.fillText(TEXT.hidden.first, dims.w / 2, cy - size * 0.55);
-      ctx.fillStyle = "#C4784A";
+      ctx.fillStyle = clay;
       ctx.fillText(TEXT.hidden.second, dims.w / 2, cy + size * 0.55);
 
       if (finePointer && !reduceMotion && active) {
@@ -82,6 +88,7 @@ export default function TorchEffect() {
           pos.y * dims.h,
           r,
         );
+        // Mask: visible inside torch (works on light & dark paper)
         g.addColorStop(0, "rgba(0,0,0,1)");
         g.addColorStop(0.55, "rgba(0,0,0,0.85)");
         g.addColorStop(1, "rgba(0,0,0,0)");
@@ -89,13 +96,11 @@ export default function TorchEffect() {
         ctx.fillRect(0, 0, dims.w, dims.h);
         ctx.globalCompositeOperation = "source-over";
       } else if (!finePointer || reduceMotion) {
-        // keep full dual identity visible as soft underlay via low alpha overlay next layer
-        ctx.globalAlpha = 0.2;
-        ctx.fillStyle = "#12141A";
+        ctx.globalAlpha = isDark ? 0.2 : 0.15;
+        ctx.fillStyle = paper;
         ctx.fillRect(0, 0, dims.w, dims.h);
         ctx.globalAlpha = 1;
       } else {
-        // idle: hide dual layer
         ctx.globalCompositeOperation = "destination-in";
         ctx.clearRect(0, 0, dims.w, dims.h);
         ctx.globalCompositeOperation = "source-over";
@@ -118,68 +123,62 @@ export default function TorchEffect() {
     <section
       ref={containerRef}
       id="home"
-      className="relative min-h-[100dvh] flex flex-col items-center justify-center overflow-hidden bg-graphite"
+      className="relative min-h-[100dvh] flex flex-col items-center justify-center overflow-hidden bg-paper"
       onPointerMove={onMove}
       onPointerLeave={() => setActive(false)}
     >
-      {/* Ambient dual wash */}
       <div
-        className="pointer-events-none absolute inset-0 opacity-40"
+        className="pointer-events-none absolute inset-0"
         style={{
           background: `
-            radial-gradient(ellipse 50% 40% at 30% 40%, rgba(184,240,0,0.10), transparent 70%),
-            radial-gradient(ellipse 45% 35% at 70% 55%, rgba(196,120,74,0.10), transparent 70%)
+            radial-gradient(ellipse 55% 45% at 28% 42%, rgba(28,61,54,0.05), transparent 70%),
+            radial-gradient(ellipse 50% 40% at 72% 58%, rgba(143,78,58,0.045), transparent 70%)
           `,
         }}
       />
 
-      {/* Hairline frame */}
-      <div className="pointer-events-none absolute inset-6 sm:inset-10 border border-rule/80" />
+      {/* Gallery frame — quiet, institutional */}
+      <div className="pointer-events-none absolute inset-5 sm:inset-10 border border-rule" />
 
       <div className="relative z-10 section-pad w-full max-w-content text-center">
-        <p className="eyebrow mb-6 text-signal">Ph.D. · dual practice</p>
+        <p className="eyebrow mb-8 text-mark">Ph.D. · AI products</p>
 
-        {/* Visible name */}
-        <h1 className="display leading-[0.92] select-none">
-          <span className="block text-[clamp(2.75rem,12vw,7.5rem)]">
+        <h1 className="font-display font-semibold leading-[0.9] select-none tracking-[-0.02em]">
+          <span className="block text-[clamp(3rem,13vw,8rem)] text-ink">
             {TEXT.visible.first}
           </span>
-          <span className="block text-[clamp(2.75rem,12vw,7.5rem)] text-chalk/90">
+          <span className="block text-[clamp(3rem,13vw,8rem)] text-ink/85">
             {TEXT.visible.second}
           </span>
         </h1>
 
-        <p className="mt-8 max-w-xl mx-auto font-body text-mist text-base sm:text-lg leading-relaxed">
-          Scientist and entrepreneur. Building systems where research rigor
-          meets products people can actually run.
+        <p className="mt-10 max-w-lg mx-auto font-body text-mute text-base sm:text-lg leading-relaxed">
+          AI products people like, love to use, and actually find useful.
         </p>
 
         {finePointer && !reduceMotion && (
-          <p className="mt-6 font-mono text-[0.65rem] uppercase tracking-[0.2em] text-mist/80">
+          <p className="mt-8 font-mono text-[0.62rem] uppercase tracking-[0.22em] text-mute/80">
             Move to reveal the other name
           </p>
         )}
       </div>
 
-      {/* Reveal canvas sits above ambient, under chrome */}
       <canvas
         ref={canvasRef}
         className="pointer-events-none absolute inset-0 z-[5] h-full w-full"
         style={{
-          opacity: finePointer && !reduceMotion ? 1 : 0.35,
-          mixBlendMode: "normal",
+          opacity: finePointer && !reduceMotion ? 1 : 0.28,
         }}
         aria-hidden
       />
 
-      {/* Static dual labels for touch / reduced motion */}
       {(!finePointer || reduceMotion) && (
         <div className="absolute bottom-16 left-0 right-0 z-10 flex justify-center gap-8 section-pad">
-          <span className="font-mono text-xs uppercase tracking-[0.18em] text-signal">
+          <span className="font-mono text-xs uppercase tracking-[0.18em] text-mark">
             {TEXT.hidden.first}
           </span>
           <span className="text-rule">/</span>
-          <span className="font-mono text-xs uppercase tracking-[0.18em] text-oxide">
+          <span className="font-mono text-xs uppercase tracking-[0.18em] text-clay">
             {TEXT.hidden.second}
           </span>
         </div>

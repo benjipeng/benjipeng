@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="bg-graphite min-h-[100dvh] flex flex-col">
+    <div className="bg-paper min-h-[100dvh] flex flex-col text-ink">
       <Navbar />
       <main className="flex-1">
         <TorchEffect />

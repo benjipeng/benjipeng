@@ -139,7 +139,7 @@ export default function CourierGame() {
 
     // —— sky: three quiet bands ——
     const sky = ctx.createLinearGradient(0, 0, 0, GROUND);
-    sky.addColorStop(0, "#0a0b10");
+    sky.addColorStop(0, "#121110");
     sky.addColorStop(0.55, "#12141c");
     sky.addColorStop(1, "#1a1416");
     ctx.fillStyle = sky;
@@ -199,10 +199,10 @@ export default function CourierGame() {
         ctx.fillStyle = "#16121c";
         ctx.fillRect(x, y, bw * 0.95, h);
         // single oxide roof tick
-        ctx.fillStyle = "rgba(196,120,74,0.22)";
+        ctx.fillStyle = "rgba(143,78,58,0.22)";
         ctx.fillRect(x, y, bw * 0.95, 1.5);
         // sparse window dots
-        ctx.fillStyle = "rgba(184,240,0,0.1)";
+        ctx.fillStyle = "rgba(250,248,243,0.1)";
         for (let row = y + 10; row < GROUND - 14; row += 14) {
           for (let col = x + 5; col < x + bw * 0.95 - 4; col += 10) {
             if ((col + row + Math.floor(cam * 0.1)) % 19 < 6) {
@@ -221,7 +221,7 @@ export default function CourierGame() {
     ctx.fillRect(0, GROUND, W, H - GROUND);
 
     // horizon rule
-    ctx.fillStyle = "rgba(196,120,74,0.55)";
+    ctx.fillStyle = "rgba(143,78,58,0.55)";
     ctx.fillRect(0, GROUND - 1, W, 1.5);
 
     // road band
@@ -243,13 +243,13 @@ export default function CourierGame() {
       const bob = Math.sin(T * 3.2 + pk.x * 0.04) * 2;
       const y = pk.y + bob;
       const g = ctx.createRadialGradient(sx, y + 7, 0, sx, y + 7, 16);
-      g.addColorStop(0, "rgba(184,240,0,0.25)");
-      g.addColorStop(1, "rgba(184,240,0,0)");
+      g.addColorStop(0, "rgba(250,248,243,0.25)");
+      g.addColorStop(1, "rgba(250,248,243,0)");
       ctx.fillStyle = g;
       ctx.beginPath();
       ctx.arc(sx, y + 7, 16, 0, Math.PI * 2);
       ctx.fill();
-      ctx.fillStyle = "#C4F020";
+      ctx.fillStyle = "#E8E4D9";
       ctx.beginPath();
       ctx.moveTo(sx, y - 2);
       ctx.lineTo(sx + 9, y + 7);
@@ -274,7 +274,7 @@ export default function CourierGame() {
       ctx.fill();
       // body
       const cg = ctx.createLinearGradient(sx, top, sx, GROUND);
-      cg.addColorStop(0, "#d18a58");
+      cg.addColorStop(0, "#A86B52");
       cg.addColorStop(1, "#9a5632");
       ctx.fillStyle = cg;
       ctx.fillRect(sx, top, o.w, o.h);
@@ -303,7 +303,7 @@ export default function CourierGame() {
     ctx.fill();
 
     // legs — two lines
-    ctx.strokeStyle = "#E6E1D6";
+    ctx.strokeStyle = "#E8E4D9";
     ctx.lineWidth = 2.2;
     ctx.lineCap = "round";
     ctx.beginPath();
@@ -314,7 +314,7 @@ export default function CourierGame() {
     ctx.stroke();
 
     // body triangle
-    ctx.fillStyle = "#E6E1D6";
+    ctx.fillStyle = "#E8E4D9";
     ctx.beginPath();
     ctx.moveTo(1, -PH);
     ctx.lineTo(8, -10);
@@ -323,17 +323,17 @@ export default function CourierGame() {
     ctx.fill();
 
     // pack
-    ctx.fillStyle = "#C4784A";
+    ctx.fillStyle = "#8F4E3A";
     ctx.fillRect(-4, -PH - 1, 11, 13);
-    ctx.fillStyle = "#B8F000";
+    ctx.fillStyle = "#C5C0B4";
     ctx.fillRect(-4, -PH - 1, 11, 1.5);
 
     // head
     ctx.beginPath();
     ctx.arc(2.5, -PH - 5, 4, 0, Math.PI * 2);
-    ctx.fillStyle = "#E6E1D6";
+    ctx.fillStyle = "#E8E4D9";
     ctx.fill();
-    ctx.fillStyle = "#0a0b10";
+    ctx.fillStyle = "#121110";
     ctx.fillRect(2.5, -PH - 6, 4.5, 2);
 
     ctx.restore();
@@ -433,25 +433,25 @@ export default function CourierGame() {
     <div className="flex flex-col items-stretch gap-3.5 w-full">
       <div className="flex items-end justify-between px-0.5">
         <div>
-          <p className="font-mono text-[0.6rem] uppercase tracking-[0.2em] text-mist mb-1">
+          <p className="font-mono text-[0.6rem] uppercase tracking-[0.2em] text-mute mb-1">
             Score
           </p>
-          <p className="font-display text-2xl font-bold text-chalk tabular-nums leading-none">
+          <p className="font-display text-2xl font-bold text-ink tabular-nums leading-none">
             {score}
           </p>
         </div>
         <div className="text-right">
-          <p className="font-mono text-[0.6rem] uppercase tracking-[0.2em] text-mist mb-1">
+          <p className="font-mono text-[0.6rem] uppercase tracking-[0.2em] text-mute mb-1">
             Best
           </p>
-          <p className="font-display text-lg font-semibold text-oxide tabular-nums leading-none">
+          <p className="font-display text-lg font-semibold text-clay tabular-nums leading-none">
             {best}
           </p>
         </div>
       </div>
 
       <div
-        className="relative w-full aspect-[520/300] overflow-hidden bg-[#0a0b10] ring-1 ring-rule/70"
+        className="relative w-full aspect-[520/300] overflow-hidden bg-[#121110] ring-1 ring-rule/70"
         style={{ borderRadius: "var(--radius)" }}
       >
         <canvas
@@ -463,26 +463,26 @@ export default function CourierGame() {
         />
 
         {(phase === "menu" || phase === "over") && (
-          <div className="absolute inset-0 z-10 flex flex-col items-center justify-center px-10 text-center bg-[#0a0b10]/68 backdrop-blur-[2px]">
-            <p className="font-mono text-[0.62rem] uppercase tracking-[0.28em] text-oxide mb-4">
+          <div className="absolute inset-0 z-10 flex flex-col items-center justify-center px-10 text-center bg-[#121110]/68 backdrop-blur-[2px]">
+            <p className="font-mono text-[0.62rem] uppercase tracking-[0.28em] text-clay mb-4">
               Night route
             </p>
-            <p className="display text-[2rem] text-chalk tracking-tight mb-3">
+            <p className="display text-[2rem] text-ink tracking-tight mb-3">
               {phase === "menu" ? "Courier" : "Ended"}
             </p>
             {phase === "menu" ? (
-              <p className="font-body text-mist text-[0.9rem] leading-relaxed max-w-[14rem] mb-8">
+              <p className="font-body text-mute text-[0.9rem] leading-relaxed max-w-[14rem] mb-8">
                 Jump. Collect. Keep the route.
               </p>
             ) : (
-              <p className="font-mono text-[0.7rem] uppercase tracking-[0.18em] text-mist mb-8">
-                Score <span className="text-oxide tabular-nums ml-2">{score}</span>
+              <p className="font-mono text-[0.7rem] uppercase tracking-[0.18em] text-mute mb-8">
+                Score <span className="text-clay tabular-nums ml-2">{score}</span>
               </p>
             )}
             <button
               type="button"
               onClick={start}
-              className="font-display font-bold text-sm tracking-wide text-graphite bg-oxide px-9 py-2.5 rounded-[var(--radius)] hover:brightness-110 transition"
+              className="font-display font-bold text-sm tracking-wide text-paper bg-clay px-9 py-2.5 rounded-[var(--radius)] hover:brightness-110 transition"
             >
               {phase === "menu" ? "Begin" : "Again"}
             </button>

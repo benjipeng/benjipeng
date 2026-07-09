@@ -6,9 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Benji Peng — scientist and entrepreneur. Research rigor, systems you can run."
+      content="Benji Peng — AI products people like, love to use, and find useful."
     />
     <title>Benji Peng</title>
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("benji-theme");
+          document.documentElement.classList.remove("light", "dark");
+          /* default day (museum paper); only dark when explicitly saved */
+          document.documentElement.classList.add(
+            t === "dark" ? "dark" : "light",
+          );
+        } catch (e) {
+          document.documentElement.classList.add("light");
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
