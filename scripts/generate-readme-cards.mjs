@@ -364,11 +364,132 @@ function pinSvg(theme, repo) {
 `;
 }
 
+async function fetchContributionCalendar() {
+  const query = `
+    query($login: String!) {
+      user(login: $login) {
+        contributionsCollection {
+          contributionCalendar {
+            totalContributions
+            weeks { contributionDays { date contributionCount } }
+          }
+        }
+      }
+    }
+  `;
+
+  const res = await fetch("https://api.github.com/graphql", {
+    method: "POST",
+    headers: { ...headers, "Content-Type": "application/json" },
+    body: JSON.stringify({ query, variables: { login: USERNAME } }),
+  });
+  if (!res.ok) {
+    throw new Error(`GraphQL ${res.status}: ${await res.text()}`);
+  }
+  const body = await res.json();
+  if (body.errors?.length) {
+    throw new Error(`GraphQL errors: ${JSON.stringify(body.errors)}`);
+  }
+  return body.data.user.contributionsCollection.contributionCalendar;
+}
+
+const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function fmtDate(iso, withYear = false) {
+  if (!iso) return "—";
+  const [y, m, d] = iso.split("-").map(Number);
+  const base = `${MONTHS[m - 1]} ${d}`;
+  return withYear ? `${base}, ${y}` : base;
+}
+
+/** Streak math over the trailing-year contribution calendar (demolab semantics). */
+function computeStreaks(calendar) {
+  const days = calendar.weeks.flatMap((w) => w.contributionDays);
+  days.sort((a, b) => (a.date < b.date ? -1 : 1));
+
+  let longest = 0;
+  let run = 0;
+  let runStart = null;
+  let longestRange = [null, null];
+  for (const d of days) {
+    if (d.contributionCount > 0) {
+      if (run === 0) runStart = d.date;
+      run += 1;
+      if (run > longest) {
+        longest = run;
+        longestRange = [runStart, d.date];
+      }
+    } else {
+      run = 0;
+    }
+  }
+
+  // Current streak: the most recent day may still be in progress (0 so far) — skip it.
+  let i = days.length - 1;
+  if (i >= 0 && days[i].contributionCount === 0) i -= 1;
+  let current = 0;
+  const currentEnd = i >= 0 ? days[i].date : null;
+  while (i >= 0 && days[i].contributionCount > 0) {
+    current += 1;
+    i -= 1;
+  }
+  const currentStart = current > 0 ? days[i + 1].date : null;
+
+  return {
+    total: calendar.totalContributions || 0,
+    current,
+    currentStart,
+    currentEnd,
+    longest,
+    longestStart: longestRange[0],
+    longestEnd: longestRange[1],
+    firstDay: days[0]?.date,
+  };
+}
+
+const FLAME =
+  "M8 15.7c-3 0-5.4-2.4-5.4-5.4 0-2.2 1.4-3.7 2.5-4.7.9-.8 1.9-1.8 2.4-3.2.2.6.6 1.2 1 1.7 1.1 1.3 2.9 2.9 2.9 6.2 0 3-2.4 5.4-5.4 5.4zm-1-2.6c-.9 0-1.6-.8-1.6-1.7 0-.7.4-1.2.8-1.6.3-.3.6-.6.8-1 .2.4.5.7.8 1 .4.4.8.9.8 1.6 0 .9-.7 1.7-1.6 1.7z";
+
+function streakSvg(theme, s) {
+  const t = THEMES[theme];
+  const col = (x, value, label, range) => `
+    <text x="${x}" y="80" class="num">${esc(value)}</text>
+    <text x="${x}" y="100" class="label">${esc(label)}</text>
+    <text x="${x}" y="116" class="range">${esc(range)}</text>`;
+
+  const totalRange = `${fmtDate(s.firstDay, true)} – Present`;
+  const currentRange =
+    s.current > 0 ? `${fmtDate(s.currentStart)} – ${fmtDate(s.currentEnd)}` : "No active streak";
+  const longestRange =
+    s.longest > 0 ? `${fmtDate(s.longestStart)} – ${fmtDate(s.longestEnd)}` : "—";
+
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="380" height="165" viewBox="0 0 380 165" role="img" aria-label="Contribution streak">
+  <style>
+    .title { font: 600 16px 'Segoe UI', Ubuntu, Sans-Serif; fill: ${t.title}; }
+    .num { font: 700 24px 'Segoe UI', Ubuntu, Sans-Serif; fill: ${t.title}; text-anchor: middle; }
+    .label { font: 400 11px 'Segoe UI', Ubuntu, Sans-Serif; fill: ${t.text}; text-anchor: middle; }
+    .range { font: 400 9px 'Segoe UI', Ubuntu, Sans-Serif; fill: ${t.text}; text-anchor: middle; }
+  </style>
+  <rect x="0.5" y="0.5" width="379" height="164" rx="4.5" fill="${t.bg}" stroke="${t.border}"/>
+  <svg x="25" y="16" width="16" height="16" viewBox="0 0 16 16" fill="${t.icon}" aria-hidden="true"><path fill-rule="evenodd" d="${FLAME}"/></svg>
+  <text x="48" y="30" class="title">Contribution Streak</text>
+  <line x1="126.5" y1="55" x2="126.5" y2="125" stroke="${t.border}"/>
+  <line x1="253.5" y1="55" x2="253.5" y2="125" stroke="${t.border}"/>
+  ${col(63, s.total, "Total Contributions", totalRange)}
+  ${col(190, `${s.current} day${s.current === 1 ? "" : "s"}`, "Current Streak", currentRange)}
+  ${col(317, `${s.longest} day${s.longest === 1 ? "" : "s"}`, "Longest Streak", longestRange)}
+</svg>
+`;
+}
+
 async function main() {
   await mkdir(OUT_DIR, { recursive: true });
 
   console.log("Fetching user stats…");
   const stats = await fetchUserStats();
+  console.log("Fetching contribution calendar…");
+  const streak = computeStreaks(await fetchContributionCalendar());
   console.log("Fetching pinned repos…");
   const repos = [];
   for (const fullName of PINNED_REPOS) {
@@ -379,6 +500,7 @@ async function main() {
   for (const theme of ["dark", "light"]) {
     writes.push(
       writeFile(join(OUT_DIR, `stats-${theme}.svg`), statsSvg(theme, stats)),
+      writeFile(join(OUT_DIR, `streak-${theme}.svg`), streakSvg(theme, streak)),
     );
     for (const repo of repos) {
       const slug = repo.fullName.replace("/", "-");
@@ -394,6 +516,7 @@ async function main() {
     JSON.stringify(
       {
         stats,
+        streak,
         pins: repos.map((r) => ({
           name: r.fullName,
           stars: r.stars,

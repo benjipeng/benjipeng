@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="380" height="165" viewBox="0 0 380 165" role="img" aria-label="Contribution streak">
+  <style>
+    .title { font: 600 16px 'Segoe UI', Ubuntu, Sans-Serif; fill: #7AA2F7; }
+    .num { font: 700 24px 'Segoe UI', Ubuntu, Sans-Serif; fill: #7AA2F7; text-anchor: middle; }
+    .label { font: 400 11px 'Segoe UI', Ubuntu, Sans-Serif; fill: #8B949E; text-anchor: middle; }
+    .range { font: 400 9px 'Segoe UI', Ubuntu, Sans-Serif; fill: #8B949E; text-anchor: middle; }
+  </style>
+  <rect x="0.5" y="0.5" width="379" height="164" rx="4.5" fill="#0D1117" stroke="#21262D"/>
+  <svg x="25" y="16" width="16" height="16" viewBox="0 0 16 16" fill="#7AA2F7" aria-hidden="true"><path fill-rule="evenodd" d="M8 15.7c-3 0-5.4-2.4-5.4-5.4 0-2.2 1.4-3.7 2.5-4.7.9-.8 1.9-1.8 2.4-3.2.2.6.6 1.2 1 1.7 1.1 1.3 2.9 2.9 2.9 6.2 0 3-2.4 5.4-5.4 5.4zm-1-2.6c-.9 0-1.6-.8-1.6-1.7 0-.7.4-1.2.8-1.6.3-.3.6-.6.8-1 .2.4.5.7.8 1 .4.4.8.9.8 1.6 0 .9-.7 1.7-1.6 1.7z"/></svg>
+  <text x="48" y="30" class="title">Contribution Streak</text>
+  <line x1="126.5" y1="55" x2="126.5" y2="125" stroke="#21262D"/>
+  <line x1="253.5" y1="55" x2="253.5" y2="125" stroke="#21262D"/>
+  
+    <text x="63" y="80" class="num">1801</text>
+    <text x="63" y="100" class="label">Total Contributions</text>
+    <text x="63" y="116" class="range">Jul 20, 2025 – Present</text>
+  
+    <text x="190" y="80" class="num">9 days</text>
+    <text x="190" y="100" class="label">Current Streak</text>
+    <text x="190" y="116" class="range">Jul 11 – Jul 19</text>
+  
+    <text x="317" y="80" class="num">35 days</text>
+    <text x="317" y="100" class="label">Longest Streak</text>
+    <text x="317" y="116" class="range">Jun 5 – Jul 9</text>
+</svg>
