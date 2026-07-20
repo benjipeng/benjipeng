@@ -1,0 +1,144 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout>
+  <div class="grain" aria-hidden="true"></div>
+
+  <div class="wrap">
+    <header class="top">
+      <span class="brand">APPCUBIC<span class="reg">®</span> — Machine Garden</span>
+      <nav>
+        <a href="#chapters">Chapters</a>
+        <a href="#channels">Channels</a>
+        <a href="https://www.appcubic.com">Studio</a>
+      </nav>
+    </header>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero-grid">
+        <div>
+          <p class="kicker mono">An AI design studio</p>
+          <h1 class="lockup">
+            <span class="row"><span>Machine</span></span>
+            <span class="row"><span><em>garden</em></span></span>
+          </h1>
+          <p class="hero-copy">
+            Agentic systems, <b>cultivated</b> — planted as research,
+            pruned by evaluation, harvested as products.
+          </p>
+        </div>
+        <div class="collage">
+          <img class="photo" src={`${base}/img/flowers.jpg`} alt="Dreamy film botanicals" />
+          <span class="ring" aria-hidden="true"></span>
+          <span class="note n1">fig. a — in bloom</span>
+          <span class="note n2">grown, not prompted ↴</span>
+          <svg class="arrow a1" viewBox="0 0 60 24" aria-hidden="true"><path d="M2 20 C 18 4, 38 2, 56 8 M 48 3 l 9 4 -7 6"/></svg>
+          <svg class="arrow a2" viewBox="0 0 60 24" aria-hidden="true"><path d="M2 20 C 18 4, 38 2, 56 8 M 48 3 l 9 4 -7 6"/></svg>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ============ CHAPTERS ============ -->
+  <div class="wrap">
+    <section class="chapters" id="chapters">
+      <article class="chapter">
+        <div class="fig">
+          <img src={`${base}/img/arch-shadow.jpg`} alt="Architectural shadows" loading="lazy" />
+          <span class="no">i.</span>
+        </div>
+        <div class="body">
+          <p class="k mono">Chapter i — the workshop</p>
+          <h2>App <em>Automaton</em></h2>
+          <p>The open workshop — portable skills for coding agents, document &amp; web tooling, multi-agent orchestration. MIT-licensed, built in public, used daily inside the studio.</p>
+          <a class="go mono" href="https://appautomaton.github.io" target="_blank" rel="noopener"><span>Visit the workshop</span> ↗</a>
+        </div>
+      </article>
+      <article class="chapter">
+        <div class="fig">
+          <img src={`${base}/img/chrome-knot.jpg`} alt="Liquid chrome knot" loading="lazy" />
+          <span class="no">ii.</span>
+        </div>
+        <div class="body">
+          <p class="k mono">Chapter ii — the models</p>
+          <h2>MLX <em>models</em></h2>
+          <p>Pure-MLX models for Apple Silicon — small, sharp, and entirely local. The greenhouse row where research-grade ideas are hardened into runnable weights.</p>
+          <a class="go mono" href="https://appautomaton.github.io" target="_blank" rel="noopener"><span>See the models</span> ↗</a>
+        </div>
+      </article>
+      <article class="chapter">
+        <div class="fig">
+          <img src={`${base}/img/film-gradient.jpg`} alt="Abstract film gradient" loading="lazy" />
+          <span class="no">iii.</span>
+        </div>
+        <div class="body">
+          <p class="k mono">Chapter iii — the lab bench</p>
+          <h2>Research <em>systems</em></h2>
+          <p>Scientific and analytical workflows turned into dependable, repeatable systems — honest evaluation loops, clear tool boundaries, no theater.</p>
+          <a class="go mono" href="https://research.appcubic.com" target="_blank" rel="noopener"><span>Read the research</span> ↗</a>
+        </div>
+      </article>
+      <article class="chapter">
+        <div class="fig">
+          <img src={`${base}/img/courtyard.jpg`} alt="Dark moody courtyard" loading="lazy" />
+          <span class="no">iv.</span>
+        </div>
+        <div class="body">
+          <p class="k mono">Chapter iv — the studio</p>
+          <h2>Venture <em>systems</em></h2>
+          <p>Early product strategy, technical diligence, and incubation for AI-first teams — the garden's other half, where systems become companies.</p>
+          <a class="go mono" href="https://www.appcubic.com" target="_blank" rel="noopener"><span>Enter the studio</span> ↗</a>
+        </div>
+      </article>
+    </section>
+  </div>
+
+  <!-- ============ FIELD NOTES ============ -->
+  <div class="notes" aria-hidden="true">
+    <div class="mtrack">
+      <span>Agent workflows</span><span class="s">✳</span><span>Honest eval loops</span><span class="s">✳</span><span>Pure-MLX</span><span class="s">✳</span><span>MIT, in public</span><span class="s">✳</span>
+      <span>Agent workflows</span><span class="s">✳</span><span>Honest eval loops</span><span class="s">✳</span><span>Pure-MLX</span><span class="s">✳</span><span>MIT, in public</span><span class="s">✳</span>
+    </div>
+  </div>
+
+  <!-- ============ CHANNELS ============ -->
+  <div class="wrap">
+    <section class="channels" id="channels">
+      <div class="head mono dim">
+        <span>Channels — <span style="color: var(--pen)">the beds, labeled</span></span>
+        <span>(05)</span>
+      </div>
+      <div class="c-rows">
+        <a class="c-row" href="https://www.appcubic.com" target="_blank" rel="noopener">
+          <span class="idx mono">c·01</span><span class="name">App<em>Cubic</em></span><span class="url mono">appcubic.com ↗</span>
+        </a>
+        <a class="c-row" href="https://appautomaton.github.io" target="_blank" rel="noopener">
+          <span class="idx mono">c·02</span><span class="name">App <em>Automaton</em></span><span class="url mono">appautomaton.github.io ↗</span>
+        </a>
+        <a class="c-row" href="https://research.appcubic.com" target="_blank" rel="noopener">
+          <span class="idx mono">c·03</span><span class="name">Research <em>systems</em></span><span class="url mono">research.appcubic.com ↗</span>
+        </a>
+        <a class="c-row" href="https://github.com/appautomaton" target="_blank" rel="noopener">
+          <span class="idx mono">c·04</span><span class="name">Git<em>Hub</em> — open source</span><span class="url mono">github.com/appautomaton ↗</span>
+        </a>
+        <a class="c-row" href="https://benji.appcubic.com" target="_blank" rel="noopener">
+          <span class="idx mono">c·05</span><span class="name">The <em>card</em></span><span class="url mono">benji.appcubic.com ↗</span>
+        </a>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="wrap">
+      <p class="signoff">Grown, <span class="p">not prompted.</span></p>
+      <div class="foot-meta mono">
+        <span>© 2026 AppCubic — an AI design studio</span>
+        <span>Built in the open — <a href="https://appautomaton.github.io" target="_blank" rel="noopener">AppAutomaton</a></span>
+      </div>
+    </div>
+  </footer>
+</BaseLayout>

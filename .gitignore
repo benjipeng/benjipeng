@@ -25,3 +25,6 @@ playwright-report/
 *.njsproj
 *.sln
 *.sw?
+
+# Astro
+.astro/

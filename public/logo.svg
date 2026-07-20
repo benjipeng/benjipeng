@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Benji Peng mark">
-  <title>BP</title>
-  <rect x="12" y="10" width="7" height="44" rx="0.5" fill="#161615"/>
-  <rect x="24" y="10" width="7" height="44" rx="0.5" fill="#161615"/>
-  <path d="M36 14h16l-8 14H36V14z" fill="#1C3D36"/>
-  <rect x="36" y="36" width="16" height="18" rx="0.5" fill="#8F4E3A"/>
-</svg>
