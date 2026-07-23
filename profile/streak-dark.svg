@@ -16,9 +16,9 @@
     <text x="63" y="100" class="label">Total Contributions</text>
     <text x="63" y="116" class="range">Jul 20, 2025 – Present</text>
   
-    <text x="190" y="80" class="num">11 days</text>
+    <text x="190" y="80" class="num">0 days</text>
     <text x="190" y="100" class="label">Current Streak</text>
-    <text x="190" y="116" class="range">Jul 11 – Jul 21</text>
+    <text x="190" y="116" class="range">No active streak</text>
   
     <text x="317" y="80" class="num">35 days</text>
     <text x="317" y="100" class="label">Longest Streak</text>
