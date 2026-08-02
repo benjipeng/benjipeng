@@ -12,13 +12,13 @@
   <line x1="126.5" y1="55" x2="126.5" y2="125" stroke="#21262D"/>
   <line x1="253.5" y1="55" x2="253.5" y2="125" stroke="#21262D"/>
   
-    <text x="63" y="80" class="num">1929</text>
+    <text x="63" y="80" class="num">1941</text>
     <text x="63" y="100" class="label">Total Contributions</text>
-    <text x="63" y="116" class="range">Jul 27, 2025 – Present</text>
+    <text x="63" y="116" class="range">Aug 3, 2025 – Present</text>
   
-    <text x="190" y="80" class="num">5 days</text>
+    <text x="190" y="80" class="num">6 days</text>
     <text x="190" y="100" class="label">Current Streak</text>
-    <text x="190" y="116" class="range">Jul 27 – Jul 31</text>
+    <text x="190" y="116" class="range">Jul 27 – Aug 1</text>
   
     <text x="317" y="80" class="num">35 days</text>
     <text x="317" y="100" class="label">Longest Streak</text>
